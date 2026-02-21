@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dossier: Alex Finn</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          :root {color-scheme: dark;}
+          * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+          body {
+            margin: 0;
+          background:
+          radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+          #08090d;
+          color: #e4e4e7;
+          font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+}
+          .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+          .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+          .timeline-lane {position: relative; padding-left: 2.25rem;}
+          .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+          .timeline-item {position: relative;}
+          .timeline-item::before {
+            content: "";
+          position: absolute;
+          left: -1.88rem;
+          top: 1.05rem;
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 9999px;
+          border: 1px solid #71717a;
+          background: #18181b;
+}
+          pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+        </style>
+      </head>
+      <body>
+        <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h1 class="text-3xl font-bold tracking-tight text-zinc-50">Alex Finn</h1>
+                  <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Person</span>
+                  <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-yellow-500/50 bg-yellow-500/20 text-yellow-200">CAUTION</span>
+                </div>
+                <p class="max-w-3xl text-sm leading-relaxed text-zinc-300">Moderate risk driven primarily by unverifiable revenue claims and prior security incident, offset by verifiable identity continuity, long-term public presence, and lack of malicious behavior.</p>
+                <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  <div>Generated: <span class="text-zinc-100">21/02/2026, 18:14:50</span></div>
+                  <div>Research date: <span class="text-zinc-100">2026-02-21</span></div>
+                  <div>Sources: <span class="text-zinc-100">Claude, GPT, Grok, Gemini</span></div>
+                  <div>Slug: <span class="mono text-zinc-100">alex-finn</span></div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+                <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+                <div class="mt-1 text-5xl font-bold text-yellow-300">36/100</div>
+                <div class="mt-2 text-xs text-zinc-400">Higher score indicates higher observed risk in this dossier.</div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">2</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">4</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">2</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">1</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+                <p class="mt-1 text-sm text-zinc-400">Known attributes linked to the subject profile.</p>
+              </div>
+              <div class="overflow-x-auto rounded-xl border border-zinc-800">
+                <table class="min-w-full text-left text-sm">
+                  <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                    <tr>
+                      <th class="px-4 py-3 font-medium">Field</th>
+                      <th class="px-4 py-3 font-medium">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="px-4"><tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+            <td class="py-2 text-zinc-100">Alex Finn</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Handles</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed"><a href="https://x.com/AlexFinn" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@AlexFinn</a></li><li class="leading-relaxed"><a href="https://x.com/AlexFinnX" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@AlexFinnX</a></li><li class="leading-relaxed"><a href="https://x.com/NFT_GOD" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@NFT_GOD</a></li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Email Addresses</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Locations</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed">Palo Alto, California, United States (self-asserted)</li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+            <td class="py-2 text-zinc-100">medium</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Source Ids</td>
+            <td class="py-2 text-zinc-100"><a href="https://x.com/AlexFinn" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://www.linkedin.com/in/alex-finn-1848684a" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://rocketreach.co/alex-finn-email_70427025" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></td>
+          </tr> </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+                <p class="mt-1 text-sm text-zinc-400">Model-level score reasoning and risk dimensions.</p>
+              </div>
+              <div class="grid gap-3"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+            <div class="mt-1 text-sm text-zinc-100">36</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+            <div class="mt-1 text-sm text-zinc-100">Moderate risk driven primarily by unverifiable revenue claims and prior security incident, offset by verifiable identity continuity, long-term public presence, and lack of malicious behavior.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">none found</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Verification Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">moderate due to reliance on self-reported metrics</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Ids</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a></div>
+          </div> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger</h2>
+              <p class="mt-1 text-sm text-zinc-400">Complete claims table with expandable corroboration notes.</p>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-zinc-800">
+              <table class="min-w-full text-left text-xs text-zinc-300">
+                <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+                  <tr>
+                    <th class="px-4 py-3 font-medium">Claim</th>
+                    <th class="px-4 py-3 font-medium">Source</th>
+                    <th class="px-4 py-3 font-medium">Confidence</th>
+                    <th class="px-4 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody><tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Bachelor of Science (B.S.) in Computer Science from Wentworth Institute of Technology (2008–2012)</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>LinkedIn, RocketReach</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> Consistent references across LinkedIn and RocketReach.</div> <div> <span class="text-zinc-400">Notes:</span> Profile could not be fully fetched in all environments, but multiple corroborating secondary sources exist.</div> <div> <span class="text-zinc-400">Flagged by:</span> Claude, GPT</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.linkedin.com/in/alex-finn-1848684a" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://rocketreach.co/alex-finn-email_70427025" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Creator Buddy reached approximately $300,000 ARR within months of launch</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Self-published posts, interviews</span></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">unverified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> No audited financials or third-party processor confirmation located.</div> <div> <span class="text-zinc-400">Notes:</span> Repeated consistently but remains self-reported.</div> <div> <span class="text-zinc-400">Flagged by:</span> Claude, GPT, Grok, Gemini</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></div> </div>
+                </details>
+            </td>
+          </tr> </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+              <p class="mt-1 text-sm text-zinc-400">Chronology with full event text and annotations.</p>
+            </div>
+            <div class="timeline-lane space-y-3"><article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2021-12</div>
+            <h4 class="mt-1 text-sm font-semibold">Launch of NFT God persona</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Public entry into NFT space with rapid audience growth.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>NFT Now</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2023-01</div>
+            <h4 class="mt-1 text-sm font-semibold">Phishing hack and asset loss</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Compromise via malicious Google Ad leading to wallet drain and account access.</p>
+            <p class="mt-2 text-xs text-zinc-400"><span class="text-zinc-300">Notes:</span> Loss estimates varied between ~$50k and ~$150k depending on source and timing.</p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>BeInCrypto</span> · <a href="https://crypto.ro/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">Crypto.ro</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2023-09</div>
+            <h4 class="mt-1 text-sm font-semibold">Rebrand to Alex Finn</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Public announcement ending NFT God branding.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>X posts</span> · <span>NFT Now</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-01</div>
+            <h4 class="mt-1 text-sm font-semibold">Creator Buddy launch</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Announcement of AI SaaS product.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Creator Buddy</span> · <a href="https://alexfinn.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">alexfinn.ai</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.creatorbuddy.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://www.alexfinn.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></p>
+          </article> </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags</h2>
+                <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by at least one model.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Unverified financial performance claims</h4>
+          <p class="mt-2 text-sm text-zinc-200">Multiple high-impact revenue claims lack independent verification.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">medium</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">All ARR figures are self-reported.</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Medium</span> · <span>Money Making Story</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Operational security failure</h4>
+          <p class="mt-2 text-sm text-zinc-200">Fell victim to basic phishing attack despite technical background.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">medium</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Public admission of hack.</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>BeInCrypto</span> · <a href="https://crypto.ro/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">Crypto.ro</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+                <p class="mt-1 text-sm text-violet-100/80">Recurring motifs across time, claims, and operations.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Trend-driven niche pivoting</h4>
+          <p class="mt-2 text-sm text-zinc-200">Moved from NFTs to AI and creator tooling as market narratives shifted.</p>
+          <p class="mt-2 text-xs text-violet-200">Frequency: Repeated across multi-year timeline</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Project History</h2>
+                <p class="mt-1 text-sm text-zinc-400">Portfolio-level outcomes and operational trajectory.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">NFT God Persona and Content Business</h4>
+          <p class="mt-1 text-xs text-zinc-400">2021–2023</p>
+          <p class="mt-2 text-sm text-zinc-300">NFT-focused personal brand monetized through newsletters, sponsorships, and community products.</p>
+          <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Successful audience growth and monetization; later rebranded.</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>NFT Now</span> · <span>BeInCrypto</span> · <a href="https://crypto.ro/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">Crypto.ro</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+        </article> <article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Creator Buddy</h4>
+          <p class="mt-1 text-xs text-zinc-400">2025–ongoing</p>
+          <p class="mt-2 text-sm text-zinc-300">AI-powered content and analytics tools for X creators.</p>
+          <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Active SaaS product with reported strong growth.</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Creator Buddy site</span> · <span>Medium</span> · <span>Money Making Story</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.creatorbuddy.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-amber-500/35 bg-amber-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-amber-200">Contradictions & Disputes</h2>
+                <p class="mt-1 text-sm text-amber-100/80">Where narratives conflict and what is unresolved.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-amber-500/30 bg-amber-500/10 p-4">
+          <div class="grid gap-3 md:grid-cols-2">
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim A</div>
+              <p class="mt-1 text-sm text-zinc-100">Overall risk score assessed at 25</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: Claude synthesis</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim B</div>
+              <p class="mt-1 text-sm text-zinc-100">Overall risk score assessed at 46</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: Gemini synthesis</p>
+            </div>
+          </div>
+          <p class="mt-3 border-t border-amber-500/20 pt-3 text-xs text-zinc-300">
+            Resolution: Median score applied per instruction. · Confidence: high
+          </p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-blue-500/35 bg-blue-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-blue-200">Key Insights</h2>
+                <p class="mt-1 text-sm text-blue-100/80">Synthesis highlights from all available model outputs.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">No evidence of fraud or criminal conduct</h4>
+          <p class="mt-2 text-sm text-zinc-200">Despite exposure to high-risk sectors, no evidence of scams or rug pulls attributable to the subject.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: critical</p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-700 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Evidence Gaps</h2>
+                <p class="mt-1 text-sm text-zinc-400">What remains unknown and what needs corroboration.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Independent financial verification of Creator Buddy revenue</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: No audited statements or processor dashboards located.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Public articles, product site, interviews</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Confidence Notes</h2>
+              <p class="mt-1 text-sm text-zinc-400">Data-quality and uncertainty indicators from the distillation step.</p>
+            </div>
+            <div class="grid gap-3 md:grid-cols-2"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Data Completeness</div>
+            <div class="mt-1 text-sm text-zinc-100">Approximately 70 percent of claims independently corroborated.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Verification</div>
+            <div class="mt-1 text-sm text-zinc-100">Mix of reputable third-party media and self-published content.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Identity Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">Medium to high.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Timeline Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">High for major events, lower for financial milestones.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Conflicting Findings</div>
+            <div class="mt-1 text-sm text-zinc-100">Primary disagreement centered on overall risk scoring.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Limitations</div>
+            <div class="mt-1 text-sm text-zinc-100">Lack of access to private financial records and full LinkedIn profile.</div>
+          </div> </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Source References</h2>
+              <p class="mt-1 text-sm text-zinc-400">Collected references/links from all source-like fields in the distilled payload.</p>
+            </div>
+            <ul class="grid gap-3 md:grid-cols-2"><li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-001</div>
+            <div class="mt-1 text-sm text-zinc-100">Alex Finn (@AlexFinn) X Profile and Bio</div>
+            <div class="mt-1 text-xs text-zinc-400">X Corp · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/AlexFinn" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/AlexFinn</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-002</div>
+            <div class="mt-1 text-sm text-zinc-100">Alex Finn LinkedIn Profile</div>
+            <div class="mt-1 text-xs text-zinc-400">LinkedIn · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.linkedin.com/in/alex-finn-1848684a" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.linkedin.com/in/alex-finn-1848684a</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-003</div>
+            <div class="mt-1 text-sm text-zinc-100">Behind the PFP: How NFT God Built a $250K Business</div>
+            <div class="mt-1 text-xs text-zinc-400">NFT Now · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-004</div>
+            <div class="mt-1 text-sm text-zinc-100">NFT Influencer&#39;s Digital Livelihood Violated by Phishing Compromise</div>
+            <div class="mt-1 text-xs text-zinc-400">BeInCrypto · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-005</div>
+            <div class="mt-1 text-sm text-zinc-100">NFT influencer&#39;s entire crypto wallet drained by Google Ads-delivered malware</div>
+            <div class="mt-1 text-xs text-zinc-400">Crypto.ro · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-006</div>
+            <div class="mt-1 text-sm text-zinc-100">Creator Buddy Official Site</div>
+            <div class="mt-1 text-xs text-zinc-400">Creator Buddy · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.creatorbuddy.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.creatorbuddy.io/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-007</div>
+            <div class="mt-1 text-sm text-zinc-100">Alex Finn Professional Profile</div>
+            <div class="mt-1 text-xs text-zinc-400">RocketReach · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://rocketreach.co/alex-finn-email_70427025" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://rocketreach.co/alex-finn-email_70427025</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-008</div>
+            <div class="mt-1 text-sm text-zinc-100">alexfinn.ai / Ship It Weekly</div>
+            <div class="mt-1 text-xs text-zinc-400">Substack · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.alexfinn.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.alexfinn.ai/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-009</div>
+            <div class="mt-1 text-sm text-zinc-100">Alex&#39;s Leap: From Content Creator to Solo SaaS Founder</div>
+            <div class="mt-1 text-xs text-zinc-400">Money Making Story · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-010</div>
+            <div class="mt-1 text-sm text-zinc-100">Alex Finn: Generating Over $300k in Annual Revenue</div>
+            <div class="mt-1 text-xs text-zinc-400">Medium · 2026-02-21</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8</a></div>
+            
+          </li> </ul>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+              <p class="mt-1 text-sm text-zinc-400">Raw distilled payload is attached to avoid information loss or truncation.</p>
+            </div>
+            <p class="mb-4 text-sm text-zinc-500">No additional top-level fields beyond rendered sections.</p>
+            <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+              <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload</summary>
+              <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  &quot;subject_name&quot;: &quot;Alex Finn&quot;,
+  &quot;type&quot;: &quot;person&quot;,
+  &quot;overall_score&quot;: 36,
+  &quot;research_sources&quot;: &quot;Claude, GPT, Grok, Gemini&quot;,
+  &quot;research_date&quot;: &quot;2026-02-21&quot;,
+  &quot;source_registry&quot;: [
+    {
+      &quot;source_id&quot;: &quot;SRC-001&quot;,
+      &quot;url&quot;: &quot;https://x.com/AlexFinn&quot;,
+      &quot;title&quot;: &quot;Alex Finn (@AlexFinn) X Profile and Bio&quot;,
+      &quot;publisher&quot;: &quot;X Corp&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-002&quot;,
+      &quot;url&quot;: &quot;https://www.linkedin.com/in/alex-finn-1848684a&quot;,
+      &quot;title&quot;: &quot;Alex Finn LinkedIn Profile&quot;,
+      &quot;publisher&quot;: &quot;LinkedIn&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-003&quot;,
+      &quot;url&quot;: &quot;https://nftnow.com/features/behind-the-pfp-nft-god-twitter-x-feature/&quot;,
+      &quot;title&quot;: &quot;Behind the PFP: How NFT God Built a $250K Business&quot;,
+      &quot;publisher&quot;: &quot;NFT Now&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-004&quot;,
+      &quot;url&quot;: &quot;https://beincrypto.com/nft-influencer-digital-livelihood-violated-by-phishing/&quot;,
+      &quot;title&quot;: &quot;NFT Influencer&#39;s Digital Livelihood Violated by Phishing Compromise&quot;,
+      &quot;publisher&quot;: &quot;BeInCrypto&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-005&quot;,
+      &quot;url&quot;: &quot;https://crypto.ro/en/news/nft-influencers-entire-crypto-wallet-drained-by-google-ads-delivered-malware/&quot;,
+      &quot;title&quot;: &quot;NFT influencer&#39;s entire crypto wallet drained by Google Ads-delivered malware&quot;,
+      &quot;publisher&quot;: &quot;Crypto.ro&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-006&quot;,
+      &quot;url&quot;: &quot;https://www.creatorbuddy.io/&quot;,
+      &quot;title&quot;: &quot;Creator Buddy Official Site&quot;,
+      &quot;publisher&quot;: &quot;Creator Buddy&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-007&quot;,
+      &quot;url&quot;: &quot;https://rocketreach.co/alex-finn-email_70427025&quot;,
+      &quot;title&quot;: &quot;Alex Finn Professional Profile&quot;,
+      &quot;publisher&quot;: &quot;RocketReach&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-008&quot;,
+      &quot;url&quot;: &quot;https://www.alexfinn.ai/&quot;,
+      &quot;title&quot;: &quot;alexfinn.ai / Ship It Weekly&quot;,
+      &quot;publisher&quot;: &quot;Substack&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-009&quot;,
+      &quot;url&quot;: &quot;https://www.moneymakingstory.com/p/alex-s-leap-from-content-creator-to-solo-saas-founder&quot;,
+      &quot;title&quot;: &quot;Alex&#39;s Leap: From Content Creator to Solo SaaS Founder&quot;,
+      &quot;publisher&quot;: &quot;Money Making Story&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-010&quot;,
+      &quot;url&quot;: &quot;https://medium.com/@yumaueno/alex-finn-generating-over-300k-in-annual-revenue-in-2-weeks-with-a-web-app-built-solely-by-ai-e85685c989d8&quot;,
+      &quot;title&quot;: &quot;Alex Finn: Generating Over $300k in Annual Revenue&quot;,
+      &quot;publisher&quot;: &quot;Medium&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-21&quot;
+    }
+  ],
+  &quot;identity&quot;: {
+    &quot;verified_name&quot;: &quot;Alex Finn&quot;,
+    &quot;handles&quot;: [
+      &quot;@AlexFinn&quot;,
+      &quot;@AlexFinnX&quot;,
+      &quot;@NFT_GOD&quot;
+    ],
+    &quot;email_addresses&quot;: [],
+    &quot;locations&quot;: [
+      &quot;Palo Alto, California, United States (self-asserted)&quot;
+    ],
+    &quot;verification_status&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-001&quot;,
+      &quot;SRC-002&quot;,
+      &quot;SRC-003&quot;,
+      &quot;SRC-007&quot;
+    ]
+  },
+  &quot;credentials_and_claims&quot;: [
+    {
+      &quot;claim&quot;: &quot;Bachelor of Science (B.S.) in Computer Science from Wentworth Institute of Technology (2008–2012)&quot;,
+      &quot;source&quot;: &quot;LinkedIn, RocketReach&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_evidence&quot;: &quot;Consistent references across LinkedIn and RocketReach.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;
+      ],
+      &quot;notes&quot;: &quot;Profile could not be fully fetched in all environments, but multiple corroborating secondary sources exist.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-002&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Creator Buddy reached approximately $300,000 ARR within months of launch&quot;,
+      &quot;source&quot;: &quot;Self-published posts, interviews&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_evidence&quot;: &quot;No audited financials or third-party processor confirmation located.&quot;,
+      &quot;verification_status&quot;: &quot;unverified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;notes&quot;: &quot;Repeated consistently but remains self-reported.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;
+      ]
+    }
+  ],
+  &quot;project_history&quot;: [
+    {
+      &quot;name&quot;: &quot;NFT God Persona and Content Business&quot;,
+      &quot;period&quot;: &quot;2021–2023&quot;,
+      &quot;description&quot;: &quot;NFT-focused personal brand monetized through newsletters, sponsorships, and community products.&quot;,
+      &quot;funding&quot;: &quot;Bootstrapped&quot;,
+      &quot;outcome&quot;: &quot;Successful audience growth and monetization; later rebranded.&quot;,
+      &quot;tvl_or_metrics&quot;: &quot;Claimed ~$250,000 total revenue; ~170,000 X followers at peak.&quot;,
+      &quot;team_members&quot;: [],
+      &quot;controversies&quot;: [
+        &quot;Victim of phishing hack resulting in crypto/NFT losses.&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;NFT Now&quot;,
+        &quot;BeInCrypto&quot;,
+        &quot;Crypto.ro&quot;
+      ],
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;,
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Creator Buddy&quot;,
+      &quot;period&quot;: &quot;2025–ongoing&quot;,
+      &quot;description&quot;: &quot;AI-powered content and analytics tools for X creators.&quot;,
+      &quot;funding&quot;: &quot;Self-funded&quot;,
+      &quot;outcome&quot;: &quot;Active SaaS product with reported strong growth.&quot;,
+      &quot;tvl_or_metrics&quot;: &quot;Claimed $300k ARR; 500+ subscribers.&quot;,
+      &quot;team_members&quot;: [
+        &quot;Alex Finn (solo)&quot;
+      ],
+      &quot;controversies&quot;: [],
+      &quot;sources&quot;: [
+        &quot;Creator Buddy site&quot;,
+        &quot;Medium&quot;,
+        &quot;Money Making Story&quot;
+      ],
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;
+      ]
+    }
+  ],
+  &quot;timeline&quot;: [
+    {
+      &quot;date&quot;: &quot;2021-12&quot;,
+      &quot;title&quot;: &quot;Launch of NFT God persona&quot;,
+      &quot;description&quot;: &quot;Public entry into NFT space with rapid audience growth.&quot;,
+      &quot;sources&quot;: [
+        &quot;NFT Now&quot;
+      ],
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2023-01&quot;,
+      &quot;title&quot;: &quot;Phishing hack and asset loss&quot;,
+      &quot;description&quot;: &quot;Compromise via malicious Google Ad leading to wallet drain and account access.&quot;,
+      &quot;sources&quot;: [
+        &quot;BeInCrypto&quot;,
+        &quot;Crypto.ro&quot;
+      ],
+      &quot;tone&quot;: &quot;critical&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;Loss estimates varied between ~$50k and ~$150k depending on source and timing.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2023-09&quot;,
+      &quot;title&quot;: &quot;Rebrand to Alex Finn&quot;,
+      &quot;description&quot;: &quot;Public announcement ending NFT God branding.&quot;,
+      &quot;sources&quot;: [
+        &quot;X posts&quot;,
+        &quot;NFT Now&quot;
+      ],
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2025-01&quot;,
+      &quot;title&quot;: &quot;Creator Buddy launch&quot;,
+      &quot;description&quot;: &quot;Announcement of AI SaaS product.&quot;,
+      &quot;sources&quot;: [
+        &quot;Creator Buddy&quot;,
+        &quot;alexfinn.ai&quot;
+      ],
+      &quot;tone&quot;: &quot;positive&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-008&quot;
+      ]
+    }
+  ],
+  &quot;red_flags&quot;: [
+    {
+      &quot;title&quot;: &quot;Unverified financial performance claims&quot;,
+      &quot;description&quot;: &quot;Multiple high-impact revenue claims lack independent verification.&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;All ARR figures are self-reported.&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;Medium&quot;,
+        &quot;Money Making Story&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Operational security failure&quot;,
+      &quot;description&quot;: &quot;Fell victim to basic phishing attack despite technical background.&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Public admission of hack.&quot;
+      ],
+      &quot;counter_evidence&quot;: [
+        &quot;No repeat incidents reported.&quot;
+      ],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;Grok&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;BeInCrypto&quot;,
+        &quot;Crypto.ro&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    }
+  ],
+  &quot;behavioral_patterns&quot;: [
+    {
+      &quot;title&quot;: &quot;Trend-driven niche pivoting&quot;,
+      &quot;description&quot;: &quot;Moved from NFTs to AI and creator tooling as market narratives shifted.&quot;,
+      &quot;examples&quot;: [
+        &quot;NFT God to AI SaaS founder transition.&quot;
+      ],
+      &quot;frequency&quot;: &quot;Repeated across multi-year timeline&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;sources&quot;: [
+        &quot;NFT Now&quot;,
+        &quot;Startup Spells&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;contradictions_and_disputes&quot;: [
+    {
+      &quot;claim_1&quot;: &quot;Overall risk score assessed at 25&quot;,
+      &quot;claim_2&quot;: &quot;Overall risk score assessed at 46&quot;,
+      &quot;source_1&quot;: &quot;Claude synthesis&quot;,
+      &quot;source_2&quot;: &quot;Gemini synthesis&quot;,
+      &quot;resolution&quot;: &quot;Median score applied per instruction.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;,
+        &quot;SRC-009&quot;
+      ]
+    }
+  ],
+  &quot;evidence_gaps&quot;: [
+    {
+      &quot;question&quot;: &quot;Independent financial verification of Creator Buddy revenue&quot;,
+      &quot;why_uncertain&quot;: &quot;No audited statements or processor dashboards located.&quot;,
+      &quot;searched&quot;: &quot;Public articles, product site, interviews&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-009&quot;
+      ]
+    }
+  ],
+  &quot;key_insights&quot;: [
+    {
+      &quot;title&quot;: &quot;No evidence of fraud or criminal conduct&quot;,
+      &quot;description&quot;: &quot;Despite exposure to high-risk sectors, no evidence of scams or rug pulls attributable to the subject.&quot;,
+      &quot;importance&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: [
+        &quot;Consistent delivery of products and transparent disclosures.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;,
+        &quot;SRC-004&quot;
+      ]
+    }
+  ],
+  &quot;risk_assessment&quot;: {
+    &quot;overall_score&quot;: 36,
+    &quot;score_reasoning&quot;: &quot;Moderate risk driven primarily by unverifiable revenue claims and prior security incident, offset by verifiable identity continuity, long-term public presence, and lack of malicious behavior.&quot;,
+    &quot;criminal_risk&quot;: &quot;none found&quot;,
+    &quot;financial_risk&quot;: &quot;medium&quot;,
+    &quot;reputational_risk&quot;: &quot;medium&quot;,
+    &quot;verification_risk&quot;: &quot;moderate due to reliance on self-reported metrics&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-003&quot;,
+      &quot;SRC-004&quot;,
+      &quot;SRC-009&quot;
+    ]
+  },
+  &quot;confidence_notes&quot;: {
+    &quot;data_completeness&quot;: &quot;Approximately 70 percent of claims independently corroborated.&quot;,
+    &quot;source_verification&quot;: &quot;Mix of reputable third-party media and self-published content.&quot;,
+    &quot;identity_confidence&quot;: &quot;Medium to high.&quot;,
+    &quot;timeline_confidence&quot;: &quot;High for major events, lower for financial milestones.&quot;,
+    &quot;conflicting_findings&quot;: &quot;Primary disagreement centered on overall risk scoring.&quot;,
+    &quot;limitations&quot;: &quot;Lack of access to private financial records and full LinkedIn profile.&quot;
+  }
+}</pre>
+            </details>
+          </section>
+
+          <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+            <p>This dossier is an evidence-oriented analytical artifact, not a legal judgment or formal accusation.</p>
+            <p class="mt-1">All claims should be independently verified against primary sources before making real-world decisions.</p>
+            <p class="mt-1 text-zinc-500">Generated by RepNet Dossier CLI on 2026-02-21.</p>
+          </footer>
+        </main>
+      </body>
+    </html>
