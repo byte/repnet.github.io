@@ -30,21 +30,124 @@
     </style>
 </head>
 <body>
-    <main class="mx-auto max-w-6xl space-y-8 px-4 py-12">
-        <header class="space-y-4">
-            <div class="flex items-center gap-3">
-                <div class="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white">R</div>
-                <h1 class="text-4xl font-bold tracking-tight text-zinc-50">RepNet Intelligence Repository</h1>
+    <main class="mx-auto max-w-6xl space-y-12 px-6 py-12 md:py-20">
+        <header class="space-y-8">
+            <div class="flex items-center gap-4">
+                <div class="h-12 w-12 rounded-2xl bg-blue-600 flex items-center justify-center font-black text-white text-2xl shadow-2xl shadow-blue-600/40">R</div>
+                <h1 class="text-4xl md:text-7xl font-black tracking-tighter text-zinc-50 uppercase italic">RepNet</h1>
             </div>
-            <p class="max-w-2xl text-zinc-400 text-lg">
-                Automated risk assessment and identity verification dossiers for high-impact actors in the digital asset ecosystem.
-            </p>
+            <div class="space-y-6">
+                <h2 class="text-2xl md:text-4xl font-black text-blue-400 tracking-tighter leading-tight uppercase italic">
+                    This goes down on your permanent record.
+                </h2>
+                <p class="max-w-4xl text-zinc-300 text-lg md:text-2xl leading-relaxed font-medium">
+                    AI-first reputation intelligence. Evidence-backed. Weekly re-rated. On-chain. Fight-back enabled.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4 border-t border-zinc-800/50">
+                    <a href="#scope" class="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-colors">I. The Scope</a>
+                    <a href="#council" class="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-colors">II. The Council</a>
+                    <a href="#repositories" class="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-colors">III. Jump to Selected Dossiers</a>
+                </div>
+            </div>
         </header>
 
-        <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <section id="scope" class="space-y-8 py-10 border-t border-zinc-900/80">
+            <div>
+                <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] section-title">The Problem Scope</h3>
+                <p class="mt-4 text-zinc-300 text-xl md:text-2xl font-bold leading-tight max-w-4xl">
+                    $5.6B+ lost to crypto scams in 2023 (estimated $17B+ in 2025, $6.1B+ in Pyramid & Ponzi schemes alone). Serial ruggers rebrand and repeat. Credentials are unverifiable. There is no permanent, intelligent record for people or projects.
+                </p>
+            </div>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="space-y-3">
+                    <h4 class="text-blue-400 font-bold uppercase tracking-tight italic">I. No Intelligent Record</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Ethos is Yelp for X accounts. Intuition stores attestations but won't judge. Nothing currently thinks about reputation.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-blue-400 font-bold uppercase tracking-tight italic">II. Reputation Laundering</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Bad actors rebrand, spin fresh wallets, and pivot narratives. No AI connects the dots across identities and wallets.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-blue-400 font-bold uppercase tracking-tight italic">III. Unverifiable Credentials</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "Former Google, former NASA" — nobody checks. No system cross-references claims against evidence at scale.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-blue-400 font-bold uppercase tracking-tight italic">IV. Manual Heroes Don't Scale</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        ZachXBT ratios scammers single-handedly. We give every wallet a ZachXBT that never sleeps — an AI that reads, connects, and rates.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="council" class="py-12 border-y border-zinc-900/80">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="h-10 w-10 rounded-lg bg-blue-500/10 flex items-center justify-center border border-blue-500/20 text-blue-400 font-black text-xl">III</div>
+                        <h3 class="text-zinc-100 text-2xl font-black uppercase tracking-tight italic">The AI Council</h3>
+                    </div>
+                    <p class="text-zinc-300 text-lg leading-relaxed font-medium">
+                        Unlike Grokipedia (one model, one owner's bias), we use a <span class="text-blue-400 font-bold">Multi-LLM Council</span> with published methodology.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500"></div>
+                            <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Independent Jury:</strong> GPT, Claude, Grok, Gemini, and other frontier models evaluate evidence independently to prevent single-model hallucination or bias.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500"></div>
+                            <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Foreperson Aggregation:</strong> A specialized model aggregates verdicts, calculates probability scores, and flags contradictions.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500"></div>
+                            <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Fully Auditable:</strong> Every verdict, score change, and evidence link is preserved and anchored on-chain.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50">
+                        <div class="text-blue-500 font-black text-xs uppercase tracking-widest mb-2">Pillar I</div>
+                        <div class="font-bold text-zinc-100">Evidence Engine</div>
+                        <div class="mt-2 text-xs text-zinc-500">Ingests on-chain data, social signals, and docs.</div>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50">
+                        <div class="text-blue-500 font-black text-xs uppercase tracking-widest mb-2">Pillar II</div>
+                        <div class="font-bold text-zinc-100">Living Dossiers</div>
+                        <div class="mt-2 text-xs text-zinc-500">Automated behavioral mapping & rebrand tracking.</div>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50">
+                        <div class="text-blue-500 font-black text-xs uppercase tracking-widest mb-2">Pillar IV</div>
+                        <div class="font-bold text-zinc-100">On-Chain Anchors</div>
+                        <div class="mt-2 text-xs text-zinc-500">Permanent evidence hashing.</div>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/50">
+                        <div class="text-blue-500 font-black text-xs uppercase tracking-widest mb-2">Pillar V</div>
+                        <div class="font-bold text-zinc-100">Fight-Back</div>
+                        <div class="mt-2 text-xs text-zinc-500">Structured dispute & resolution.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="repositories" class="space-y-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] section-title">Active Intelligence Repositories</h3>
+                    <p class="mt-2 text-zinc-400 text-sm">
+                        Comprehensive behavioral analysis for both <span class="text-zinc-100 font-semibold">Individual Actors</span> and <span class="text-zinc-100 font-semibold">Projects</span> (Tokenomics, Rug Pulls, Rebrands).
+                    </p>
+                </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <a href="dossier-alex-finn.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Alex Finn</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Moderate risk driven by unverifiable revenue claims and prior security incident.</p>
                 </div>
@@ -52,7 +155,6 @@
 
             <a href="dossier-andrew-cronje.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Andre Cronje</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">High-impact DeFi architect with a complex history of "testing in prod" and temporary exits.</p>
                 </div>
@@ -60,7 +162,6 @@
 
             <a href="dossier-arsyan-ismail.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Arsyan Ismail</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Indonesian tech entrepreneur and founder of several blockchain-focused ventures.</p>
                 </div>
@@ -68,7 +169,6 @@
 
             <a href="dossier-aurawhale33.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">AuraWhale33 (Motion)</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">High-volume trader and influential voice within the Motion ecosystem.</p>
                 </div>
@@ -76,7 +176,6 @@
 
             <a href="dossier-dan-romero.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Dan Romero</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Co-founder of Farcaster and former Coinbase executive.</p>
                 </div>
@@ -84,7 +183,6 @@
 
             <a href="dossier-frank-degods.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Frank DeGods (Rohun Vora)</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Founder of DeGods and y00ts; influential figure in the Solana and Ethereum NFT spaces.</p>
                 </div>
@@ -92,21 +190,84 @@
 
             <a href="dossier-joyce-lee.html" class="dossier-card group rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-xl">
                 <div>
-                    <div class="text-xs uppercase tracking-widest text-blue-400 font-semibold mb-2">Dossier</div>
                     <h2 class="text-xl font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Joyce Lee</h2>
                     <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Prominent figure in the digital art and NFT curation space.</p>
                 </div>
             </a>
         </section>
 
+        <section class="mt-20 space-y-8">
+            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] section-title">Updates on X</h3>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a href="https://x.com/bytebot/status/2023356976735142330" target="_blank" class="group relative block overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50 hover:border-blue-500/50 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10"></div>
+                    <div class="relative z-20 p-6 flex flex-col h-full justify-end">
+                        <div class="bg-blue-600/20 text-blue-400 text-xs font-bold px-2 py-1 rounded w-fit mb-3 uppercase tracking-wider border border-blue-500/30">Video Intel</div>
+                        <h4 class="text-lg font-bold text-zinc-100 group-hover:text-blue-300 transition-colors">Phase 1: Initial Deployment</h4>
+                        <p class="mt-2 text-sm text-zinc-400 line-clamp-2">First look at the RepNet intelligence engine in action. Analyzing initial targets.</p>
+                    </div>
+                </a>
+
+                <a href="https://x.com/bytebot/status/2024044624252473630" target="_blank" class="group relative block overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50 hover:border-blue-500/50 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10"></div>
+                    <div class="relative z-20 p-6 flex flex-col h-full justify-end">
+                        <div class="bg-purple-600/20 text-purple-400 text-xs font-bold px-2 py-1 rounded w-fit mb-3 uppercase tracking-wider border border-purple-500/30">Update</div>
+                        <h4 class="text-lg font-bold text-zinc-100 group-hover:text-purple-300 transition-colors">Network Expansion</h4>
+                        <p class="mt-2 text-sm text-zinc-400 line-clamp-2">Scaling the ingestion pipeline to track cross-chain asset movements and social graph anomalies.</p>
+                    </div>
+                </a>
+
+                <a href="https://x.com/bytebot/status/2024442381224071344" target="_blank" class="group relative block overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50 hover:border-blue-500/50 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10"></div>
+                    <div class="relative z-20 p-6 flex flex-col h-full justify-end">
+                        <div class="bg-emerald-600/20 text-emerald-400 text-xs font-bold px-2 py-1 rounded w-fit mb-3 uppercase tracking-wider border border-emerald-500/30">Breakthrough</div>
+                        <h4 class="text-lg font-bold text-zinc-100 group-hover:text-emerald-300 transition-colors">Automated Pattern Recognition</h4>
+                        <p class="mt-2 text-sm text-zinc-400 line-clamp-2">AI-driven identification of washing trading and coordinated hype campaigns across multiple projects.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="mt-20 rounded-3xl border border-blue-900/40 bg-blue-950/10 p-12 text-center relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent pointer-events-none"></div>
+            <h2 class="text-3xl font-black text-zinc-100 uppercase tracking-tighter">Who else would you like to run this on?</h2>
+            <p class="mt-6 text-zinc-300 mx-auto text-lg leading-relaxed">
+                RepNet is scaling its intelligence repository and infrastructure. We are currently raising a small round to expand our AI council and evidence engine.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://x.com/bytebot" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-blue-600/20 active:scale-95">
+                    Request a Dossier
+                </a>
+                <a href="https://x.com/bytebot" class="px-8 py-3 border border-zinc-700 bg-zinc-900/50 hover:bg-zinc-800 text-zinc-300 font-bold rounded-xl transition-all active:scale-95">
+                    Investment Inquiry
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-zinc-500 font-medium">
+                Reach out to <a href="https://x.com/bytebot" class="text-blue-400 hover:text-blue-300 underline underline-offset-4 decoration-blue-900/50">@bytebot on X</a> or <a href="https://farcaster.xyz/bytebot" class="text-purple-400 hover:text-purple-300 underline underline-offset-4 decoration-purple-900/50">Farcaster</a> for the deck and technical roadmap.
+            </p>
+        </section>
+
         <footer class="mt-20 rounded-2xl border border-zinc-800 bg-zinc-900/65 p-8 text-center">
+            <p class="text-sm text-zinc-400 font-bold italic mb-4">
+                "This goes down on your permanent record."
+            </p>
             <p class="text-sm text-zinc-500 italic">
                 RepNet is an autonomous analytical system. All dossiers are generated based on public data and model-driven synthesis.
+            </p>
+            <p class="mt-4 text-xs text-zinc-600">
+                Contact: <a href="https://x.com/bytebot" class="text-zinc-400 hover:text-blue-400 transition-colors">@bytebot (X)</a> &bull; <a href="https://farcaster.xyz/bytebot" class="text-zinc-400 hover:text-purple-400 transition-colors">@bytebot (Farcaster)</a>
             </p>
             <p class="mt-4 text-xs text-zinc-600">
                 &copy; 2026 RepNet Intelligence. All rights reserved.
             </p>
         </footer>
     </main>
+
+    <a href="#" class="fixed bottom-8 right-8 z-50 flex items-center gap-2 rounded-full bg-zinc-900/80 border border-zinc-800 px-4 py-2 text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-blue-400 backdrop-blur-sm transition-all shadow-2xl active:scale-95 group" title="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-y-0.5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        TOC
+    </a>
 </body>
 </html>
