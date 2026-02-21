@@ -25,6 +25,23 @@ $5.6B+ lost to crypto scams in 2023 (estimated $17B+ in 2025, $6.1B+ in Pyramid 
 4.  **Anchors:** On-chain evidence hashing for permanent, tamper-proof records.
 5.  **Fight-Back:** Structured dispute and resolution mechanisms for subjects to challenge findings.
 
+## Development & Metrics
+
+RepNet is built on a multi-language codebase focused on scale and automated intelligence.
+
+| Language | Files | Code (SLOC) |
+| :--- | :--- | :--- |
+| TypeScript | 46 | 5,984 |
+| JavaScript | 16 | 12,375 |
+| JSX | 5 | 3,521 |
+| JSON | 12 | 823 |
+| SQL | 1 | 83 |
+| **Total (inc. others)** | **167** | **41,076** |
+
+- **Estimated Cost to Develop:** $1,336,173 (organic)
+- **Estimated Schedule Effort:** 15.35 months
+- **Estimated People Required:** 7.73
+
 ## Live Intelligence
 
 RepNet is scaling its intelligence repository and infrastructure. Dossiers are generated based on public data and model-driven synthesis.
