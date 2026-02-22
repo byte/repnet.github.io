@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dossier: MegaETH</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          :root {color-scheme: dark;}
+          * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+          body {
+            margin: 0;
+          background:
+          radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+          #08090d;
+          color: #e4e4e7;
+          font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+}
+          .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+          .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+          .timeline-lane {position: relative; padding-left: 2.25rem;}
+          .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+          .timeline-item {position: relative;}
+          .timeline-item::before {
+            content: "";
+          position: absolute;
+          left: -1.88rem;
+          top: 1.05rem;
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 9999px;
+          border: 1px solid #71717a;
+          background: #18181b;
+}
+          pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+        </style>
+      </head>
+      <body>
+        <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+          <nav class="mb-4">
+            <a href="index.html#projects" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Projects
+            </a>
+          </nav>
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h1 class="text-3xl font-bold tracking-tight text-zinc-50">MegaETH</h1>
+                  <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Project</span>
+                  <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-amber-500/50 bg-amber-500/20 text-amber-200">ELEVATED RISK</span>
+                </div>
+                <p class="max-w-3xl text-sm leading-relaxed text-zinc-300">MegaETH presents a plausible technical roadmap and has credible funding and disclosed security assessments, which lowers pure rug probability relative to anonymous projects. However, near-term user risk is dominated by centralized control surfaces: a single-sequencer architecture acknowledged in official risk disclosures, and third-party reporting of multisig-controlled upgrade authority over core contracts and configuration. Tokenomics reduce uncertainty on headline allocation, but introduce a very large discretionary emission surface via KPI staking rewards (53.3% of supply), amplifying governance-capture and hidden-inflation risk. Operational disruption signals (pre-deposit rewind/refunds) materially increase execution and process risk during transitions. On-chain holder concentration, treasury flows, and market microstructure were not fully quantified here, so uncertainty remains elevated.</p>
+                <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  <div>Generated: <span class="text-zinc-100">22/02/2026, 16:35:33</span></div>
+                  <div>Research date: <span class="text-zinc-100">2026-02-22</span></div>
+                  <div>Sources: <span class="text-zinc-100">N/A</span></div>
+                  <div>Slug: <span class="mono text-zinc-100">megaeth</span></div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+                <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+                <div class="mt-1 text-5xl font-bold text-amber-300">68/100</div>
+                <div class="mt-2 text-xs text-zinc-400">Higher score indicates higher observed risk in this dossier.</div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">10</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">5</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">5</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">5</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+                <p class="mt-1 text-sm text-zinc-400">Known attributes linked to the subject profile.</p>
+              </div>
+              <div class="overflow-x-auto rounded-xl border border-zinc-800">
+                <table class="min-w-full text-left text-sm">
+                  <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                    <tr>
+                      <th class="px-4 py-3 font-medium">Field</th>
+                      <th class="px-4 py-3 font-medium">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="px-4"><tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+            <td class="py-2 text-zinc-100">MegaETH (project) / MegaLabs (development company) / Superior Performance Limited (token issuer and offeror, per MiCA whitepaper) / MegaETH Foundation (ecosystem entity, per MiCA whitepaper)</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Handles</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed">[<a href="https://www.megaeth.com/](https://www.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.megaeth.com/](https://www.megaeth.com/</a>)</li><li class="leading-relaxed">[<a href="https://docs.megaeth.com/](https://docs.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.megaeth.com/](https://docs.megaeth.com/</a>)</li><li class="leading-relaxed">[<a href="https://github.com/orgs/megaeth-labs/repositories](https://github.com/orgs/megaeth-labs/repositories" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/orgs/megaeth-labs/repositories](https://github.com/orgs/megaeth-labs/repositories</a>)</li><li class="leading-relaxed">Ethos listing: userkey service:x.com:1730321133545922560 (MegaETH)</li><li class="leading-relaxed">Etherscan label: MegaETH: ETH Bridge (0x0CA3A2FBC3D770b578223FBB6b062fa875a2eE75)</li><li class="leading-relaxed">Etherscan label: MegaETH: Public Sale (0xAB02bF85A7a851B6A379eA3d5bd3B9B4F5Dd8461)</li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+            <td class="py-2 text-zinc-100">medium</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Source Ids</td>
+            <td class="py-2 text-zinc-100"><a href="https://www.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://api.ethos.network/api/v2/internal/listings/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-013</a> · <a href="https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://etherscan.io/address/0xab02bf85a7a851b6a379ea3d5bd3b9b4f5dd8461" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a> · <a href="https://github.com/orgs/megaeth-labs/repositories" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a></td>
+          </tr> </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+                <p class="mt-1 text-sm text-zinc-400">Model-level score reasoning and risk dimensions.</p>
+              </div>
+              <div class="grid gap-3"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+            <div class="mt-1 text-sm text-zinc-100">68</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH presents a plausible technical roadmap and has credible funding and disclosed security assessments, which lowers pure rug probability relative to anonymous projects. However, near-term user risk is dominated by centralized control surfaces: a single-sequencer architecture acknowledged in official risk disclosures, and third-party reporting of multisig-controlled upgrade authority over core contracts and configuration. Tokenomics reduce uncertainty on headline allocation, but introduce a very large discretionary emission surface via KPI staking rewards (53.3% of supply), amplifying governance-capture and hidden-inflation risk. Operational disruption signals (pre-deposit rewind/refunds) materially increase execution and process risk during transitions. On-chain holder concentration, treasury flows, and market microstructure were not fully quantified here, so uncertainty remains elevated.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">none found</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">high</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">high</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Ids</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://l2beat.com/scaling/projects/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://reports.zellic.io/publications/megaeth-predeposit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a> · <a href="https://blocksec.com/audits/web3-audit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-011</a> · <a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a> · <a href="https://megaeth.forum/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-021</a></div>
+          </div> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger</h2>
+              <p class="mt-1 text-sm text-zinc-400">Complete claims table with expandable corroboration notes.</p>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-zinc-800">
+              <table class="min-w-full text-left text-xs text-zinc-300">
+                <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+                  <tr>
+                    <th class="px-4 py-3 font-medium">Claim</th>
+                    <th class="px-4 py-3 font-medium">Source</th>
+                    <th class="px-4 py-3 font-medium">Confidence</th>
+                    <th class="px-4 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody><tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">MegaETH is a next-generation Ethereum Layer 2 blockchain targeting 100,000 transactions per second and 10-millisecond block times, positioned as &#39;real-time Ethereum&#39;.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> The claim is stated directly in official materials. Independent verification of sustained performance on permissionless mainnet conditions is not established by these sources alone.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://docs.megaeth.com/testnet" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">MEGA has a fixed initial total supply of 10,000,000,000 tokens, with 5% offered in the October 2025 public sale via an English Auction format.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Supply and sale format are specified in the MiCA whitepaper.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Team and Advisors allocation is 9.5% (950,000,000 MEGA), subject to a 1-year cliff and 3-year linear vesting.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Vesting terms are explicitly stated in the MiCA whitepaper; an independent media summary exists, but the whitepaper is the primary source of record here.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-020</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">KPI Staking Rewards are allocated 53.3% (5,330,000,000 MEGA), described as reserved for performance-based staking rewards distributed over time based on network metrics.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> This allocation creates large discretion over emissions timing and criteria, which is a material governance and inflation surface even if the headline supply is &#39;fixed&#39; at genesis.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">MegaLabs raised a $20 million seed round led by Dragonfly with participation from investors including Vitalik Buterin and Joseph Lubin.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Reported by independent outlets; this supports legitimacy but does not reduce protocol centralization or token-distribution risk.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">MegaETH’s canonical bridge uses OP Stack’s Standard Bridge (op-contracts/v3.0.0) with a small patch adjusting parameters; the Ethereum-side bridge address is 0x0CA3A2FBC3D770b578223FBB6b062fa875a2eE75.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Bridge implementation details and address are stated in docs and reflected by Etherscan labeling.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://docs.megaeth.com/frontier" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Control of key upgrade/admin surfaces (ProxyAdmin and SystemConfig) is held via a Safe multisig (reported as 4-of-7) for both L1 and L2 upgrade control, implying centralized upgrade authority.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> This is a high-impact operational and trust assumption for users because it enables changes to core contracts and configuration by a small group.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Zellic performed a security assessment of MegaETH Predeposit over November 14th to November 17th, 2025.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Scope and dates are stated by the auditor publisher.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://reports.zellic.io/publications/megaeth-predeposit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">BlockSec conducted a security testing engagement over October 11, 2025 to November 28, 2025, focusing on MegaEVM, SALT, and the Stateless Validator.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Scope and dates are stated by the auditor publisher.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://blocksec.com/audits/web3-audit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-011</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">MegaETH’s pre-deposit program was fully rewound with refunds after operational/security missteps, with reporting indicating very large deposit totals.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Not specified</span></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> The existence of a rewind/refund process is the key risk signal here; exact totals and causal attribution should be treated cautiously without direct on-chain accounting in this dossier.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a></div> </div>
+                </details>
+            </td>
+          </tr> </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+              <p class="mt-1 text-sm text-zinc-400">Chronology with full event text and annotations.</p>
+            </div>
+            <div class="timeline-lane space-y-3"><article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2024-06</div>
+            <h4 class="mt-1 text-sm font-semibold">Seed funding reported</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Independent outlets report MegaLabs raised $20M in a seed round led by Dragonfly with notable angel participation.</p>
+            
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-10</div>
+            <h4 class="mt-1 text-sm font-semibold">MiCA whitepaper publication and public sale disclosure</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">MiCA whitepaper discloses MEGA token characteristics, a 10B initial supply, and a 5% public sale via an English Auction format in October 2025, including allocation breakdown and vesting for Team and Advisors.</p>
+            
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-020</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-amber-500/40 bg-amber-500/10 text-amber-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-11</div>
+            <h4 class="mt-1 text-sm font-semibold">Pre-deposit rewind and refund reporting</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Reporting describes a full rewind/refund process for a large pre-deposit initiative after missteps, highlighting operational and security-process risk during rollout phases.</p>
+            
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-amber-500/40 bg-amber-500/10 text-amber-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-01</div>
+            <h4 class="mt-1 text-sm font-semibold">Aave community technical evaluation highlights centralized upgrade control</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Aave governance forum technical evaluation describes key admin/upgrade control surfaces governed by a Safe multisig (reported 4-of-7), implying centralized authority over core protocol contracts and configuration.</p>
+            
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Ecosystem tracking lists measurable network value secured and usage</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">L2BEAT lists MegaETH as an OP Stack-based project with recorded TVS and usage metrics, providing an external benchmark for adoption and economic activity (values fluctuate over time).</p>
+            
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://l2beat.com/scaling/projects/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></p>
+          </article> </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags</h2>
+                <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by at least one model.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Centralized upgrade authority over core contracts and configuration</h4>
+          <p class="mt-2 text-sm text-zinc-200">A third-party technical evaluation reports that MegaETH controls critical upgrade/admin components (ProxyAdmin and SystemConfig) through a Safe multisig with a low signing threshold (reported 4-of-7) on both L1 and L2. This concentrates power to upgrade core contracts or alter system parameters, increasing governance capture risk, user-fund risk from compromised signers, and policy risk (censorship or discriminatory changes) before robust timelocks and decentralization are proven in production.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">critical</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Third-party technical evaluation explicitly states multisig control over L1 ProxyAdmin, L1 SystemConfig, and L2 ProxyAdmin via Safe 4-of-7.</div>
+            </details>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Token distribution concentrates long-term emission discretion in KPI staking rewards (53.3% of supply)</h4>
+          <p class="mt-2 text-sm text-zinc-200">The MiCA whitepaper allocates 53.3% of total supply to KPI Staking Rewards, described as distributed over time based on network metrics. This creates a large policy surface: whoever defines and measures KPIs, and authorizes distributions, effectively controls the dominant flow of tokens, creating hidden inflation and insider-favoring risk if governance is not credibly constrained and auditable.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">MiCA whitepaper allocation table includes KPI Staking Rewards: 5,330,000,000 MEGA (53.3%) and describes distribution over time based on network metrics.</div>
+            </details>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Operational/security process risk evidenced by reported full rewind/refunds of pre-deposits</h4>
+          <p class="mt-2 text-sm text-zinc-200">Reporting indicates MegaETH executed a full rewind/refund process for a large pre-deposit program after missteps. Even when refunds are honored, such events signal weaknesses in launch discipline, risk controls, and change management that can recur during bridge, sequencer, or token-mint lifecycle transitions.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">medium</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Independent reporting describes a full rewind/refund process after missteps, implying significant operational disruption and user trust impact.</div>
+            </details>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Permissioned sequencer and centralization acknowledged as a design trade-off in official risk disclosures</h4>
+          <p class="mt-2 text-sm text-zinc-200">The MiCA whitepaper risk section describes reliance on a single sequencer model and notes centralization risk until decentralization measures are implemented. This implies liveness, censorship resistance, and MEV policy are centrally governed for an extended period, which is a known failure mode for rollups during stress events.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">MiCA whitepaper risk disclosures explicitly state reliance on a single sequencer model and associated centralization risks.</div>
+            </details>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Impersonation/scam surface: a third-party site presents itself as an &#39;official&#39; claim and presale portal</h4>
+          <p class="mt-2 text-sm text-zinc-200">A site on megaeth.forum is indexed as an &#39;Official MegaETH Airdrop Claim &amp; Presale Portal&#39; and solicits wallet connections and deposits. This is a classic phishing/presale-scam pattern. Presence of such sites is a material user-safety risk, and it increases reputational and support burden even if unrelated to the core team.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">The megaeth.forum page claims to be an official airdrop claim and presale portal and describes deposit-based purchasing mechanics.</div>
+            </details>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://megaeth.forum/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-021</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+                <p class="mt-1 text-sm text-violet-100/80">Recurring motifs across time, claims, and operations.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Narrative dominance: &#39;real-time&#39; performance framing outpaces independently verifiable production benchmarks</h4>
+          <p class="mt-2 text-sm text-zinc-200">Official materials emphasize sub-10ms blocks and 100,000+ TPS targets. Documentation shows testnet parameters consistent with performance experimentation, but sustained, adversarial, and economically meaningful mainnet benchmarking is not established in this dossier. This mismatch is a common pattern in high-performance chain marketing: impressive lab/testnet figures are used to imply durable production properties.</p>
+          
+        </article> <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Decentralization roadmap theater risk</h4>
+          <p class="mt-2 text-sm text-zinc-200">The MiCA whitepaper describes future governance/DAO structures and reduction of admin privileges over time, while third-party technical evaluation identifies current multisig control over upgradeable core components. This combination matches a common rollup pattern: a credible decentralization narrative with centralized control persisting through the riskiest growth phase.</p>
+          
+        </article> <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Incentive/airdrop-adjacent engagement likely elevates sybil pressure and low-signal community activity</h4>
+          <p class="mt-2 text-sm text-zinc-200">Ethos shows large volumes of positive reviews and vouches, and the presence of public airdrop/presale narratives increases incentive-aligned engagement that can be difficult to separate from organic adoption. This raises uncertainty in community-quality assessment without deeper identity graphing and anti-sybil evidence.</p>
+          
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Project History</h2>
+                <p class="mt-1 text-sm text-zinc-400">Portfolio-level outcomes and operational trajectory.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">MegaETH / MegaLabs development and early commercialization</h4>
+          <p class="mt-1 text-xs text-zinc-400">2024-06 to 2026-02</p>
+          <p class="mt-2 text-sm text-zinc-300">Independent reporting describes a $20M seed round in mid-2024 led by Dragonfly, supporting buildout of MegaETH. Official documentation describes a public testnet with specific chain parameters and a canonical bridge based on OP Stack components. The MiCA whitepaper describes a public token sale (October 2025), a 10B MEGA genesis supply, and large KPI staking rewards reserved for future distribution.</p>
+          <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Operational network presence (testnet and mainnet documentation), token sale structure disclosed, and multiple security assessments disclosed by third-party auditors; centralization and upgrade-control surfaces remain material.</span></p>
+          
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a> · <a href="https://docs.megaeth.com/testnet" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://docs.megaeth.com/frontier" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://l2beat.com/scaling/projects/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-amber-500/35 bg-amber-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-amber-200">Contradictions & Disputes</h2>
+                <p class="mt-1 text-sm text-amber-100/80">Where narratives conflict and what is unresolved.</p>
+              </div>
+              <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400"> No contradictions section provided.</div> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-blue-500/35 bg-blue-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-blue-200">Key Insights</h2>
+                <p class="mt-1 text-sm text-blue-100/80">Synthesis highlights from all available model outputs.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Measurable fundamentals: disclosed token supply, allocation breakdown, and team vesting are unusually explicit for a high-hype L2</h4>
+          <p class="mt-2 text-sm text-zinc-200">The MiCA whitepaper provides concrete supply and allocation figures (10B total; 5% public sale; 14.7% VC; 53.3% KPI staking rewards; 9.5% team with 1-year cliff and 3-year linear vesting). This reduces one class of uncertainty (hidden supply), but shifts risk to how KPI rewards are governed and distributed.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: high</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Primary risk driver: centralized control surfaces (sequencer and upgrades) dominate the near-term trust model</h4>
+          <p class="mt-2 text-sm text-zinc-200">A credible technical evaluation identifies multisig control over ProxyAdmin and SystemConfig. Combined with the single-sequencer model acknowledged in risk disclosures, this means users must underwrite governance and operational integrity, not only code correctness.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: critical</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Security posture is better-than-average on paper (named third-party reviews), but operational disruptions already occurred</h4>
+          <p class="mt-2 text-sm text-zinc-200">Zellic and BlockSec disclosures indicate non-trivial security review efforts across components. However, independent reporting about a large pre-deposit rewind/refund indicates meaningful operational/security-process fragility during rollout, which can be a leading indicator for future bridge or token lifecycle incidents.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: high</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">External adoption visibility exists (L2BEAT), enabling ongoing falsification of traction claims</h4>
+          <p class="mt-2 text-sm text-zinc-200">L2BEAT provides third-party tracking of TVS and usage metrics for MegaETH. This helps separate narrative from measurable outcomes, even though it does not prove decentralization, censorship resistance, or MEV policy quality.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: medium</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">User-safety and reputational risk is amplified by impersonation/scam ecosystem activity</h4>
+          <p class="mt-2 text-sm text-zinc-200">A third-party site indexed as an official claim/presale portal presents high-likelihood phishing behavior. This increases the probability of user losses incorrectly attributed to the project and can trigger downstream regulatory and reputational blowback.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: high</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Community signal is noisy: Ethos shows heavy positive sentiment, but incentive alignment can inflate metrics</h4>
+          <p class="mt-2 text-sm text-zinc-200">Ethos metrics show high review volume and vouches for the MegaETH account, and top-voted reviews include explicit bias disclosures (an author states they are building it). This does not invalidate community strength, but it reduces confidence that engagement reflects disinterested third-party validation.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: medium</p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-700 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Evidence Gaps</h2>
+                <p class="mt-1 text-sm text-zinc-400">What remains unknown and what needs corroboration.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">What are the exact unlock schedules and vesting terms for VC allocation (14.7%), Echo investors (5%), Fluffle round (2.5%), and Foundation/Ecosystem reserve (7.5%) beyond the Team and Advisors cliff/vesting?</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: The MiCA whitepaper discloses allocation sizes and explicitly discloses Team and Advisors cliff/vesting, but detailed schedules for other categories are not fully enumerated in the excerpts captured here.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: MiCA whitepaper text inspection for &#39;vesting&#39;, &#39;cliff&#39;, and &#39;unlock&#39; and review of allocation sections.</p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Who are the named multisig signers, what is signer independence, and are there timelocks on upgrade actions?</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: A third-party evaluation reports Safe thresholds and control surfaces, but signer identities, separation of duties, and timelock enforcement were not fully enumerated in this dossier.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Aave governance technical evaluation; no direct multisig signer roster analysis performed.</p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">On-chain MEGA holder concentration, top-holder percentages, insider wallet clusters, and treasury flow analysis</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Etherscan pages confirm labeled addresses and token/contract presence, but this dossier does not include a complete extracted holder table, clustering, or time-series flow analysis.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Etherscan labeled pages for bridge, sale, and token contract; no full holder-distribution export completed.</p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Exploit history and unresolved vulnerabilities across the full protocol stack (sequencer, data availability, bridges, and token sale contracts)</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Third-party audits are documented, and a refund/rewind event is reported, but a comprehensive incident register and current open-issue list (including audit findings status) is not assembled here.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Auditor pages (Zellic, BlockSec) and independent reporting (CoinDesk) for incidents.</p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Independent, reproducible mainnet performance benchmarks under load and adversarial conditions</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Official performance claims and testnet parameters are available, but independent benchmarking with reproducible methodology is not established in these sources.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Official website and testnet documentation; ecosystem tracker (L2BEAT) for adoption metrics.</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Confidence Notes</h2>
+              <p class="mt-1 text-sm text-zinc-400">Data-quality and uncertainty indicators from the distillation step.</p>
+            </div>
+            <div class="grid gap-3 md:grid-cols-2"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3 text-sm text-zinc-500"> No confidence notes supplied.</div> </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Source References</h2>
+              <p class="mt-1 text-sm text-zinc-400">Collected references/links from all source-like fields in the distilled payload.</p>
+            </div>
+            <ul class="grid gap-3 md:grid-cols-2"><li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-001</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH | The First Real-Time Blockchain</div>
+            <div class="mt-1 text-xs text-zinc-400">MegaETH · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.megaeth.com/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-002</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH Docs – Overview</div>
+            <div class="mt-1 text-xs text-zinc-400">MegaETH · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.megaeth.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.megaeth.com/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-003</div>
+            <div class="mt-1 text-sm text-zinc-100">Testnet</div>
+            <div class="mt-1 text-xs text-zinc-400">MegaETH · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.megaeth.com/testnet" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.megaeth.com/testnet</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-004</div>
+            <div class="mt-1 text-sm text-zinc-100">Mainnet</div>
+            <div class="mt-1 text-xs text-zinc-400">MegaETH · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.megaeth.com/frontier" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.megaeth.com/frontier</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-005</div>
+            <div class="mt-1 text-sm text-zinc-100">MICA CRYPTO-ASSET WHITE PAPER - MEGA TOKEN</div>
+            <div class="mt-1 text-xs text-zinc-400">Superior Performance Limited (as stated in the document) · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-006</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaLabs, Behind the &#39;Real-Time&#39; Blockchain, Raises $20M, Led By Dragonfly</div>
+            <div class="mt-1 text-xs text-zinc-400">CoinDesk · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-007</div>
+            <div class="mt-1 text-sm text-zinc-100">Vitalik Buterin backs MegaLabs in its seed raise</div>
+            <div class="mt-1 text-xs text-zinc-400">Blockworks · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-008</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH (scaling project page)</div>
+            <div class="mt-1 text-xs text-zinc-400">L2BEAT · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://l2beat.com/scaling/projects/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://l2beat.com/scaling/projects/megaeth</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-009</div>
+            <div class="mt-1 text-sm text-zinc-100">BGD. Aave &lt;&gt; megaETH. Infrastructure/technical evaluation</div>
+            <div class="mt-1 text-xs text-zinc-400">Aave Governance Forum · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-010</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH Predeposit (Zellic security assessment)</div>
+            <div class="mt-1 text-xs text-zinc-400">Zellic · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://reports.zellic.io/publications/megaeth-predeposit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://reports.zellic.io/publications/megaeth-predeposit</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-011</div>
+            <div class="mt-1 text-sm text-zinc-100">Web3 Audit (includes Security Testing Report for MegaETH: MegaEVM, Stateless Validator &amp; SALT)</div>
+            <div class="mt-1 text-xs text-zinc-400">BlockSec · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://blocksec.com/audits/web3-audit" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://blocksec.com/audits/web3-audit</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-012</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH&#39;s $500M Pre-Deposit Turns Into a Full Rewind After Missteps Pile Up</div>
+            <div class="mt-1 text-xs text-zinc-400">CoinDesk · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-013</div>
+            <div class="mt-1 text-sm text-zinc-100">Ethos API v2 internal listing: megaeth</div>
+            <div class="mt-1 text-xs text-zinc-400">Ethos Network · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://api.ethos.network/api/v2/internal/listings/megaeth" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://api.ethos.network/api/v2/internal/listings/megaeth</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-014</div>
+            <div class="mt-1 text-sm text-zinc-100">Ethos API v2 activities (top voted reviews) for userkey service:x.com:1730321133545922560</div>
+            <div class="mt-1 text-xs text-zinc-400">Ethos Network · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://api.ethos.network/api/v2/activities/userkey?userkey=service%3Ax.com%3A1730321133545922560&amp;direction=subject&amp;activityType=review&amp;orderBy=totalVotes&amp;sort=desc&amp;limit=3&amp;offset=0" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://api.ethos.network/api/v2/activities/userkey?userkey=service%3Ax.com%3A1730321133545922560&amp;direction=subject&amp;activityType=review&amp;orderBy=totalVotes&amp;sort=desc&amp;limit=3&amp;offset=0</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-015</div>
+            <div class="mt-1 text-sm text-zinc-100">Ethos API v1 slashes query for subject service:x.com:1730321133545922560</div>
+            <div class="mt-1 text-xs text-zinc-400">Ethos Network · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://api.ethos.network/api/v1/slashes?subject=service%3Ax.com%3A1730321133545922560&amp;limit=1&amp;offset=0" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://api.ethos.network/api/v1/slashes?subject=service%3Ax.com%3A1730321133545922560&amp;limit=1&amp;offset=0</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-016</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH: ETH Bridge (Etherscan address page)</div>
+            <div class="mt-1 text-xs text-zinc-400">Etherscan · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-017</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH: Public Sale (Etherscan address page)</div>
+            <div class="mt-1 text-xs text-zinc-400">Etherscan · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://etherscan.io/address/0xab02bf85a7a851b6a379ea3d5bd3b9b4f5dd8461" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://etherscan.io/address/0xab02bf85a7a851b6a379ea3d5bd3b9b4f5dd8461</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-018</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH: MEGA Token (Etherscan address page)</div>
+            <div class="mt-1 text-xs text-zinc-400">Etherscan · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://etherscan.io/address/0x4e502ab1bb313b3c1311eb0d11b31a6b62988b86" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://etherscan.io/address/0x4e502ab1bb313b3c1311eb0d11b31a6b62988b86</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-019</div>
+            <div class="mt-1 text-sm text-zinc-100">megaeth-labs repositories</div>
+            <div class="mt-1 text-xs text-zinc-400">GitHub · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://github.com/orgs/megaeth-labs/repositories" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/orgs/megaeth-labs/repositories</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-020</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH&#39;s MiCA whitepaper reveals tokenomics with 9.5% team allocation and sequencer features</div>
+            <div class="mt-1 text-xs text-zinc-400">The Block · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-021</div>
+            <div class="mt-1 text-sm text-zinc-100">MegaETH Airdrop Claim Portal | Claim $MEGA Tokens (site content as indexed)</div>
+            <div class="mt-1 text-xs text-zinc-400">Unclear / third-party site · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://megaeth.forum/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://megaeth.forum/</a></div>
+            
+          </li> </ul>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+              <p class="mt-1 text-sm text-zinc-400">Raw distilled payload is attached to avoid information loss or truncation.</p>
+            </div>
+            <p class="mb-4 text-sm text-zinc-500">No additional top-level fields beyond rendered sections.</p>
+            <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+              <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload</summary>
+              <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  &quot;subject_name&quot;: &quot;MegaETH&quot;,
+  &quot;type&quot;: &quot;project&quot;,
+  &quot;research_date&quot;: &quot;2026-02-22&quot;,
+  &quot;source_registry&quot;: [
+    {
+      &quot;source_id&quot;: &quot;SRC-001&quot;,
+      &quot;url&quot;: &quot;[https://www.megaeth.com/](https://www.megaeth.com/)&quot;,
+      &quot;title&quot;: &quot;MegaETH | The First Real-Time Blockchain&quot;,
+      &quot;publisher&quot;: &quot;MegaETH&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-002&quot;,
+      &quot;url&quot;: &quot;[https://docs.megaeth.com/](https://docs.megaeth.com/)&quot;,
+      &quot;title&quot;: &quot;MegaETH Docs – Overview&quot;,
+      &quot;publisher&quot;: &quot;MegaETH&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-003&quot;,
+      &quot;url&quot;: &quot;[https://docs.megaeth.com/testnet](https://docs.megaeth.com/testnet)&quot;,
+      &quot;title&quot;: &quot;Testnet&quot;,
+      &quot;publisher&quot;: &quot;MegaETH&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-004&quot;,
+      &quot;url&quot;: &quot;[https://docs.megaeth.com/frontier](https://docs.megaeth.com/frontier)&quot;,
+      &quot;title&quot;: &quot;Mainnet&quot;,
+      &quot;publisher&quot;: &quot;MegaETH&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-005&quot;,
+      &quot;url&quot;: &quot;[https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf](https://static.megaeth.com/MEGA%20MiCA%20Whitepaper.pdf)&quot;,
+      &quot;title&quot;: &quot;MICA CRYPTO-ASSET WHITE PAPER - MEGA TOKEN&quot;,
+      &quot;publisher&quot;: &quot;Superior Performance Limited (as stated in the document)&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-006&quot;,
+      &quot;url&quot;: &quot;[https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly](https://www.coindesk.com/tech/2024/06/27/megalabs-behind-the-real-time-blockchain-raises-20m-led-by-dragonfly)&quot;,
+      &quot;title&quot;: &quot;MegaLabs, Behind the &#39;Real-Time&#39; Blockchain, Raises $20M, Led By Dragonfly&quot;,
+      &quot;publisher&quot;: &quot;CoinDesk&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-007&quot;,
+      &quot;url&quot;: &quot;[https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise](https://blockworks.co/news/vitalik-buterin-backs-megalabs-raise)&quot;,
+      &quot;title&quot;: &quot;Vitalik Buterin backs MegaLabs in its seed raise&quot;,
+      &quot;publisher&quot;: &quot;Blockworks&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-008&quot;,
+      &quot;url&quot;: &quot;[https://l2beat.com/scaling/projects/megaeth](https://l2beat.com/scaling/projects/megaeth)&quot;,
+      &quot;title&quot;: &quot;MegaETH (scaling project page)&quot;,
+      &quot;publisher&quot;: &quot;L2BEAT&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-009&quot;,
+      &quot;url&quot;: &quot;[https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905](https://governance.aave.com/t/bgd-aave-megaeth-infrastructure-technical-evaluation/23905)&quot;,
+      &quot;title&quot;: &quot;BGD. Aave &lt;&gt; megaETH. Infrastructure/technical evaluation&quot;,
+      &quot;publisher&quot;: &quot;Aave Governance Forum&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-010&quot;,
+      &quot;url&quot;: &quot;[https://reports.zellic.io/publications/megaeth-predeposit](https://reports.zellic.io/publications/megaeth-predeposit)&quot;,
+      &quot;title&quot;: &quot;MegaETH Predeposit (Zellic security assessment)&quot;,
+      &quot;publisher&quot;: &quot;Zellic&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-011&quot;,
+      &quot;url&quot;: &quot;[https://blocksec.com/audits/web3-audit](https://blocksec.com/audits/web3-audit)&quot;,
+      &quot;title&quot;: &quot;Web3 Audit (includes Security Testing Report for MegaETH: MegaEVM, Stateless Validator &amp; SALT)&quot;,
+      &quot;publisher&quot;: &quot;BlockSec&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-012&quot;,
+      &quot;url&quot;: &quot;[https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up](https://www.coindesk.com/markets/2025/11/28/megaeth-s-usd500m-pre-deposit-turns-into-a-full-rewind-after-missteps-pile-up)&quot;,
+      &quot;title&quot;: &quot;MegaETH&#39;s $500M Pre-Deposit Turns Into a Full Rewind After Missteps Pile Up&quot;,
+      &quot;publisher&quot;: &quot;CoinDesk&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-013&quot;,
+      &quot;url&quot;: &quot;[https://api.ethos.network/api/v2/internal/listings/megaeth](https://api.ethos.network/api/v2/internal/listings/megaeth)&quot;,
+      &quot;title&quot;: &quot;Ethos API v2 internal listing: megaeth&quot;,
+      &quot;publisher&quot;: &quot;Ethos Network&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-014&quot;,
+      &quot;url&quot;: &quot;[https://api.ethos.network/api/v2/activities/userkey?userkey=service%3Ax.com%3A1730321133545922560&amp;direction=subject&amp;activityType=review&amp;orderBy=totalVotes&amp;sort=desc&amp;limit=3&amp;offset=0](https://api.ethos.network/api/v2/activities/userkey?userkey=service%3Ax.com%3A1730321133545922560&amp;direction=subject&amp;activityType=review&amp;orderBy=totalVotes&amp;sort=desc&amp;limit=3&amp;offset=0)&quot;,
+      &quot;title&quot;: &quot;Ethos API v2 activities (top voted reviews) for userkey service:x.com:1730321133545922560&quot;,
+      &quot;publisher&quot;: &quot;Ethos Network&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-015&quot;,
+      &quot;url&quot;: &quot;[https://api.ethos.network/api/v1/slashes?subject=service%3Ax.com%3A1730321133545922560&amp;limit=1&amp;offset=0](https://api.ethos.network/api/v1/slashes?subject=service%3Ax.com%3A1730321133545922560&amp;limit=1&amp;offset=0)&quot;,
+      &quot;title&quot;: &quot;Ethos API v1 slashes query for subject service:x.com:1730321133545922560&quot;,
+      &quot;publisher&quot;: &quot;Ethos Network&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-016&quot;,
+      &quot;url&quot;: &quot;[https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75](https://etherscan.io/address/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75)&quot;,
+      &quot;title&quot;: &quot;MegaETH: ETH Bridge (Etherscan address page)&quot;,
+      &quot;publisher&quot;: &quot;Etherscan&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-017&quot;,
+      &quot;url&quot;: &quot;[https://etherscan.io/address/0xab02bf85a7a851b6a379ea3d5bd3b9b4f5dd8461](https://etherscan.io/address/0xab02bf85a7a851b6a379ea3d5bd3b9b4f5dd8461)&quot;,
+      &quot;title&quot;: &quot;MegaETH: Public Sale (Etherscan address page)&quot;,
+      &quot;publisher&quot;: &quot;Etherscan&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-018&quot;,
+      &quot;url&quot;: &quot;[https://etherscan.io/address/0x4e502ab1bb313b3c1311eb0d11b31a6b62988b86](https://etherscan.io/address/0x4e502ab1bb313b3c1311eb0d11b31a6b62988b86)&quot;,
+      &quot;title&quot;: &quot;MegaETH: MEGA Token (Etherscan address page)&quot;,
+      &quot;publisher&quot;: &quot;Etherscan&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-019&quot;,
+      &quot;url&quot;: &quot;[https://github.com/orgs/megaeth-labs/repositories](https://github.com/orgs/megaeth-labs/repositories)&quot;,
+      &quot;title&quot;: &quot;megaeth-labs repositories&quot;,
+      &quot;publisher&quot;: &quot;GitHub&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-020&quot;,
+      &quot;url&quot;: &quot;[https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features](https://www.theblock.co/post/375871/megaeths-mica-whitepaper-tokenomics-team-allocation-sequencer-features)&quot;,
+      &quot;title&quot;: &quot;MegaETH&#39;s MiCA whitepaper reveals tokenomics with 9.5% team allocation and sequencer features&quot;,
+      &quot;publisher&quot;: &quot;The Block&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-021&quot;,
+      &quot;url&quot;: &quot;[https://megaeth.forum/](https://megaeth.forum/)&quot;,
+      &quot;title&quot;: &quot;MegaETH Airdrop Claim Portal | Claim $MEGA Tokens (site content as indexed)&quot;,
+      &quot;publisher&quot;: &quot;Unclear / third-party site&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    }
+  ],
+  &quot;identity&quot;: {
+    &quot;verified_name&quot;: &quot;MegaETH (project) / MegaLabs (development company) / Superior Performance Limited (token issuer and offeror, per MiCA whitepaper) / MegaETH Foundation (ecosystem entity, per MiCA whitepaper)&quot;,
+    &quot;handles&quot;: [
+      &quot;[https://www.megaeth.com/](https://www.megaeth.com/)&quot;,
+      &quot;[https://docs.megaeth.com/](https://docs.megaeth.com/)&quot;,
+      &quot;[https://github.com/orgs/megaeth-labs/repositories](https://github.com/orgs/megaeth-labs/repositories)&quot;,
+      &quot;Ethos listing: userkey service:x.com:1730321133545922560 (MegaETH)&quot;,
+      &quot;Etherscan label: MegaETH: ETH Bridge (0x0CA3A2FBC3D770b578223FBB6b062fa875a2eE75)&quot;,
+      &quot;Etherscan label: MegaETH: Public Sale (0xAB02bF85A7a851B6A379eA3d5bd3B9B4F5Dd8461)&quot;
+    ],
+    &quot;verification_status&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-001&quot;,
+      &quot;SRC-005&quot;,
+      &quot;SRC-013&quot;,
+      &quot;SRC-016&quot;,
+      &quot;SRC-017&quot;,
+      &quot;SRC-019&quot;
+    ]
+  },
+  &quot;credentials_and_claims&quot;: [
+    {
+      &quot;claim&quot;: &quot;MegaETH is a next-generation Ethereum Layer 2 blockchain targeting 100,000 transactions per second and 10-millisecond block times, positioned as &#39;real-time Ethereum&#39;.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;The claim is stated directly in official materials. Independent verification of sustained performance on permissionless mainnet conditions is not established by these sources alone.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-005&quot;,
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;MEGA has a fixed initial total supply of 10,000,000,000 tokens, with 5% offered in the October 2025 public sale via an English Auction format.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Supply and sale format are specified in the MiCA whitepaper.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Team and Advisors allocation is 9.5% (950,000,000 MEGA), subject to a 1-year cliff and 3-year linear vesting.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Vesting terms are explicitly stated in the MiCA whitepaper; an independent media summary exists, but the whitepaper is the primary source of record here.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;,
+        &quot;SRC-020&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;KPI Staking Rewards are allocated 53.3% (5,330,000,000 MEGA), described as reserved for performance-based staking rewards distributed over time based on network metrics.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;This allocation creates large discretion over emissions timing and criteria, which is a material governance and inflation surface even if the headline supply is &#39;fixed&#39; at genesis.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;MegaLabs raised a $20 million seed round led by Dragonfly with participation from investors including Vitalik Buterin and Joseph Lubin.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Reported by independent outlets; this supports legitimacy but does not reduce protocol centralization or token-distribution risk.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;MegaETH’s canonical bridge uses OP Stack’s Standard Bridge (op-contracts/v3.0.0) with a small patch adjusting parameters; the Ethereum-side bridge address is 0x0CA3A2FBC3D770b578223FBB6b062fa875a2eE75.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Bridge implementation details and address are stated in docs and reflected by Etherscan labeling.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-016&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Control of key upgrade/admin surfaces (ProxyAdmin and SystemConfig) is held via a Safe multisig (reported as 4-of-7) for both L1 and L2 upgrade control, implying centralized upgrade authority.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;This is a high-impact operational and trust assumption for users because it enables changes to core contracts and configuration by a small group.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Zellic performed a security assessment of MegaETH Predeposit over November 14th to November 17th, 2025.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Scope and dates are stated by the auditor publisher.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-010&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;BlockSec conducted a security testing engagement over October 11, 2025 to November 28, 2025, focusing on MegaEVM, SALT, and the Stateless Validator.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Scope and dates are stated by the auditor publisher.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-011&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;MegaETH’s pre-deposit program was fully rewound with refunds after operational/security missteps, with reporting indicating very large deposit totals.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;The existence of a rewind/refund process is the key risk signal here; exact totals and causal attribution should be treated cautiously without direct on-chain accounting in this dossier.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-012&quot;
+      ]
+    }
+  ],
+  &quot;project_history&quot;: [
+    {
+      &quot;name&quot;: &quot;MegaETH / MegaLabs development and early commercialization&quot;,
+      &quot;period&quot;: &quot;2024-06 to 2026-02&quot;,
+      &quot;description&quot;: &quot;Independent reporting describes a $20M seed round in mid-2024 led by Dragonfly, supporting buildout of MegaETH. Official documentation describes a public testnet with specific chain parameters and a canonical bridge based on OP Stack components. The MiCA whitepaper describes a public token sale (October 2025), a 10B MEGA genesis supply, and large KPI staking rewards reserved for future distribution.&quot;,
+      &quot;outcome&quot;: &quot;Operational network presence (testnet and mainnet documentation), token sale structure disclosed, and multiple security assessments disclosed by third-party auditors; centralization and upgrade-control surfaces remain material.&quot;,
+      &quot;tvl_or_metrics&quot;: &quot;L2BEAT lists Total Value Secured (TVS) and usage metrics for MegaETH at the time accessed (exact values vary over time).&quot;,
+      &quot;controversies&quot;: [
+        &quot;Reported rewind/refunds of a large pre-deposit program after missteps&quot;,
+        &quot;Centralization concerns around permissioned sequencer and multisig-controlled upgrades&quot;
+      ],
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;,
+        &quot;SRC-003&quot;,
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;,
+        &quot;SRC-008&quot;,
+        &quot;SRC-009&quot;,
+        &quot;SRC-012&quot;
+      ]
+    }
+  ],
+  &quot;timeline&quot;: [
+    {
+      &quot;date&quot;: &quot;2024-06&quot;,
+      &quot;title&quot;: &quot;Seed funding reported&quot;,
+      &quot;description&quot;: &quot;Independent outlets report MegaLabs raised $20M in a seed round led by Dragonfly with notable angel participation.&quot;,
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2025-10&quot;,
+      &quot;title&quot;: &quot;MiCA whitepaper publication and public sale disclosure&quot;,
+      &quot;description&quot;: &quot;MiCA whitepaper discloses MEGA token characteristics, a 10B initial supply, and a 5% public sale via an English Auction format in October 2025, including allocation breakdown and vesting for Team and Advisors.&quot;,
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;,
+        &quot;SRC-020&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2025-11&quot;,
+      &quot;title&quot;: &quot;Pre-deposit rewind and refund reporting&quot;,
+      &quot;description&quot;: &quot;Reporting describes a full rewind/refund process for a large pre-deposit initiative after missteps, highlighting operational and security-process risk during rollout phases.&quot;,
+      &quot;tone&quot;: &quot;warning&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-012&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01&quot;,
+      &quot;title&quot;: &quot;Aave community technical evaluation highlights centralized upgrade control&quot;,
+      &quot;description&quot;: &quot;Aave governance forum technical evaluation describes key admin/upgrade control surfaces governed by a Safe multisig (reported 4-of-7), implying centralized authority over core protocol contracts and configuration.&quot;,
+      &quot;tone&quot;: &quot;warning&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02&quot;,
+      &quot;title&quot;: &quot;Ecosystem tracking lists measurable network value secured and usage&quot;,
+      &quot;description&quot;: &quot;L2BEAT lists MegaETH as an OP Stack-based project with recorded TVS and usage metrics, providing an external benchmark for adoption and economic activity (values fluctuate over time).&quot;,
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-008&quot;
+      ]
+    }
+  ],
+  &quot;red_flags&quot;: [
+    {
+      &quot;title&quot;: &quot;Centralized upgrade authority over core contracts and configuration&quot;,
+      &quot;description&quot;: &quot;A third-party technical evaluation reports that MegaETH controls critical upgrade/admin components (ProxyAdmin and SystemConfig) through a Safe multisig with a low signing threshold (reported 4-of-7) on both L1 and L2. This concentrates power to upgrade core contracts or alter system parameters, increasing governance capture risk, user-fund risk from compromised signers, and policy risk (censorship or discriminatory changes) before robust timelocks and decentralization are proven in production.&quot;,
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Third-party technical evaluation explicitly states multisig control over L1 ProxyAdmin, L1 SystemConfig, and L2 ProxyAdmin via Safe 4-of-7.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Token distribution concentrates long-term emission discretion in KPI staking rewards (53.3% of supply)&quot;,
+      &quot;description&quot;: &quot;The MiCA whitepaper allocates 53.3% of total supply to KPI Staking Rewards, described as distributed over time based on network metrics. This creates a large policy surface: whoever defines and measures KPIs, and authorizes distributions, effectively controls the dominant flow of tokens, creating hidden inflation and insider-favoring risk if governance is not credibly constrained and auditable.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;MiCA whitepaper allocation table includes KPI Staking Rewards: 5,330,000,000 MEGA (53.3%) and describes distribution over time based on network metrics.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Operational/security process risk evidenced by reported full rewind/refunds of pre-deposits&quot;,
+      &quot;description&quot;: &quot;Reporting indicates MegaETH executed a full rewind/refund process for a large pre-deposit program after missteps. Even when refunds are honored, such events signal weaknesses in launch discipline, risk controls, and change management that can recur during bridge, sequencer, or token-mint lifecycle transitions.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Independent reporting describes a full rewind/refund process after missteps, implying significant operational disruption and user trust impact.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-012&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Permissioned sequencer and centralization acknowledged as a design trade-off in official risk disclosures&quot;,
+      &quot;description&quot;: &quot;The MiCA whitepaper risk section describes reliance on a single sequencer model and notes centralization risk until decentralization measures are implemented. This implies liveness, censorship resistance, and MEV policy are centrally governed for an extended period, which is a known failure mode for rollups during stress events.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;MiCA whitepaper risk disclosures explicitly state reliance on a single sequencer model and associated centralization risks.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Impersonation/scam surface: a third-party site presents itself as an &#39;official&#39; claim and presale portal&quot;,
+      &quot;description&quot;: &quot;A site on megaeth.forum is indexed as an &#39;Official MegaETH Airdrop Claim &amp; Presale Portal&#39; and solicits wallet connections and deposits. This is a classic phishing/presale-scam pattern. Presence of such sites is a material user-safety risk, and it increases reputational and support burden even if unrelated to the core team.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;The megaeth.forum page claims to be an official airdrop claim and presale portal and describes deposit-based purchasing mechanics.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-021&quot;
+      ]
+    }
+  ],
+  &quot;behavioral_patterns&quot;: [
+    {
+      &quot;title&quot;: &quot;Narrative dominance: &#39;real-time&#39; performance framing outpaces independently verifiable production benchmarks&quot;,
+      &quot;description&quot;: &quot;Official materials emphasize sub-10ms blocks and 100,000+ TPS targets. Documentation shows testnet parameters consistent with performance experimentation, but sustained, adversarial, and economically meaningful mainnet benchmarking is not established in this dossier. This mismatch is a common pattern in high-performance chain marketing: impressive lab/testnet figures are used to imply durable production properties.&quot;,
+      &quot;examples&quot;: [
+        &quot;Website headlines emphasize 100,000+ TPS and sub-10ms block times.&quot;,
+        &quot;Testnet documentation specifies 10ms mini blocks and other parameters aimed at throughput.&quot;
+      ],
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Decentralization roadmap theater risk&quot;,
+      &quot;description&quot;: &quot;The MiCA whitepaper describes future governance/DAO structures and reduction of admin privileges over time, while third-party technical evaluation identifies current multisig control over upgradeable core components. This combination matches a common rollup pattern: a credible decentralization narrative with centralized control persisting through the riskiest growth phase.&quot;,
+      &quot;examples&quot;: [
+        &quot;Whitepaper describes governance transition and reduction of admin privileges over time.&quot;,
+        &quot;Third-party evaluation reports immediate multisig-controlled upgrade authority for core components.&quot;
+      ],
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;,
+        &quot;SRC-009&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Incentive/airdrop-adjacent engagement likely elevates sybil pressure and low-signal community activity&quot;,
+      &quot;description&quot;: &quot;Ethos shows large volumes of positive reviews and vouches, and the presence of public airdrop/presale narratives increases incentive-aligned engagement that can be difficult to separate from organic adoption. This raises uncertainty in community-quality assessment without deeper identity graphing and anti-sybil evidence.&quot;,
+      &quot;examples&quot;: [
+        &quot;Ethos subject stats include large review totals and vouch counts for the MegaETH account.&quot;,
+        &quot;Scam/impersonation sites and airdrop claims typically correlate with heightened opportunistic engagement.&quot;
+      ],
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-014&quot;,
+        &quot;SRC-013&quot;,
+        &quot;SRC-021&quot;
+      ]
+    }
+  ],
+  &quot;evidence_gaps&quot;: [
+    {
+      &quot;question&quot;: &quot;What are the exact unlock schedules and vesting terms for VC allocation (14.7%), Echo investors (5%), Fluffle round (2.5%), and Foundation/Ecosystem reserve (7.5%) beyond the Team and Advisors cliff/vesting?&quot;,
+      &quot;why_uncertain&quot;: &quot;The MiCA whitepaper discloses allocation sizes and explicitly discloses Team and Advisors cliff/vesting, but detailed schedules for other categories are not fully enumerated in the excerpts captured here.&quot;,
+      &quot;searched&quot;: &quot;MiCA whitepaper text inspection for &#39;vesting&#39;, &#39;cliff&#39;, and &#39;unlock&#39; and review of allocation sections.&quot;
+    },
+    {
+      &quot;question&quot;: &quot;Who are the named multisig signers, what is signer independence, and are there timelocks on upgrade actions?&quot;,
+      &quot;why_uncertain&quot;: &quot;A third-party evaluation reports Safe thresholds and control surfaces, but signer identities, separation of duties, and timelock enforcement were not fully enumerated in this dossier.&quot;,
+      &quot;searched&quot;: &quot;Aave governance technical evaluation; no direct multisig signer roster analysis performed.&quot;
+    },
+    {
+      &quot;question&quot;: &quot;On-chain MEGA holder concentration, top-holder percentages, insider wallet clusters, and treasury flow analysis&quot;,
+      &quot;why_uncertain&quot;: &quot;Etherscan pages confirm labeled addresses and token/contract presence, but this dossier does not include a complete extracted holder table, clustering, or time-series flow analysis.&quot;,
+      &quot;searched&quot;: &quot;Etherscan labeled pages for bridge, sale, and token contract; no full holder-distribution export completed.&quot;
+    },
+    {
+      &quot;question&quot;: &quot;Exploit history and unresolved vulnerabilities across the full protocol stack (sequencer, data availability, bridges, and token sale contracts)&quot;,
+      &quot;why_uncertain&quot;: &quot;Third-party audits are documented, and a refund/rewind event is reported, but a comprehensive incident register and current open-issue list (including audit findings status) is not assembled here.&quot;,
+      &quot;searched&quot;: &quot;Auditor pages (Zellic, BlockSec) and independent reporting (CoinDesk) for incidents.&quot;
+    },
+    {
+      &quot;question&quot;: &quot;Independent, reproducible mainnet performance benchmarks under load and adversarial conditions&quot;,
+      &quot;why_uncertain&quot;: &quot;Official performance claims and testnet parameters are available, but independent benchmarking with reproducible methodology is not established in these sources.&quot;,
+      &quot;searched&quot;: &quot;Official website and testnet documentation; ecosystem tracker (L2BEAT) for adoption metrics.&quot;
+    }
+  ],
+  &quot;key_insights&quot;: [
+    {
+      &quot;title&quot;: &quot;Measurable fundamentals: disclosed token supply, allocation breakdown, and team vesting are unusually explicit for a high-hype L2&quot;,
+      &quot;description&quot;: &quot;The MiCA whitepaper provides concrete supply and allocation figures (10B total; 5% public sale; 14.7% VC; 53.3% KPI staking rewards; 9.5% team with 1-year cliff and 3-year linear vesting). This reduces one class of uncertainty (hidden supply), but shifts risk to how KPI rewards are governed and distributed.&quot;,
+      &quot;importance&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Primary risk driver: centralized control surfaces (sequencer and upgrades) dominate the near-term trust model&quot;,
+      &quot;description&quot;: &quot;A credible technical evaluation identifies multisig control over ProxyAdmin and SystemConfig. Combined with the single-sequencer model acknowledged in risk disclosures, this means users must underwrite governance and operational integrity, not only code correctness.&quot;,
+      &quot;importance&quot;: &quot;critical&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Security posture is better-than-average on paper (named third-party reviews), but operational disruptions already occurred&quot;,
+      &quot;description&quot;: &quot;Zellic and BlockSec disclosures indicate non-trivial security review efforts across components. However, independent reporting about a large pre-deposit rewind/refund indicates meaningful operational/security-process fragility during rollout, which can be a leading indicator for future bridge or token lifecycle incidents.&quot;,
+      &quot;importance&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-010&quot;,
+        &quot;SRC-011&quot;,
+        &quot;SRC-012&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;External adoption visibility exists (L2BEAT), enabling ongoing falsification of traction claims&quot;,
+      &quot;description&quot;: &quot;L2BEAT provides third-party tracking of TVS and usage metrics for MegaETH. This helps separate narrative from measurable outcomes, even though it does not prove decentralization, censorship resistance, or MEV policy quality.&quot;,
+      &quot;importance&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-008&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;User-safety and reputational risk is amplified by impersonation/scam ecosystem activity&quot;,
+      &quot;description&quot;: &quot;A third-party site indexed as an official claim/presale portal presents high-likelihood phishing behavior. This increases the probability of user losses incorrectly attributed to the project and can trigger downstream regulatory and reputational blowback.&quot;,
+      &quot;importance&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-021&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Community signal is noisy: Ethos shows heavy positive sentiment, but incentive alignment can inflate metrics&quot;,
+      &quot;description&quot;: &quot;Ethos metrics show high review volume and vouches for the MegaETH account, and top-voted reviews include explicit bias disclosures (an author states they are building it). This does not invalidate community strength, but it reduces confidence that engagement reflects disinterested third-party validation.&quot;,
+      &quot;importance&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-013&quot;,
+        &quot;SRC-014&quot;,
+        &quot;SRC-015&quot;
+      ]
+    }
+  ],
+  &quot;risk_assessment&quot;: {
+    &quot;overall_score&quot;: 68,
+    &quot;score_reasoning&quot;: &quot;MegaETH presents a plausible technical roadmap and has credible funding and disclosed security assessments, which lowers pure rug probability relative to anonymous projects. However, near-term user risk is dominated by centralized control surfaces: a single-sequencer architecture acknowledged in official risk disclosures, and third-party reporting of multisig-controlled upgrade authority over core contracts and configuration. Tokenomics reduce uncertainty on headline allocation, but introduce a very large discretionary emission surface via KPI staking rewards (53.3% of supply), amplifying governance-capture and hidden-inflation risk. Operational disruption signals (pre-deposit rewind/refunds) materially increase execution and process risk during transitions. On-chain holder concentration, treasury flows, and market microstructure were not fully quantified here, so uncertainty remains elevated.&quot;,
+    &quot;criminal_risk&quot;: &quot;none found&quot;,
+    &quot;financial_risk&quot;: &quot;high&quot;,
+    &quot;reputational_risk&quot;: &quot;high&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-005&quot;,
+      &quot;SRC-008&quot;,
+      &quot;SRC-009&quot;,
+      &quot;SRC-010&quot;,
+      &quot;SRC-011&quot;,
+      &quot;SRC-012&quot;,
+      &quot;SRC-021&quot;
+    ]
+  },
+  &quot;overall_score&quot;: 68
+}</pre>
+            </details>
+          </section>
+
+          <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+            <p>This dossier is an evidence-oriented analytical artifact, not a legal judgment or formal accusation.</p>
+            <p class="mt-1">All claims should be independently verified against primary sources before making real-world decisions.</p>
+            <p class="mt-1 text-zinc-500">Generated by RepNet Dossier CLI on 2026-02-22.</p>
+          </footer>
+        </main>
+      </body>
+    </html>
