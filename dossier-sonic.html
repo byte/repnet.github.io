@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dossier: Sonic (Sonic Labs, $S)</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          :root {color-scheme: dark;}
+          * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+          body {
+            margin: 0;
+          background:
+          radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+          #08090d;
+          color: #e4e4e7;
+          font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+}
+          .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+          .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+          .timeline-lane {position: relative; padding-left: 2.25rem;}
+          .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+          .timeline-item {position: relative;}
+          .timeline-item::before {
+            content: "";
+          position: absolute;
+          left: -1.88rem;
+          top: 1.05rem;
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 9999px;
+          border: 1px solid #71717a;
+          background: #18181b;
+}
+          pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+        </style>
+      </head>
+      <body>
+        <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+          <nav class="mb-4">
+            <a href="index.html#repositories" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Repositories
+            </a>
+          </nav>
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h1 class="text-3xl font-bold tracking-tight text-zinc-50">Sonic (Sonic Labs, $S)</h1>
+                  <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Project</span>
+                  <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-red-500/50 bg-red-500/20 text-red-200">HIGH RISK</span>
+                </div>
+                <p class="max-w-3xl text-sm leading-relaxed text-zinc-300">Median of LLM scores clustered between high-medium risk, driven primarily by financial dilution, leadership instability, and hype-reality gaps.</p>
+                <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  <div>Generated: <span class="text-zinc-100">22/02/2026, 17:13:45</span></div>
+                  <div>Research date: <span class="text-zinc-100">2026-02-21</span></div>
+                  <div>Sources: <span class="text-zinc-100">Claude, GPT, Grok, Gemini</span></div>
+                  <div>Slug: <span class="mono text-zinc-100">sonic</span></div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+                <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+                <div class="mt-1 text-5xl font-bold text-red-300">70/100</div>
+                <div class="mt-2 text-xs text-zinc-400">Higher score indicates higher observed risk in this dossier.</div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">1</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">2</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">2</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">1</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+                <p class="mt-1 text-sm text-zinc-400">Known attributes linked to the subject profile.</p>
+              </div>
+              <div class="overflow-x-auto rounded-xl border border-zinc-800">
+                <table class="min-w-full text-left text-sm">
+                  <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                    <tr>
+                      <th class="px-4 py-3 font-medium">Field</th>
+                      <th class="px-4 py-3 font-medium">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="px-4"><tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+            <td class="py-2 text-zinc-100">Sonic Labs</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Handles</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed"><a href="https://x.com/SonicLabs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@SonicLabs</a></li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Email Addresses</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Locations</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed">Global</li><li class="leading-relaxed">United States (Sonic USA entity)</li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+            <td class="py-2 text-zinc-100">high confidence</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Source Ids</td>
+            <td class="py-2 text-zinc-100"><a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></td>
+          </tr> </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+                <p class="mt-1 text-sm text-zinc-400">Model-level score reasoning and risk dimensions.</p>
+              </div>
+              <div class="grid gap-3"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+            <div class="mt-1 text-sm text-zinc-100">70</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+            <div class="mt-1 text-sm text-zinc-100">Median of LLM scores clustered between high-medium risk, driven primarily by financial dilution, leadership instability, and hype-reality gaps.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">none found</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">high</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Verification Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Ids</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://www.theblock.co/post/378505/sonic-labs-fee-monetization-system" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></div>
+          </div> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger</h2>
+              <p class="mt-1 text-sm text-zinc-400">Complete claims table with expandable corroboration notes.</p>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-zinc-800">
+              <table class="min-w-full text-left text-xs text-zinc-300">
+                <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+                  <tr>
+                    <th class="px-4 py-3 font-medium">Claim</th>
+                    <th class="px-4 py-3 font-medium">Source</th>
+                    <th class="px-4 py-3 font-medium">Confidence</th>
+                    <th class="px-4 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody><tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Sonic is the fastest EVM Layer-1 blockchain, claiming up to 400,000 TPS with sub-second finality.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Sonic Labs marketing and documentation</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">disputed</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> Independent on-chain metrics show significantly lower sustained TPS.</div> <div> <span class="text-zinc-400">Notes:</span> Conflicting TPS claims exist across official documentation versions.</div> <div> <span class="text-zinc-400">Flagged by:</span> Claude, GPT, Grok, Gemini</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://learn.bybit.com/en/blockchain/fantom-to-sonic-crypto" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></div> </div>
+                </details>
+            </td>
+          </tr> </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+              <p class="mt-1 text-sm text-zinc-400">Chronology with full event text and annotations.</p>
+            </div>
+            <div class="timeline-lane space-y-3"><article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2024-12</div>
+            <h4 class="mt-1 text-sm font-semibold">Sonic Mainnet Launch</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">FTM to S 1:1 migration begins; Sonic mainnet goes live.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Sonic Labs</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Leadership Resignations</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">CEO Mitchell Demeter and Business Lead Evan Owens resign; board assumes interim control.</p>
+            <p class="mt-2 text-xs text-zinc-400"><span class="text-zinc-300">Notes:</span> Creates leadership vacuum.</p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Bitget News</span> · <span>KuCoin News</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/378505/sonic-labs-fee-monetization-system" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+          </article> </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags</h2>
+                <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by at least one model.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Performance hype vs reality</h4>
+          <p class="mt-2 text-sm text-zinc-200">Marketing claims of extreme TPS are not supported by observed on-chain activity.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Explorer metrics, Independent analysis</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>SonicScan</span> · <span>DefiLlama</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://learn.bybit.com/en/blockchain/fantom-to-sonic-crypto" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Governance-driven dilution</h4>
+          <p class="mt-2 text-sm text-zinc-200">Large governance-approved token issuances significantly increased circulating supply.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Governance proposal records, On-chain issuance</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Sonic Labs docs</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+                <p class="mt-1 text-sm text-violet-100/80">Recurring motifs across time, claims, and operations.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Rebrand-driven narrative reset</h4>
+          <p class="mt-2 text-sm text-zinc-200">Legacy chain rebranded with new performance and incentive narratives to reset valuation.</p>
+          <p class="mt-2 text-xs text-violet-200">Frequency: Repeated across cycles</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Project History</h2>
+                <p class="mt-1 text-sm text-zinc-400">Portfolio-level outcomes and operational trajectory.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Fantom Opera</h4>
+          <p class="mt-1 text-xs text-zinc-400">2018–2024</p>
+          <p class="mt-2 text-sm text-zinc-300">Original Fantom Layer-1 blockchain prior to rebrand.</p>
+          <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Rebranded and migrated to Sonic</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Sonic Labs documentation</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-amber-500/35 bg-amber-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-amber-200">Contradictions & Disputes</h2>
+                <p class="mt-1 text-sm text-amber-100/80">Where narratives conflict and what is unresolved.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-amber-500/30 bg-amber-500/10 p-4">
+          <div class="grid gap-3 md:grid-cols-2">
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim A</div>
+              <p class="mt-1 text-sm text-zinc-100">Sonic achieves 400,000 TPS.</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: Sonic website</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim B</div>
+              <p class="mt-1 text-sm text-zinc-100">Sonic achieves 10,000 TPS.</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: Earlier Sonic documentation</p>
+            </div>
+          </div>
+          <p class="mt-3 border-t border-amber-500/20 pt-3 text-xs text-zinc-300">
+            Resolution: Unknown; no independent benchmark confirms either figure. · Confidence: high
+          </p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-blue-500/35 bg-blue-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-blue-200">Key Insights</h2>
+                <p class="mt-1 text-sm text-blue-100/80">Synthesis highlights from all available model outputs.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Dilution risk outweighs utility narrative</h4>
+          <p class="mt-2 text-sm text-zinc-200">Despite advanced fee monetization concepts, ongoing supply expansion and low organic usage create persistent downside risk for holders.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: critical</p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-700 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Evidence Gaps</h2>
+                <p class="mt-1 text-sm text-zinc-400">What remains unknown and what needs corroboration.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Independent real-world TPS benchmarks under sustained load</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: No third-party stress test reports available</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Public audits, media reports</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Confidence Notes</h2>
+              <p class="mt-1 text-sm text-zinc-400">Data-quality and uncertainty indicators from the distillation step.</p>
+            </div>
+            <div class="grid gap-3 md:grid-cols-2"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Data Completeness</div>
+            <div class="mt-1 text-sm text-zinc-100">High for tokenomics and governance; medium for performance benchmarks</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Verification</div>
+            <div class="mt-1 text-sm text-zinc-100">Mostly first-party with several reputable third-party confirmations</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Identity Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">High</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Timeline Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">High</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Conflicting Findings</div>
+            <div class="mt-1 text-sm text-zinc-100">TPS claims and governance vote reporting inconsistencies</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Limitations</div>
+            <div class="mt-1 text-sm text-zinc-100">Lack of independent benchmarking and incomplete transparency on some governance mechanics</div>
+          </div> </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Source References</h2>
+              <p class="mt-1 text-sm text-zinc-400">Collected references/links from all source-like fields in the distilled payload.</p>
+            </div>
+            <ul class="grid gap-3 md:grid-cols-2"><li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-001</div>
+            <div class="mt-1 text-sm text-zinc-100">Vertical Integration: The Missing Link in L1 Value Creation - Sonic Insights</div>
+            <div class="mt-1 text-xs text-zinc-400">Sonic Labs · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://blog.soniclabs.com/vertical-integration-the-missing-link-in-l1-value-creation/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://blog.soniclabs.com/vertical-integration-the-missing-link-in-l1-value-creation/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-002</div>
+            <div class="mt-1 text-sm text-zinc-100">From Fantom to Sonic (S): Enhancing speed and scalability in DeFi</div>
+            <div class="mt-1 text-xs text-zinc-400">Bybit Learn · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://learn.bybit.com/en/blockchain/fantom-to-sonic-crypto" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://learn.bybit.com/en/blockchain/fantom-to-sonic-crypto</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-003</div>
+            <div class="mt-1 text-sm text-zinc-100">EVM Layer-1 Blockchain - S Token | Sonic Documentation</div>
+            <div class="mt-1 text-xs text-zinc-400">Sonic Labs · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.soniclabs.com/sonic/s-token" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.soniclabs.com/sonic/s-token</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-004</div>
+            <div class="mt-1 text-sm text-zinc-100">Sonic Airdrop Guide: How To Qualify, Claim, And Maximize Rewards</div>
+            <div class="mt-1 text-xs text-zinc-400">MEXC Blog · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://blog.mexc.com/news/sonic-airdrop/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://blog.mexc.com/news/sonic-airdrop/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-005</div>
+            <div class="mt-1 text-sm text-zinc-100">Sonic Labs unveils fee monetization system to drive native token deflation</div>
+            <div class="mt-1 text-xs text-zinc-400">The Block · 2026-02-22</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.theblock.co/post/378505/sonic-labs-fee-monetization-system" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.theblock.co/post/378505/sonic-labs-fee-monetization-system</a></div>
+            
+          </li> </ul>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+              <p class="mt-1 text-sm text-zinc-400">Raw distilled payload is attached to avoid information loss or truncation.</p>
+            </div>
+            <p class="mb-4 text-sm text-zinc-500">No additional top-level fields beyond rendered sections.</p>
+            <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+              <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload</summary>
+              <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  &quot;subject_name&quot;: &quot;Sonic (Sonic Labs, $S)&quot;,
+  &quot;type&quot;: &quot;project&quot;,
+  &quot;overall_score&quot;: 70,
+  &quot;research_sources&quot;: &quot;Claude, GPT, Grok, Gemini&quot;,
+  &quot;research_date&quot;: &quot;2026-02-21&quot;,
+  &quot;source_registry&quot;: [
+    {
+      &quot;source_id&quot;: &quot;SRC-001&quot;,
+      &quot;url&quot;: &quot;https://blog.soniclabs.com/vertical-integration-the-missing-link-in-l1-value-creation/&quot;,
+      &quot;title&quot;: &quot;Vertical Integration: The Missing Link in L1 Value Creation - Sonic Insights&quot;,
+      &quot;publisher&quot;: &quot;Sonic Labs&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-002&quot;,
+      &quot;url&quot;: &quot;https://learn.bybit.com/en/blockchain/fantom-to-sonic-crypto&quot;,
+      &quot;title&quot;: &quot;From Fantom to Sonic (S): Enhancing speed and scalability in DeFi&quot;,
+      &quot;publisher&quot;: &quot;Bybit Learn&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-003&quot;,
+      &quot;url&quot;: &quot;https://docs.soniclabs.com/sonic/s-token&quot;,
+      &quot;title&quot;: &quot;EVM Layer-1 Blockchain - S Token | Sonic Documentation&quot;,
+      &quot;publisher&quot;: &quot;Sonic Labs&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-004&quot;,
+      &quot;url&quot;: &quot;https://blog.mexc.com/news/sonic-airdrop/&quot;,
+      &quot;title&quot;: &quot;Sonic Airdrop Guide: How To Qualify, Claim, And Maximize Rewards&quot;,
+      &quot;publisher&quot;: &quot;MEXC Blog&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-005&quot;,
+      &quot;url&quot;: &quot;https://www.theblock.co/post/378505/sonic-labs-fee-monetization-system&quot;,
+      &quot;title&quot;: &quot;Sonic Labs unveils fee monetization system to drive native token deflation&quot;,
+      &quot;publisher&quot;: &quot;The Block&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-22&quot;
+    }
+  ],
+  &quot;identity&quot;: {
+    &quot;verified_name&quot;: &quot;Sonic Labs&quot;,
+    &quot;handles&quot;: [
+      &quot;@SonicLabs&quot;
+    ],
+    &quot;email_addresses&quot;: [],
+    &quot;locations&quot;: [
+      &quot;Global&quot;,
+      &quot;United States (Sonic USA entity)&quot;
+    ],
+    &quot;verification_status&quot;: &quot;high confidence&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-003&quot;
+    ]
+  },
+  &quot;credentials_and_claims&quot;: [
+    {
+      &quot;claim&quot;: &quot;Sonic is the fastest EVM Layer-1 blockchain, claiming up to 400,000 TPS with sub-second finality.&quot;,
+      &quot;source&quot;: &quot;Sonic Labs marketing and documentation&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_evidence&quot;: &quot;Independent on-chain metrics show significantly lower sustained TPS.&quot;,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;notes&quot;: &quot;Conflicting TPS claims exist across official documentation versions.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-002&quot;,
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;project_history&quot;: [
+    {
+      &quot;name&quot;: &quot;Fantom Opera&quot;,
+      &quot;period&quot;: &quot;2018–2024&quot;,
+      &quot;description&quot;: &quot;Original Fantom Layer-1 blockchain prior to rebrand.&quot;,
+      &quot;funding&quot;: &quot;Multiple ecosystem funds over lifecycle&quot;,
+      &quot;outcome&quot;: &quot;Rebranded and migrated to Sonic&quot;,
+      &quot;tvl_or_metrics&quot;: &quot;Variable TVL, legacy chain&quot;,
+      &quot;team_members&quot;: [
+        &quot;Andre Cronje&quot;,
+        &quot;Michael Kong&quot;
+      ],
+      &quot;controversies&quot;: [
+        &quot;Repeated hype cycles without sustained dominance&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;Sonic Labs documentation&quot;
+      ],
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;timeline&quot;: [
+    {
+      &quot;date&quot;: &quot;2024-12&quot;,
+      &quot;title&quot;: &quot;Sonic Mainnet Launch&quot;,
+      &quot;description&quot;: &quot;FTM to S 1:1 migration begins; Sonic mainnet goes live.&quot;,
+      &quot;sources&quot;: [
+        &quot;Sonic Labs&quot;
+      ],
+      &quot;tone&quot;: &quot;positive&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02&quot;,
+      &quot;title&quot;: &quot;Leadership Resignations&quot;,
+      &quot;description&quot;: &quot;CEO Mitchell Demeter and Business Lead Evan Owens resign; board assumes interim control.&quot;,
+      &quot;sources&quot;: [
+        &quot;Bitget News&quot;,
+        &quot;KuCoin News&quot;
+      ],
+      &quot;tone&quot;: &quot;critical&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;Creates leadership vacuum.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    }
+  ],
+  &quot;red_flags&quot;: [
+    {
+      &quot;title&quot;: &quot;Performance hype vs reality&quot;,
+      &quot;description&quot;: &quot;Marketing claims of extreme TPS are not supported by observed on-chain activity.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Explorer metrics&quot;,
+        &quot;Independent analysis&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;SonicScan&quot;,
+        &quot;DefiLlama&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-002&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Governance-driven dilution&quot;,
+      &quot;description&quot;: &quot;Large governance-approved token issuances significantly increased circulating supply.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Governance proposal records&quot;,
+        &quot;On-chain issuance&quot;
+      ],
+      &quot;counter_evidence&quot;: [
+        &quot;Burn mechanisms for unused allocations&quot;
+      ],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;Sonic Labs docs&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;behavioral_patterns&quot;: [
+    {
+      &quot;title&quot;: &quot;Rebrand-driven narrative reset&quot;,
+      &quot;description&quot;: &quot;Legacy chain rebranded with new performance and incentive narratives to reset valuation.&quot;,
+      &quot;examples&quot;: [
+        &quot;FTM to S migration&quot;,
+        &quot;Aggressive airdrop campaigns&quot;
+      ],
+      &quot;frequency&quot;: &quot;Repeated across cycles&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;sources&quot;: [
+        &quot;Sonic Labs blogs&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;
+      ]
+    }
+  ],
+  &quot;contradictions_and_disputes&quot;: [
+    {
+      &quot;claim_1&quot;: &quot;Sonic achieves 400,000 TPS.&quot;,
+      &quot;claim_2&quot;: &quot;Sonic achieves 10,000 TPS.&quot;,
+      &quot;source_1&quot;: &quot;Sonic website&quot;,
+      &quot;source_2&quot;: &quot;Earlier Sonic documentation&quot;,
+      &quot;resolution&quot;: &quot;Unknown; no independent benchmark confirms either figure.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-002&quot;,
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;evidence_gaps&quot;: [
+    {
+      &quot;question&quot;: &quot;Independent real-world TPS benchmarks under sustained load&quot;,
+      &quot;why_uncertain&quot;: &quot;No third-party stress test reports available&quot;,
+      &quot;searched&quot;: &quot;Public audits, media reports&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-005&quot;
+      ]
+    }
+  ],
+  &quot;key_insights&quot;: [
+    {
+      &quot;title&quot;: &quot;Dilution risk outweighs utility narrative&quot;,
+      &quot;description&quot;: &quot;Despite advanced fee monetization concepts, ongoing supply expansion and low organic usage create persistent downside risk for holders.&quot;,
+      &quot;importance&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: [
+        &quot;Token issuance history&quot;,
+        &quot;Low fee revenue&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-003&quot;
+      ]
+    }
+  ],
+  &quot;risk_assessment&quot;: {
+    &quot;overall_score&quot;: 70,
+    &quot;score_reasoning&quot;: &quot;Median of LLM scores clustered between high-medium risk, driven primarily by financial dilution, leadership instability, and hype-reality gaps.&quot;,
+    &quot;criminal_risk&quot;: &quot;none found&quot;,
+    &quot;financial_risk&quot;: &quot;high&quot;,
+    &quot;reputational_risk&quot;: &quot;medium&quot;,
+    &quot;verification_risk&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-003&quot;,
+      &quot;SRC-005&quot;
+    ]
+  },
+  &quot;confidence_notes&quot;: {
+    &quot;data_completeness&quot;: &quot;High for tokenomics and governance; medium for performance benchmarks&quot;,
+    &quot;source_verification&quot;: &quot;Mostly first-party with several reputable third-party confirmations&quot;,
+    &quot;identity_confidence&quot;: &quot;High&quot;,
+    &quot;timeline_confidence&quot;: &quot;High&quot;,
+    &quot;conflicting_findings&quot;: &quot;TPS claims and governance vote reporting inconsistencies&quot;,
+    &quot;limitations&quot;: &quot;Lack of independent benchmarking and incomplete transparency on some governance mechanics&quot;
+  }
+}</pre>
+            </details>
+          </section>
+
+          <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+            <p>This dossier is an evidence-oriented analytical artifact, not a legal judgment or formal accusation.</p>
+            <p class="mt-1">All claims should be independently verified against primary sources before making real-world decisions.</p>
+            <p class="mt-1 text-zinc-500">Generated by RepNet Dossier CLI on 2026-02-22.</p>
+          </footer>
+        </main>
+      </body>
+    </html>
