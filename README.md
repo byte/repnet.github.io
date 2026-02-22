@@ -32,15 +32,15 @@ RepNet is built on a multi-language codebase focused on scale and automated inte
 | Language | Files | Code (SLOC) |
 | :--- | :--- | :--- |
 | TypeScript | 46 | 5,984 |
-| JavaScript | 16 | 12,375 |
+| JavaScript | 16 | 12,378 |
 | JSX | 5 | 3,521 |
 | JSON | 12 | 823 |
 | SQL | 1 | 83 |
-| **Total (inc. others)** | **167** | **41,076** |
+| **Total (inc. others)** | **169** | **41,623** |
 
-- **Estimated Cost to Develop:** $1,336,173 (organic)
-- **Estimated Schedule Effort:** 15.35 months
-- **Estimated People Required:** 7.73
+- **Estimated Cost to Develop:** $1,354,862 (organic)
+- **Estimated Schedule Effort:** 15.44 months
+- **Estimated People Required:** 7.80
 
 ## Live Intelligence
 
