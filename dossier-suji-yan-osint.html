@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dossier: Suji Yan (OSINT)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {color-scheme: dark;}
+      * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+      body {
+        margin: 0;
+        background:
+        radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+        #08090d;
+        color: #e4e4e7;
+        font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+      }
+      .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+      .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+      .timeline-lane {position: relative; padding-left: 2.25rem;}
+      .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+      .timeline-item {position: relative;}
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -1.88rem;
+        top: 1.05rem;
+        width: 0.65rem;
+        height: 0.65rem;
+        border-radius: 9999px;
+        border: 1px solid #71717a;
+        background: #18181b;
+      }
+      pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+    </style>
+  </head>
+  <body>
+    <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+      <nav class="mb-4">
+          <a href="index.html#repositories" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Repositories
+          </a>
+      </nav>
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-3">
+              <h1 class="text-3xl font-bold tracking-tight text-zinc-50">Suji Yan (OSINT)</h1>
+              <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Person</span>
+              <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-red-500/50 bg-red-500/20 text-red-200">DANGER</span>
+            </div>
+            <p class="max-w-3xl text-sm leading-relaxed text-zinc-300"><strong>Adversarial OSINT Reframing:</strong> Assessment significantly elevated (from 45 to 68) following the forensic resolution of legal filings. The confirmation of an active federal lawsuit (LANG v. SUJITECH) alleging sexual assault, retaliatory firing, and tax/crypto non-compliance, combined with aborted investigation attempts, indicates severe governance and legal risk.</p>
+            <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+              <div>Generated: <span class="text-zinc-100">23/02/2026, 19:15:00</span></div>
+              <div>Research date: <span class="text-zinc-100">2026-02-23</span></div>
+              <div>Sources: <span class="text-zinc-100">Federal Court Records (PACER/New Jersey), Law360, News Archive</span></div>
+              <div>Slug: <span class="mono text-zinc-100">suji-yan-osint</span></div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+            <div class="mt-1 text-5xl font-bold text-red-500">68/100</div>
+            <div class="mt-2 text-xs text-zinc-400">Score elevated due to specific federal allegations of financial and sexual misconduct.</div>
+            <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">6</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">8</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">6</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">2</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-5 lg:grid-cols-2">
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+            <p class="mt-1 text-sm text-zinc-400">Resolved legal identity and pivots.</p>
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-zinc-800">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                <tr>
+                  <th class="px-4 py-3 font-medium">Field</th>
+                  <th class="px-4 py-3 font-medium">Value</th>
+                </tr>
+              </thead>
+              <tbody class="px-4">
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+                  <td class="py-2 text-zinc-100">Han Yan (known publicly as Suji Yan)</td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Legal Entities</td>
+                  <td class="py-2 text-zinc-100">Sujitech, LLC (NJ Payroll entity); Dimension Mechanics Inc.</td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Handles</td>
+                  <td class="py-2 text-zinc-100">@suji_yan (X), tedko (GitHub), suji (Farcaster)</td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+                  <td class="py-2 text-zinc-100">high (court-verified name)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+            <p class="mt-1 text-sm text-zinc-400">Forensic scoring breakdown.</p>
+          </div>
+          <div class="grid gap-3">
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+              <div class="mt-1 text-sm text-zinc-100">68</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+              <div class="mt-1 text-sm text-zinc-100">Severe risk arising from confirmed federal lawsuit alleging sexual assault, retaliatory firing, and active avoidance of financial compliance (unreported crypto/tax). Risk is compounded by counter-claims of asset theft, indicating an adversarial and unstable corporate environment.</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal/Legal Risk</div>
+              <div class="mt-1 text-sm text-zinc-100">critical (Sexual Assault & Retaliation case ongoing)</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+              <div class="mt-1 text-sm text-zinc-100">high (Allegations of unreported transactions and $1.5M asset theft)</div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger (Forensic OSINT)</h2>
+          <p class="mt-1 text-sm text-zinc-400">Verified claims vs legal allegations.</p>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-zinc-800">
+          <table class="min-w-full text-left text-xs text-zinc-300">
+            <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+              <tr>
+                <th class="px-4 py-3 font-medium">Claim</th>
+                <th class="px-4 py-3 font-medium">Source</th>
+                <th class="px-4 py-3 font-medium">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Sexual Assault during work trip (alleged by Shengning Lang).</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>NJ Federal Court (2:25-cv-12175)</span></td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">unresolved/filed</span>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Retaliatory firing after raising tax/crypto compliance concerns.</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Plaintiff Declaration, Law360</span></td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">unresolved/filed</span>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Shengning Lang stole $1.5M+ USDT from Han Yan/Sujitech.</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Counterclaims filed by Han Yan (NJ Federal Court)</span></td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">disputed/counterclaimed</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+          <p class="mt-1 text-sm text-zinc-400">Chronology focused on the 2025-2026 legal cycle.</p>
+        </div>
+        <div class="timeline-lane space-y-3">
+          <article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Personal Wallet Hack</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Loss of $4M in personal assets; occurs during the same period as alleged employment tensions.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-06-26</div>
+            <h4 class="mt-1 text-sm font-semibold">Federal Lawsuit Filed (New Jersey)</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Case 2:25-cv-12175 filed. Allegations include assault, retaliation, and tax non-compliance.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-amber-500/40 bg-amber-500/10 text-amber-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-07</div>
+            <h4 class="mt-1 text-sm font-semibold">Counterclaims & In-Rem Action</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Han Yan files counterclaims alleging theft of $1.5M USDT; Bybit and 1.5M USDT named as defendants.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid gap-5 lg:grid-cols-2">
+        <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags (Forensic)</h2>
+            <p class="mt-1 text-sm text-red-100/80">Confirmed high-impact legal risks.</p>
+          </div>
+          <div class="space-y-3">
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Federal Sexual Assault Allegation</h4>
+              <p class="mt-2 text-sm text-zinc-200">Ongoing federal litigation involving specific allegations of workplace sexual violence and intimidation.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">critical</span> · Confidence: <span class="font-semibold">high (court filing)</span></div>
+            </article>
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Tax & Compliance Suppression</h4>
+              <p class="mt-2 text-sm text-zinc-200">Employee whistleblower claims regarding unreported crypto transactions and tax issues within the 'Sujitech' payroll entity.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">high</span> · Confidence: <span class="font-semibold">medium</span></div>
+            </article>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+            <p class="mt-1 text-sm text-violet-100/80">Identified OSINT archetypes.</p>
+          </div>
+          <div class="space-y-3">
+            <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+              <h4 class="text-sm font-semibold text-violet-200">Aggressive Litigant Posture</h4>
+              <p class="mt-2 text-sm text-zinc-200">Pattern of responding to whistleblower/employee claims with immediate counter-allegations of theft and multi-million dollar asset recovery actions.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+          <p class="mt-1 text-sm text-zinc-400">Raw distilled payload updated with forensic findings.</p>
+        </div>
+        <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+          <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload (Forensic Merged)</summary>
+          <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  "subject_name": "Suji Yan (Han Yan)",
+  "type": "person",
+  "overall_score": 68,
+  "research_date": "2026-02-23",
+  "identity": {
+    "verified_name": "Han Yan",
+    "legal_entities": ["Sujitech, LLC", "Dimension Mechanics Inc."],
+    "handles": ["@suji_yan", "tedko", "suji"]
+  },
+  "risk_assessment": {
+    "overall_score": 68,
+    "score_reasoning": "Severe governance and legal risk from federal litigation involving assault and financial compliance suppression. Score reflects the specific nature of court-filed allegations and counter-claims.",
+    "criminal_risk": "critical (ongoing)",
+    "financial_risk": "high"
+  },
+  "credentials_and_claims": [
+    { "claim": "Sexual Assault (Lang v. Sujitech)", "verified": false, "status": "filed", "source_ids": ["2:25-cv-12175"] },
+    { "claim": "Retaliatory firing for tax concerns", "verified": false, "status": "filed", "source_ids": ["2:25-cv-12175"] },
+    { "claim": "Asset theft by plaintiff ($1.5M USDT)", "verified": false, "status": "counterclaimed", "source_ids": ["2:25-cv-12175"] }
+  ],
+  "red_flags": [
+    { "title": "Federal Sexual Assault Allegation", "severity": "critical" },
+    { "title": "Tax/Crypto Compliance Failure", "severity": "high" },
+    { "title": "Aggressive Workplace Retaliation", "severity": "high" }
+  ]
+}</pre>
+        </details>
+      </section>
+
+      <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+        <p><strong>OSINT Warning:</strong> This dossier applies PRD 15 forensic methodology, focusing on federal court filings and legal declarations. It tests the public persona against court-verified legal identities (Han Yan).</p>
+        <p class="mt-1">Generated by RepNet Dossier CLI (Forensic-Improved Merged) on 2026-02-23.</p>
+      </footer>
+    </main>
+  </body>
+</html>
