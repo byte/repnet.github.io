@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dossier: Icebergy</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          :root {color-scheme: dark;}
+          * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+          body {
+            margin: 0;
+          background:
+          radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+          #08090d;
+          color: #e4e4e7;
+          font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+}
+          .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+          .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+          .timeline-lane {position: relative; padding-left: 2.25rem;}
+          .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+          .timeline-item {position: relative;}
+          .timeline-item::before {
+            content: "";
+          position: absolute;
+          left: -1.88rem;
+          top: 1.05rem;
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 9999px;
+          border: 1px solid #71717a;
+          background: #18181b;
+}
+          pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+        </style>
+      </head>
+      <body>
+        <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+          <nav class="mb-4">
+            <a href="index.html#repositories" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Repositories
+            </a>
+          </nav>
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h1 class="text-3xl font-bold tracking-tight text-zinc-50">Icebergy</h1>
+                  <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Person</span>
+                  <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-yellow-500/50 bg-yellow-500/20 text-yellow-200">CAUTION</span>
+                </div>
+                <p class="max-w-3xl text-sm leading-relaxed text-zinc-300">Median of materially divergent LLM scores. Positive signals include long-term operational utility and no direct evidence of fraud. Risk is elevated by unresolved identity, unverified investor claims, and explicit normalization of behavior associated with significant retail financial harm.</p>
+                <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  <div>Generated: <span class="text-zinc-100">23/02/2026, 10:04:48</span></div>
+                  <div>Research date: <span class="text-zinc-100">2026-02-23</span></div>
+                  <div>Sources: <span class="text-zinc-100">Claude, GPT, Grok, Gemini</span></div>
+                  <div>Slug: <span class="mono text-zinc-100">icebergy</span></div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+                <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+                <div class="mt-1 text-5xl font-bold text-yellow-300">37/100</div>
+                <div class="mt-2 text-xs text-zinc-400">Higher score indicates higher observed risk in this dossier.</div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">3</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">4</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">3</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">2</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+                <p class="mt-1 text-sm text-zinc-400">Known attributes linked to the subject profile.</p>
+              </div>
+              <div class="overflow-x-auto rounded-xl border border-zinc-800">
+                <table class="min-w-full text-left text-sm">
+                  <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                    <tr>
+                      <th class="px-4 py-3 font-medium">Field</th>
+                      <th class="px-4 py-3 font-medium">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="px-4"><tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Handles</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed"><a href="https://x.com/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@Icebergy (X)</a></li><li class="leading-relaxed"><a href="https://x.com/icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@icebergy</a> (Telegram)</li><li class="leading-relaxed"><a href="https://x.com/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@cryptowhalebot</a> (Telegram bot)</li><li class="leading-relaxed"><a href="https://x.com/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@WhaleBotAlerts</a> (Telegram channel)</li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Email Addresses</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Locations</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+            <td class="py-2 text-zinc-100">medium</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Source Ids</td>
+            <td class="py-2 text-zinc-100"><a href="https://x.com/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://app.sorsa.io/profile/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://twitterscore.io/twitter/Icebergy/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a> · <a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></td>
+          </tr> </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+                <p class="mt-1 text-sm text-zinc-400">Model-level score reasoning and risk dimensions.</p>
+              </div>
+              <div class="grid gap-3"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+            <div class="mt-1 text-sm text-zinc-100">37</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+            <div class="mt-1 text-sm text-zinc-100">Median of materially divergent LLM scores. Positive signals include long-term operational utility and no direct evidence of fraud. Risk is elevated by unresolved identity, unverified investor claims, and explicit normalization of behavior associated with significant retail financial harm.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">none found</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Verification Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">moderate; identity and investment claims weakly verifiable</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Ids</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://app.ethos.network/profile/x/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></div>
+          </div> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger</h2>
+              <p class="mt-1 text-sm text-zinc-400">Complete claims table with expandable corroboration notes.</p>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-zinc-800">
+              <table class="min-w-full text-left text-xs text-zinc-300">
+                <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+                  <tr>
+                    <th class="px-4 py-3 font-medium">Claim</th>
+                    <th class="px-4 py-3 font-medium">Source</th>
+                    <th class="px-4 py-3 font-medium">Confidence</th>
+                    <th class="px-4 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody><tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Developer and operator of CryptoWhaleBot / WhaleBot ecosystem.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Telegram bot and channel listings</span></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> Telegram pages explicitly list &#39;Dev @icebergy&#39;.</div> <div> <span class="text-zinc-400">Notes:</span> Sustained multi-year operation with large user base.</div> <div> <span class="text-zinc-400">Flagged by:</span> Claude, GPT, Grok, Gemini</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Angel investor in crypto projects.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Self-description and CryptoRank profile</span></td>
+            <td class="py-3 pr-3 text-zinc-300">low</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">unverified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> No primary disclosures, deal announcements, or portfolio company confirmations located.</div> <div> <span class="text-zinc-400">Notes:</span> Claim repeated by aggregators; treated as self-reported.</div> <div> <span class="text-zinc-400">Flagged by:</span> Claude, GPT</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://cryptorank.io/funds/icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Entered crypto in 2016 and remained active through multiple market cycles.</td>
+            <td class="py-3 pr-3 text-zinc-300"><span>Podcast self-report</span></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">unverified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Verification evidence:</span> Corroborated indirectly by bot history and long-standing X account, but remains self-reported.</div> <div> <span class="text-zinc-400">Notes:</span> No independent timestamped proof beyond circumstantial alignment.</div> <div> <span class="text-zinc-400">Flagged by:</span> GPT</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://blockworks.co/podcast/empire/d08f9f0a-0f7e-11ee-885e-f32815103dfb" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-011</a></div> </div>
+                </details>
+            </td>
+          </tr> </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+              <p class="mt-1 text-sm text-zinc-400">Chronology with full event text and annotations.</p>
+            </div>
+            <div class="timeline-lane space-y-3"><article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2011-01</div>
+            <h4 class="mt-1 text-sm font-semibold">X account creation</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Third-party analytics indicate the @Icebergy account joined Twitter/X in January 2011.</p>
+            <p class="mt-2 text-xs text-zinc-400"><span class="text-zinc-300">Notes:</span> Direct X verification not possible in this environment.</p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>TwitterScore</span> · <span>Sorsa</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://app.sorsa.io/profile/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://twitterscore.io/twitter/Icebergy/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-003</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2018-05</div>
+            <h4 class="mt-1 text-sm font-semibold">CryptoWhaleBot public update</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Medium post documents Discord and bot updates and provides contact handles.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Medium</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://medium.com/@Whalereports/crypto-whale-bot-discord-update-6d6e665b5e36" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2023-07</div>
+            <h4 class="mt-1 text-sm font-semibold">BALD token rug pull discourse</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Icebergy publicly validated the semantic defense that the BALD deployer did not &#39;sell&#39; but merely removed two-sided liquidity after a ~$20M liquidity pull caused a ~90% crash.</p>
+            <p class="mt-2 text-xs text-zinc-400"><span class="text-zinc-300">Notes:</span> Sparked backlash and comparisons to gaslighting rhetoric used in prior major crypto scandals.</p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Unchained</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Active operation confirmed</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Telegram listings show ongoing operation with substantial user metrics.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Telegram</span></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+          </article> </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags</h2>
+                <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by at least one model.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Complete pseudonymity with no verifiable legal identity</h4>
+          <p class="mt-2 text-sm text-zinc-200">No legal name, jurisdiction, education, or corporate registration information is available across all reviewed sources.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">medium</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Absence of legal identifiers on all platforms., Reliance on handles and aggregators only.</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>X</span> · <span>Telegram</span> · <span>Aggregators</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://app.sorsa.io/profile/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Normalization of malicious on-chain behavior (BALD incident)</h4>
+          <p class="mt-2 text-sm text-zinc-200">Publicly endorsed a semantic defense minimizing a high-profile rug pull that caused severe retail losses.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Quoted and affirmed deployer defense post-rug pull., Documented journalist criticism.</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Unchained</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Unsubstantiated angel investor claims</h4>
+          <p class="mt-2 text-sm text-zinc-200">Angel investor status is self-reported and repeated by aggregators without primary corroboration.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">low</span>
+            · Confidence: <span class="font-semibold">medium</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Lack of deal announcements or confirmations.</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>CryptoRank</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://cryptorank.io/funds/icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+                <p class="mt-1 text-sm text-violet-100/80">Recurring motifs across time, claims, and operations.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+          <h4 class="text-sm font-semibold text-violet-200">Long-term operational continuity</h4>
+          <p class="mt-2 text-sm text-zinc-200">Maintained a functional crypto utility product across multiple market cycles.</p>
+          <p class="mt-2 text-xs text-violet-200">Frequency: Continuous</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Project History</h2>
+                <p class="mt-1 text-sm text-zinc-400">Portfolio-level outcomes and operational trajectory.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">CryptoWhaleBot / WhaleBot</h4>
+          <p class="mt-1 text-xs text-zinc-400">2018-05 to ongoing</p>
+          <p class="mt-2 text-sm text-zinc-300">Telegram-based crypto market tracking and alert bot, later expanded to multiple platforms.</p>
+          <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Ongoing, widely used utility product.</span></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <span>Telegram</span> · <span>Medium</span> · <a href="https://whalebot.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">whalebot.io</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-004</a> · <a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a> · <a href="https://whalebot.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://medium.com/@Whalereports/crypto-whale-bot-discord-update-6d6e665b5e36" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-amber-500/35 bg-amber-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-amber-200">Contradictions & Disputes</h2>
+                <p class="mt-1 text-sm text-amber-100/80">Where narratives conflict and what is unresolved.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-amber-500/30 bg-amber-500/10 p-4">
+          <div class="grid gap-3 md:grid-cols-2">
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim A</div>
+              <p class="mt-1 text-sm text-zinc-100">Overall risk score approximately 46, indicating moderate risk.</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: Claude/Grok synthesis</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wide text-amber-300">Claim B</div>
+              <p class="mt-1 text-sm text-zinc-100">Overall risk score approximately 28, indicating low-to-moderate risk.</p>
+              <p class="mt-1 text-xs text-zinc-400">Source: GPT synthesis</p>
+            </div>
+          </div>
+          <p class="mt-3 border-t border-amber-500/20 pt-3 text-xs text-zinc-300">
+            Resolution: Median score used per instructions. · Confidence: high
+          </p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-blue-500/35 bg-blue-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-blue-200">Key Insights</h2>
+                <p class="mt-1 text-sm text-blue-100/80">Synthesis highlights from all available model outputs.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Sustained delivery of a real utility product</h4>
+          <p class="mt-2 text-sm text-zinc-200">Unlike many pseudonymous accounts, Icebergy is linked to a long-running, widely used crypto bot.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: high</p>
+        </article> <article class="rounded-xl border border-blue-500/30 bg-blue-500/10 p-4">
+          <h4 class="text-sm font-semibold text-blue-200">Ethical risk signal from BALD commentary</h4>
+          <p class="mt-2 text-sm text-zinc-200">Public minimization of a major rug pull represents the most severe negative finding.</p>
+          <p class="mt-2 text-xs text-blue-200">Importance: critical</p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-700 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Evidence Gaps</h2>
+                <p class="mt-1 text-sm text-zinc-400">What remains unknown and what needs corroboration.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">What is the subject’s legal identity and jurisdiction?</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: No disclosures across any reviewed sources.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Social platforms, aggregators, podcasts.</p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Are there attributable on-chain wallets controlled by Icebergy?</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: No wallets publicly linked.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched: Project sites, profiles, media.</p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Confidence Notes</h2>
+              <p class="mt-1 text-sm text-zinc-400">Data-quality and uncertainty indicators from the distillation step.</p>
+            </div>
+            <div class="grid gap-3 md:grid-cols-2"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Data Completeness</div>
+            <div class="mt-1 text-sm text-zinc-100">High for public activity and projects; low for real-world identity and finances.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Verification</div>
+            <div class="mt-1 text-sm text-zinc-100">Mixed; strong for platform-native data, weaker for aggregator-reported claims.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Identity Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">Medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Timeline Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">Medium-High</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Conflicting Findings</div>
+            <div class="mt-1 text-sm text-zinc-100">Primary disagreement centered on overall risk severity.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Limitations</div>
+            <div class="mt-1 text-sm text-zinc-100">No access to private records, corporate filings, or cryptographic identity attestations.</div>
+          </div> </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Source References</h2>
+              <p class="mt-1 text-sm text-zinc-400">Collected references/links from all source-like fields in the distilled payload.</p>
+            </div>
+            <ul class="grid gap-3 md:grid-cols-2"><li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-001</div>
+            <div class="mt-1 text-sm text-zinc-100">icebergy ❄️ (@Icebergy) / Posts / X</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/Icebergy</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-002</div>
+            <div class="mt-1 text-sm text-zinc-100">Sorsa profile: @Icebergy</div>
+            <div class="mt-1 text-xs text-zinc-400">Sorsa · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://app.sorsa.io/profile/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://app.sorsa.io/profile/Icebergy</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-003</div>
+            <div class="mt-1 text-sm text-zinc-100">TwitterScore profile: icebergy ❄️ (@Icebergy)</div>
+            <div class="mt-1 text-xs text-zinc-400">TwitterScore.io · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://twitterscore.io/twitter/Icebergy/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://twitterscore.io/twitter/Icebergy/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-004</div>
+            <div class="mt-1 text-sm text-zinc-100">@cryptowhalebot Telegram bot</div>
+            <div class="mt-1 text-xs text-zinc-400">Telegram · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://t.me/cryptowhalebot" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://t.me/cryptowhalebot</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-005</div>
+            <div class="mt-1 text-sm text-zinc-100">WhaleBot Alerts Telegram channel</div>
+            <div class="mt-1 text-xs text-zinc-400">Telegram · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://t.me/WhaleBotAlerts" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://t.me/WhaleBotAlerts</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-006</div>
+            <div class="mt-1 text-sm text-zinc-100">Crypto Whale Bot</div>
+            <div class="mt-1 text-xs text-zinc-400">whalebot.io · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://whalebot.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://whalebot.io/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-007</div>
+            <div class="mt-1 text-sm text-zinc-100">Crypto Whale Bot — Discord Update</div>
+            <div class="mt-1 text-xs text-zinc-400">Medium · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://medium.com/@Whalereports/crypto-whale-bot-discord-update-6d6e665b5e36" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://medium.com/@Whalereports/crypto-whale-bot-discord-update-6d6e665b5e36</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-008</div>
+            <div class="mt-1 text-sm text-zinc-100">icebergy - Investment Fund Review</div>
+            <div class="mt-1 text-xs text-zinc-400">CryptoRank.io · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://cryptorank.io/funds/icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://cryptorank.io/funds/icebergy</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-009</div>
+            <div class="mt-1 text-sm text-zinc-100">icebergy ❄️ | Ethos credibility profile – 1689 (Established)</div>
+            <div class="mt-1 text-xs text-zinc-400">Ethos Network · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://app.ethos.network/profile/x/Icebergy" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://app.ethos.network/profile/x/Icebergy</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-010</div>
+            <div class="mt-1 text-sm text-zinc-100">BALD Token Falls 90% Amid Rug Pull Allegations</div>
+            <div class="mt-1 text-xs text-zinc-400">Unchained · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-011</div>
+            <div class="mt-1 text-sm text-zinc-100">Empire Podcast: How to Discover Crypto&#39;s Next Narrative Using Onchain Activity | Icebergy</div>
+            <div class="mt-1 text-xs text-zinc-400">Blockworks · 2026-02-23</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://blockworks.co/podcast/empire/d08f9f0a-0f7e-11ee-885e-f32815103dfb" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://blockworks.co/podcast/empire/d08f9f0a-0f7e-11ee-885e-f32815103dfb</a></div>
+            
+          </li> </ul>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+              <p class="mt-1 text-sm text-zinc-400">Raw distilled payload is attached to avoid information loss or truncation.</p>
+            </div>
+            <div class="mb-4 space-y-2"><details class="rounded-lg border border-zinc-800 bg-zinc-900/70 p-3">
+          <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Third Party Reputation Scores</summary>
+          <pre class="mt-2 overflow-x-auto whitespace-pre-wrap break-words rounded bg-zinc-950/80 p-3 text-xs text-zinc-300">[
+  {
+    &quot;platform&quot;: &quot;ethos.network&quot;,
+    &quot;score&quot;: 1689,
+    &quot;score_type&quot;: &quot;credibility&quot;,
+    &quot;reviews_positive&quot;: null,
+    &quot;reviews_negative&quot;: null,
+    &quot;reviews_neutral&quot;: null,
+    &quot;notable_review_texts&quot;: [],
+    &quot;vouch_count&quot;: null,
+    &quot;vouch_eth_staked&quot;: null,
+    &quot;slash_count&quot;: null,
+    &quot;url&quot;: &quot;https://app.ethos.network/profile/x/Icebergy&quot;,
+    &quot;source_id&quot;: &quot;SRC-009&quot;
+  }
+]</pre>
+        </details> </div>
+            <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+              <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload</summary>
+              <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  &quot;subject_name&quot;: &quot;Icebergy&quot;,
+  &quot;type&quot;: &quot;person&quot;,
+  &quot;overall_score&quot;: 37,
+  &quot;research_sources&quot;: &quot;Claude, GPT, Grok, Gemini&quot;,
+  &quot;research_date&quot;: &quot;2026-02-23&quot;,
+  &quot;source_registry&quot;: [
+    {
+      &quot;source_id&quot;: &quot;SRC-001&quot;,
+      &quot;url&quot;: &quot;https://x.com/Icebergy&quot;,
+      &quot;title&quot;: &quot;icebergy ❄️ (@Icebergy) / Posts / X&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-002&quot;,
+      &quot;url&quot;: &quot;https://app.sorsa.io/profile/Icebergy&quot;,
+      &quot;title&quot;: &quot;Sorsa profile: @Icebergy&quot;,
+      &quot;publisher&quot;: &quot;Sorsa&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-003&quot;,
+      &quot;url&quot;: &quot;https://twitterscore.io/twitter/Icebergy/&quot;,
+      &quot;title&quot;: &quot;TwitterScore profile: icebergy ❄️ (@Icebergy)&quot;,
+      &quot;publisher&quot;: &quot;TwitterScore.io&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-004&quot;,
+      &quot;url&quot;: &quot;https://t.me/cryptowhalebot&quot;,
+      &quot;title&quot;: &quot;@cryptowhalebot Telegram bot&quot;,
+      &quot;publisher&quot;: &quot;Telegram&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-005&quot;,
+      &quot;url&quot;: &quot;https://t.me/WhaleBotAlerts&quot;,
+      &quot;title&quot;: &quot;WhaleBot Alerts Telegram channel&quot;,
+      &quot;publisher&quot;: &quot;Telegram&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-006&quot;,
+      &quot;url&quot;: &quot;https://whalebot.io/&quot;,
+      &quot;title&quot;: &quot;Crypto Whale Bot&quot;,
+      &quot;publisher&quot;: &quot;whalebot.io&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-007&quot;,
+      &quot;url&quot;: &quot;https://medium.com/@Whalereports/crypto-whale-bot-discord-update-6d6e665b5e36&quot;,
+      &quot;title&quot;: &quot;Crypto Whale Bot — Discord Update&quot;,
+      &quot;publisher&quot;: &quot;Medium&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-008&quot;,
+      &quot;url&quot;: &quot;https://cryptorank.io/funds/icebergy&quot;,
+      &quot;title&quot;: &quot;icebergy - Investment Fund Review&quot;,
+      &quot;publisher&quot;: &quot;CryptoRank.io&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-009&quot;,
+      &quot;url&quot;: &quot;https://app.ethos.network/profile/x/Icebergy&quot;,
+      &quot;title&quot;: &quot;icebergy ❄️ | Ethos credibility profile – 1689 (Established)&quot;,
+      &quot;publisher&quot;: &quot;Ethos Network&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-010&quot;,
+      &quot;url&quot;: &quot;https://unchainedcrypto.com/bald-token-falls-90-amid-rug-pull-allegations/&quot;,
+      &quot;title&quot;: &quot;BALD Token Falls 90% Amid Rug Pull Allegations&quot;,
+      &quot;publisher&quot;: &quot;Unchained&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-011&quot;,
+      &quot;url&quot;: &quot;https://blockworks.co/podcast/empire/d08f9f0a-0f7e-11ee-885e-f32815103dfb&quot;,
+      &quot;title&quot;: &quot;Empire Podcast: How to Discover Crypto&#39;s Next Narrative Using Onchain Activity | Icebergy&quot;,
+      &quot;publisher&quot;: &quot;Blockworks&quot;,
+      &quot;accessed_date&quot;: &quot;2026-02-23&quot;
+    }
+  ],
+  &quot;third_party_reputation_scores&quot;: [
+    {
+      &quot;platform&quot;: &quot;ethos.network&quot;,
+      &quot;score&quot;: 1689,
+      &quot;score_type&quot;: &quot;credibility&quot;,
+      &quot;reviews_positive&quot;: null,
+      &quot;reviews_negative&quot;: null,
+      &quot;reviews_neutral&quot;: null,
+      &quot;notable_review_texts&quot;: [],
+      &quot;vouch_count&quot;: null,
+      &quot;vouch_eth_staked&quot;: null,
+      &quot;slash_count&quot;: null,
+      &quot;url&quot;: &quot;https://app.ethos.network/profile/x/Icebergy&quot;,
+      &quot;source_id&quot;: &quot;SRC-009&quot;
+    }
+  ],
+  &quot;identity&quot;: {
+    &quot;verified_name&quot;: &quot;&quot;,
+    &quot;handles&quot;: [
+      &quot;@Icebergy (X)&quot;,
+      &quot;@icebergy (Telegram)&quot;,
+      &quot;@cryptowhalebot (Telegram bot)&quot;,
+      &quot;@WhaleBotAlerts (Telegram channel)&quot;
+    ],
+    &quot;email_addresses&quot;: [],
+    &quot;locations&quot;: [],
+    &quot;verification_status&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-001&quot;,
+      &quot;SRC-002&quot;,
+      &quot;SRC-003&quot;,
+      &quot;SRC-004&quot;,
+      &quot;SRC-005&quot;
+    ]
+  },
+  &quot;credentials_and_claims&quot;: [
+    {
+      &quot;claim&quot;: &quot;Developer and operator of CryptoWhaleBot / WhaleBot ecosystem.&quot;,
+      &quot;source&quot;: &quot;Telegram bot and channel listings&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_evidence&quot;: &quot;Telegram pages explicitly list &#39;Dev @icebergy&#39;.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;notes&quot;: &quot;Sustained multi-year operation with large user base.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Angel investor in crypto projects.&quot;,
+      &quot;source&quot;: &quot;Self-description and CryptoRank profile&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_evidence&quot;: &quot;No primary disclosures, deal announcements, or portfolio company confirmations located.&quot;,
+      &quot;verification_status&quot;: &quot;unverified&quot;,
+      &quot;confidence&quot;: &quot;low&quot;,
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;
+      ],
+      &quot;notes&quot;: &quot;Claim repeated by aggregators; treated as self-reported.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-008&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Entered crypto in 2016 and remained active through multiple market cycles.&quot;,
+      &quot;source&quot;: &quot;Podcast self-report&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_evidence&quot;: &quot;Corroborated indirectly by bot history and long-standing X account, but remains self-reported.&quot;,
+      &quot;verification_status&quot;: &quot;unverified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;found_by&quot;: [
+        &quot;GPT&quot;
+      ],
+      &quot;notes&quot;: &quot;No independent timestamped proof beyond circumstantial alignment.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-011&quot;
+      ]
+    }
+  ],
+  &quot;project_history&quot;: [
+    {
+      &quot;name&quot;: &quot;CryptoWhaleBot / WhaleBot&quot;,
+      &quot;period&quot;: &quot;2018-05 to ongoing&quot;,
+      &quot;description&quot;: &quot;Telegram-based crypto market tracking and alert bot, later expanded to multiple platforms.&quot;,
+      &quot;funding&quot;: &quot;Unknown&quot;,
+      &quot;outcome&quot;: &quot;Ongoing, widely used utility product.&quot;,
+      &quot;tvl_or_metrics&quot;: &quot;20,882 monthly bot users; 159,630 Telegram channel subscribers at time of access.&quot;,
+      &quot;team_members&quot;: [
+        &quot;Icebergy (pseudonymous)&quot;
+      ],
+      &quot;controversies&quot;: [],
+      &quot;sources&quot;: [
+        &quot;Telegram&quot;,
+        &quot;Medium&quot;,
+        &quot;whalebot.io&quot;
+      ],
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;,
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    }
+  ],
+  &quot;timeline&quot;: [
+    {
+      &quot;date&quot;: &quot;2011-01&quot;,
+      &quot;title&quot;: &quot;X account creation&quot;,
+      &quot;description&quot;: &quot;Third-party analytics indicate the @Icebergy account joined Twitter/X in January 2011.&quot;,
+      &quot;sources&quot;: [
+        &quot;TwitterScore&quot;,
+        &quot;Sorsa&quot;
+      ],
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: false,
+      &quot;notes&quot;: &quot;Direct X verification not possible in this environment.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-002&quot;,
+        &quot;SRC-003&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2018-05&quot;,
+      &quot;title&quot;: &quot;CryptoWhaleBot public update&quot;,
+      &quot;description&quot;: &quot;Medium post documents Discord and bot updates and provides contact handles.&quot;,
+      &quot;sources&quot;: [
+        &quot;Medium&quot;
+      ],
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2023-07&quot;,
+      &quot;title&quot;: &quot;BALD token rug pull discourse&quot;,
+      &quot;description&quot;: &quot;Icebergy publicly validated the semantic defense that the BALD deployer did not &#39;sell&#39; but merely removed two-sided liquidity after a ~$20M liquidity pull caused a ~90% crash.&quot;,
+      &quot;sources&quot;: [
+        &quot;Unchained&quot;
+      ],
+      &quot;tone&quot;: &quot;critical&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;Sparked backlash and comparisons to gaslighting rhetoric used in prior major crypto scandals.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-010&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02&quot;,
+      &quot;title&quot;: &quot;Active operation confirmed&quot;,
+      &quot;description&quot;: &quot;Telegram listings show ongoing operation with substantial user metrics.&quot;,
+      &quot;sources&quot;: [
+        &quot;Telegram&quot;
+      ],
+      &quot;tone&quot;: &quot;positive&quot;,
+      &quot;verified&quot;: true,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    }
+  ],
+  &quot;red_flags&quot;: [
+    {
+      &quot;title&quot;: &quot;Complete pseudonymity with no verifiable legal identity&quot;,
+      &quot;description&quot;: &quot;No legal name, jurisdiction, education, or corporate registration information is available across all reviewed sources.&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Absence of legal identifiers on all platforms.&quot;,
+        &quot;Reliance on handles and aggregators only.&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;X&quot;,
+        &quot;Telegram&quot;,
+        &quot;Aggregators&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-002&quot;,
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Normalization of malicious on-chain behavior (BALD incident)&quot;,
+      &quot;description&quot;: &quot;Publicly endorsed a semantic defense minimizing a high-profile rug pull that caused severe retail losses.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Quoted and affirmed deployer defense post-rug pull.&quot;,
+        &quot;Documented journalist criticism.&quot;
+      ],
+      &quot;counter_evidence&quot;: [
+        &quot;No evidence Icebergy participated financially or operationally in the rug pull.&quot;
+      ],
+      &quot;found_by&quot;: [
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;Unchained&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-010&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Unsubstantiated angel investor claims&quot;,
+      &quot;description&quot;: &quot;Angel investor status is self-reported and repeated by aggregators without primary corroboration.&quot;,
+      &quot;severity&quot;: &quot;low&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Lack of deal announcements or confirmations.&quot;
+      ],
+      &quot;counter_evidence&quot;: [
+        &quot;Presence in investor directories and podcast appearances.&quot;
+      ],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;CryptoRank&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-008&quot;
+      ]
+    }
+  ],
+  &quot;behavioral_patterns&quot;: [
+    {
+      &quot;title&quot;: &quot;Long-term operational continuity&quot;,
+      &quot;description&quot;: &quot;Maintained a functional crypto utility product across multiple market cycles.&quot;,
+      &quot;examples&quot;: [
+        &quot;2018 Medium update.&quot;,
+        &quot;2026 active Telegram metrics.&quot;
+      ],
+      &quot;frequency&quot;: &quot;Continuous&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;sources&quot;: [
+        &quot;Medium&quot;,
+        &quot;Telegram&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;,
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;
+      ]
+    }
+  ],
+  &quot;contradictions_and_disputes&quot;: [
+    {
+      &quot;claim_1&quot;: &quot;Overall risk score approximately 46, indicating moderate risk.&quot;,
+      &quot;claim_2&quot;: &quot;Overall risk score approximately 28, indicating low-to-moderate risk.&quot;,
+      &quot;source_1&quot;: &quot;Claude/Grok synthesis&quot;,
+      &quot;source_2&quot;: &quot;GPT synthesis&quot;,
+      &quot;resolution&quot;: &quot;Median score used per instructions.&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: []
+    }
+  ],
+  &quot;evidence_gaps&quot;: [
+    {
+      &quot;question&quot;: &quot;What is the subject’s legal identity and jurisdiction?&quot;,
+      &quot;why_uncertain&quot;: &quot;No disclosures across any reviewed sources.&quot;,
+      &quot;searched&quot;: &quot;Social platforms, aggregators, podcasts.&quot;,
+      &quot;source_ids&quot;: []
+    },
+    {
+      &quot;question&quot;: &quot;Are there attributable on-chain wallets controlled by Icebergy?&quot;,
+      &quot;why_uncertain&quot;: &quot;No wallets publicly linked.&quot;,
+      &quot;searched&quot;: &quot;Project sites, profiles, media.&quot;,
+      &quot;source_ids&quot;: []
+    }
+  ],
+  &quot;key_insights&quot;: [
+    {
+      &quot;title&quot;: &quot;Sustained delivery of a real utility product&quot;,
+      &quot;description&quot;: &quot;Unlike many pseudonymous accounts, Icebergy is linked to a long-running, widely used crypto bot.&quot;,
+      &quot;importance&quot;: &quot;high&quot;,
+      &quot;evidence&quot;: [
+        &quot;Telegram usage metrics.&quot;,
+        &quot;Multi-year documentation.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-004&quot;,
+        &quot;SRC-005&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Ethical risk signal from BALD commentary&quot;,
+      &quot;description&quot;: &quot;Public minimization of a major rug pull represents the most severe negative finding.&quot;,
+      &quot;importance&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: [
+        &quot;Journalistic coverage and backlash.&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-010&quot;
+      ]
+    }
+  ],
+  &quot;risk_assessment&quot;: {
+    &quot;overall_score&quot;: 37,
+    &quot;score_reasoning&quot;: &quot;Median of materially divergent LLM scores. Positive signals include long-term operational utility and no direct evidence of fraud. Risk is elevated by unresolved identity, unverified investor claims, and explicit normalization of behavior associated with significant retail financial harm.&quot;,
+    &quot;criminal_risk&quot;: &quot;none found&quot;,
+    &quot;financial_risk&quot;: &quot;medium&quot;,
+    &quot;reputational_risk&quot;: &quot;medium&quot;,
+    &quot;verification_risk&quot;: &quot;moderate; identity and investment claims weakly verifiable&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-004&quot;,
+      &quot;SRC-005&quot;,
+      &quot;SRC-009&quot;,
+      &quot;SRC-010&quot;
+    ]
+  },
+  &quot;confidence_notes&quot;: {
+    &quot;data_completeness&quot;: &quot;High for public activity and projects; low for real-world identity and finances.&quot;,
+    &quot;source_verification&quot;: &quot;Mixed; strong for platform-native data, weaker for aggregator-reported claims.&quot;,
+    &quot;identity_confidence&quot;: &quot;Medium&quot;,
+    &quot;timeline_confidence&quot;: &quot;Medium-High&quot;,
+    &quot;conflicting_findings&quot;: &quot;Primary disagreement centered on overall risk severity.&quot;,
+    &quot;limitations&quot;: &quot;No access to private records, corporate filings, or cryptographic identity attestations.&quot;
+  }
+}</pre>
+            </details>
+          </section>
+
+          <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+            <p>This dossier is an evidence-oriented analytical artifact, not a legal judgment or formal accusation.</p>
+            <p class="mt-1">All claims should be independently verified against primary sources before making real-world decisions.</p>
+            <p class="mt-1 text-zinc-500">Generated by RepNet Dossier CLI on 2026-02-23.</p>
+          </footer>
+        </main>
+      </body>
+    </html>

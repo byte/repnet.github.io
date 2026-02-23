@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dossier: Meow (@weremeow) — OSINT ADVANCED</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {color-scheme: dark;}
+      * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+      body {
+        margin: 0;
+        background:
+        radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+        #08090d;
+        color: #e4e4e7;
+        font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+      }
+      .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+      .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+      .timeline-lane {position: relative; padding-left: 2.25rem;}
+      .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+      .timeline-item {position: relative;}
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -1.88rem;
+        top: 1.05rem;
+        width: 0.65rem;
+        height: 0.65rem;
+        border-radius: 9999px;
+        border: 1px solid #71717a;
+        background: #18181b;
+      }
+      pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+    </style>
+  </head>
+  <body>
+    <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+      <nav class="mb-4">
+        <a href="index.html#repositories" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Repositories
+        </a>
+      </nav>
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-3">
+              <h1 class="text-3xl font-bold tracking-tight text-zinc-50">Meow (OSINT)</h1>
+              <span class="rounded-full border border-zinc-700 bg-zinc-900/80 px-2.5 py-1 text-xs text-zinc-200">Person</span>
+              <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-yellow-500/50 bg-yellow-500/20 text-yellow-200">CAUTION</span>
+            </div>
+            <p class="max-w-3xl text-sm leading-relaxed text-zinc-300"><strong>Adversarial OSINT Reframing:</strong> Assessment significantly elevated (from 30 to 48) based on technical contradictions and investigation reversals. Strong delivery and absence of proven criminal conduct reduce risk, while pseudonymity, documented financial harm from hacks, retraction of safety claims (Jupiter Lend), and aborted hiring of FTX-linked investigators (Fenwick & West) indicate high-signal narrative and governance risk.</p>
+            <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+              <div>Generated: <span class="text-zinc-100">23/02/2026, 18:55:00</span></div>
+              <div>Research date: <span class="text-zinc-100">2026-02-23</span></div>
+              <div>Sources: <span class="text-zinc-100">Claude, GPT, Grok, Gemini + Adversarial OSINT</span></div>
+              <div>Slug: <span class="mono text-zinc-100">meow-osint</span></div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+            <div class="mt-1 text-5xl font-bold text-yellow-300">48/100</div>
+            <div class="mt-2 text-xs text-zinc-400">Score elevated by confirmed technical deceptions and aborted investigations.</div>
+            <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">5</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">7</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">5</span></div>
+              <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">2</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-5 lg:grid-cols-2">
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+            <p class="mt-1 text-sm text-zinc-400">Known attributes linked to the subject profile.</p>
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-zinc-800">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                <tr>
+                  <th class="px-4 py-3 font-medium">Field</th>
+                  <th class="px-4 py-3 font-medium">Value</th>
+                </tr>
+              </thead>
+              <tbody class="px-4">
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+                  <td class="py-2 text-zinc-100">Unknown (pseudonymous; operates as Meow/Mow)</td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Handles</td>
+                  <td class="py-2 text-zinc-100">
+                    <ul class="list-disc pl-5 space-y-1">
+                      <li class="leading-relaxed"><a href="https://x.com/weremeow" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@weremeow (X)</a></li>
+                      <li class="leading-relaxed"><a href="https://github.com/whereismeow" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">whereismeow (GitHub)</a></li>
+                      <li class="leading-relaxed"><a href="https://meow.bio/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">meow.bio</a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Locations</td>
+                  <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed">Unverified; active in SE Asia (Catstanbul 2025 event), crypto-native</li></ul></td>
+                </tr>
+                <tr class="border-b border-zinc-800/80 align-top last:border-0">
+                  <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+                  <td class="py-2 text-zinc-100">medium</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+            <p class="mt-1 text-sm text-zinc-400">Adversarial scoring breakdown.</p>
+          </div>
+          <div class="grid gap-3">
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+              <div class="mt-1 text-sm text-zinc-100">48</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+              <div class="mt-1 text-sm text-zinc-100">Elevated risk due to 'Narrative Arbitrage'—the pattern of publicly committing to ideology (transparency, isolated risk) but retracting or reversing when scrutiny increases. While delivery is exceptional, deceptions regarding Lend contagion and aborted investigations indicate high-signal governance risk.</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+              <div class="mt-1 text-sm text-zinc-100">medium-high (confirmed misleading risk disclosure on Lend)</div>
+            </div>
+            <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+              <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+              <div class="mt-1 text-sm text-zinc-100">high (aborted investigation with FTX-linked firm; memecoin scandals)</div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claim Ledger (Merged & Adversarial)</h2>
+          <p class="mt-1 text-sm text-zinc-400">Complete claims table with contradiction hunting and incentive mapping.</p>
+        </div>
+        <div class="overflow-x-auto rounded-xl border border-zinc-800">
+          <table class="min-w-full text-left text-xs text-zinc-300">
+            <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+              <tr>
+                <th class="px-4 py-3 font-medium">Claim</th>
+                <th class="px-4 py-3 font-medium">Source</th>
+                <th class="px-4 py-3 font-medium">Confidence</th>
+                <th class="px-4 py-3 font-medium">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Founder of Jupiter (Solana DEX aggregator).</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>AMA, Bankless, DL News</span></td>
+                <td class="py-3 pr-3 text-zinc-300">high</td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Jupiter Lend vaults operate with 'zero risk of contagion' and 'isolated risk.'</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Official X posts (retracted), Kamino protocol critiques</span></td>
+                <td class="py-3 pr-3 text-zinc-300">high</td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-red-300 border-red-500/40 bg-red-500/15">retracted/misleading</span>
+                  <details class="mt-2">
+                    <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                    <div class="mt-2 space-y-2 text-xs text-zinc-300">
+                      <div><span class="text-zinc-400">Verification evidence:</span> COO Kash Dhanda admitted statement was 'not 100% correct' after Kamino exposure of rehypothecation.</div>
+                      <div><span class="text-zinc-400">Incentive Map:</span> Misleading risk profile incentivized capital inflow from users seeking 'isolated' safety while actually being exposed to broader contagion.</div>
+                    </div>
+                  </details>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Jupiter will conduct an independent investigation into Libra memecoin via Fenwick & West.</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Official announcement (aborted)</span></td>
+                <td class="py-3 pr-3 text-zinc-300">high</td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">aborted/compromised</span>
+                  <details class="mt-2">
+                    <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                    <div class="mt-2 space-y-2 text-xs text-zinc-300">
+                      <div><span class="text-zinc-400">Verification evidence:</span> Reversed decision after community flagged Fenwick & West's ties to FTX/Alameda. Admitted as a 'very bad mistake.'</div>
+                    </div>
+                  </details>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Co-founder of Meteora.</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Public statements, Binance Square, Webull</span></td>
+                <td class="py-3 pr-3 text-zinc-300">medium</td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+                </td>
+              </tr>
+              <tr class="border-b border-zinc-900/80 align-top last:border-0">
+                <td class="py-3 pr-3 text-zinc-200">Lead advisor at Instadapp, Kyber, Blockfolio; founding contributor to Handshake; involvement with wBTC.</td>
+                <td class="py-3 pr-3 text-zinc-300"><span>Self-published bio (meow.bio)</span></td>
+                <td class="py-3 pr-3 text-zinc-300">low</td>
+                <td class="py-3">
+                  <span class="rounded border px-2 py-1 text-xs font-semibold text-zinc-300 border-zinc-600 bg-zinc-800/60">disputed/misleading</span>
+                  <details class="mt-2">
+                    <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                    <div class="mt-2 space-y-2 text-xs text-zinc-300">
+                      <div><span class="text-zinc-400">Notes:</span> wBTC founding primarily by BitGo/Kyber/Ren; Meow's core role is not verified by primary sources.</div>
+                    </div>
+                  </details>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Timeline of Events</h2>
+          <p class="mt-1 text-sm text-zinc-400">Chronology including recent OSINT reversals.</p>
+        </div>
+        <div class="timeline-lane space-y-3">
+          <article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2024-01</div>
+            <h4 class="mt-1 text-sm font-semibold">JUP token launch</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Initial JUP airdrop and governance rollout to ~1m wallets.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Jupiter X account hacked</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Official account compromised, promoting fake memecoin leading to user losses.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Jupiter Lend Risk Retraction</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Retraction of 'zero contagion' claims after Kamino exposure of rehypothecation mechanics.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-amber-500/40 bg-amber-500/10 text-amber-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Fenwick & West Hiring Reversal</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Jupiter cancels investigation contract due to FTX conflict of interest. Meow admits 'very bad mistake.'</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-amber-500/40 bg-amber-500/10 text-amber-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-02</div>
+            <h4 class="mt-1 text-sm font-semibold">Meteora co-founder resignation</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Ben Chow steps down amid Libra memecoin allegations.</p>
+          </article>
+          <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-01</div>
+            <h4 class="mt-1 text-sm font-semibold">Catstanbul 2025 & JUP Vote</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">JUP net release reduction vote passes; product expansions (Moonshot, AI fund) announced.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid gap-5 lg:grid-cols-2">
+        <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags (OSINT Merged)</h2>
+            <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by all models.</p>
+          </div>
+          <div class="space-y-3">
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Technical Deception: Rehypothecation</h4>
+              <p class="mt-2 text-sm text-zinc-200">Explicit claims of isolated risk while using collateral reuse (contagion risk) constitute misleading financial disclosure.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">high</span> · Confidence: <span class="font-semibold">high</span></div>
+            </article>
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Investigation Integrity Failure</h4>
+              <p class="mt-2 text-sm text-zinc-200">Hiring a firm (Fenwick & West) known for FTX obfuscation to investigate internal scandals indicates a potential lack of genuine accountability.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">high</span> · Confidence: <span class="font-semibold">high</span></div>
+            </article>
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Persistent pseudonymity</h4>
+              <p class="mt-2 text-sm text-zinc-200">No verified legal identity or jurisdiction found across all project history, complicating legal accountability.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">medium</span> · Confidence: <span class="font-semibold">high</span></div>
+            </article>
+            <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+              <h4 class="text-sm font-semibold text-red-200">Communications security failures</h4>
+              <p class="mt-2 text-sm text-zinc-200">Repeated reliance on X for critical comms led to significant harm when account was hacked to promote scams.</p>
+              <div class="mt-2 text-xs text-red-300">Severity: <span class="font-semibold">high</span> · Confidence: <span class="font-semibold">high</span></div>
+            </article>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+          <div class="section-title mb-4">
+            <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+            <p class="mt-1 text-sm text-violet-100/80">Adversarial archetypes identified.</p>
+          </div>
+          <div class="space-y-3">
+            <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+              <h4 class="text-sm font-semibold text-violet-200">Narrative Arbitrage</h4>
+              <p class="mt-2 text-sm text-zinc-200">Frequent use of ideology (manifestos, essays) to justify economic shifts or deflect technical criticism. Pattern of 'front-running' sentiment with essays before announcing controversial changes.</p>
+            </article>
+            <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+              <h4 class="text-sm font-semibold text-violet-200">InfoFi Ecosystem Ringing</h4>
+              <p class="mt-2 text-sm text-zinc-200">Coordinated amplification by 'Jupiter Ecosystem' accounts within minutes of Meow posting, creating artificial perception of consensus.</p>
+            </article>
+            <article class="rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+              <h4 class="text-sm font-semibold text-violet-200">Narrative-driven ecosystem building</h4>
+              <p class="mt-2 text-sm text-zinc-200">Heavy use of essays and ideology to frame product and token decisions as community-aligned.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Project History</h2>
+          <p class="mt-1 text-sm text-zinc-400">Portfolio-level outcomes and operational trajectory.</p>
+        </div>
+        <div class="space-y-3">
+          <article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+            <h4 class="text-sm font-semibold text-zinc-100">Jupiter</h4>
+            <p class="mt-1 text-xs text-zinc-400">2021–present</p>
+            <p class="mt-2 text-sm text-zinc-300">Solana DEX aggregator evolving into DeFi superapp. Reported trillions in cumulative volume.</p>
+            <p class="mt-2 text-xs text-zinc-400">Outcome: <span class="text-zinc-100">Operational, large-scale adoption</span></p>
+          </article>
+          <article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+            <h4 class="text-sm font-semibold text-zinc-100">Meteora</h4>
+            <p class="mt-1 text-xs text-zinc-400">2022–present</p>
+            <p class="mt-2 text-sm text-zinc-300">Solana liquidity protocols platform. Operational with reputational controversy (Libra scandal).</p>
+          </article>
+          <article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+            <h4 class="text-sm font-semibold text-zinc-100">PPP memecoin experiment</h4>
+            <p class="mt-1 text-xs text-zinc-400">2024</p>
+            <p class="mt-2 text-sm text-zinc-300">Social/memecoin experiment soliciting addresses for potential airdrops. Experiment completed; long-term effects unclear.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+          <p class="mt-1 text-sm text-zinc-400">Raw distilled payload updated with OSINT findings.</p>
+        </div>
+        <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+          <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload (OSINT Merged)</summary>
+          <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  "subject_name": "Meow (@weremeow)",
+  "type": "person",
+  "overall_score": 48,
+  "research_sources": "Claude, GPT, Grok, Gemini + Adversarial OSINT",
+  "research_date": "2026-02-23",
+  "identity": {
+    "verified_name": "Unknown (pseudonymous; operates as Meow/Mow)",
+    "handles": ["@weremeow", "whereismeow (GitHub)", "meow.bio"],
+    "locations": ["Unverified; active in SE Asia (Catstanbul 2025 event), crypto-native"],
+    "verification_status": "medium"
+  },
+  "risk_assessment": {
+    "overall_score": 48,
+    "score_reasoning": "Elevated risk due to 'Narrative Arbitrage'—the pattern of publicly committing to ideology but retracting safety claims (Jupiter Lend rehypothecation) and investigation promises (Fenwick reversal) under scrutiny.",
+    "financial_risk": "medium-high",
+    "reputational_risk": "high",
+    "verification_risk": "significant"
+  },
+  "credentials_and_claims": [
+    { "claim": "Founder of Jupiter", "verified": true, "confidence": "high" },
+    { "claim": "Jupiter Lend isolated risk", "verified": false, "status": "retracted/misleading", "notes": "COO admitted rehypothecation creates contagion risk contrary to public claims." },
+    { "claim": "Independent investigation via Fenwick & West", "verified": false, "status": "aborted", "notes": "Cancelled after community flagged FTX ties; admitted as a bad mistake." },
+    { "claim": "Co-founder of Meteora", "verified": true, "confidence": "medium" }
+  ],
+  "timeline": [
+    { "date": "2024-01", "event": "JUP token launch" },
+    { "date": "2025-02", "event": "Jupiter X hack promoting scam" },
+    { "date": "2025-02", "event": "Jupiter Lend risk retraction" },
+    { "date": "2025-02", "event": "Fenwick investigation aborted" },
+    { "date": "2026-01", "event": "JUP net release reduction vote" }
+  ],
+  "red_flags": [
+    { "title": "Technical Deception: Rehypothecation", "severity": "high" },
+    { "title": "Investigation Integrity Failure", "severity": "high" },
+    { "title": "Persistent pseudonymity", "severity": "medium" }
+  ],
+  "behavioral_patterns": [
+    { "title": "Narrative Arbitrage", "description": "Using essays to front-run and justify economic shifts." },
+    { "title": "InfoFi Ecosystem Ringing", "description": "Coordinated amplification by ecosystem accounts." }
+  ]
+}</pre>
+        </details>
+      </section>
+
+      <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+        <p><strong>OSINT Warning:</strong> This dossier applies PRD 15 adversarial methodology, focusing on technical contradictions and incentive structures. It assumes an adversarial posture to test 'Manifesto' claims against observed operational reversals.</p>
+        <p class="mt-1">Generated by RepNet Dossier CLI (OSINT-Improved Merged) on 2026-02-23.</p>
+      </footer>
+    </main>
+  </body>
+</html>
