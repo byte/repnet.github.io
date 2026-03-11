@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dossier: aixbt_agent</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          :root {color-scheme: dark;}
+          * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+          body {
+            margin: 0;
+          background:
+          radial-gradient(1200px 500px at 8% -6%, rgba(59,130,246,0.18), transparent 60%),
+          radial-gradient(900px 500px at 100% 0%, rgba(244,63,94,0.14), transparent 55%),
+          #08090d;
+          color: #e4e4e7;
+          font-family: 'Outfit','DM Sans','Space Grotesk','Avenir Next','Segoe UI',sans-serif;
+}
+          .mono {font-family: 'JetBrains Mono','IBM Plex Mono','Menlo',monospace;}
+          .section-title {border-left: 2px solid #3f3f46; padding-left: 0.85rem;}
+          .timeline-lane {position: relative; padding-left: 2.25rem;}
+          .timeline-lane::before {content: ""; position: absolute; left: 0.68rem; top: 0.2rem; bottom: 0.2rem; width: 1px; background: #3f3f46;}
+          .timeline-item {position: relative;}
+          .timeline-item::before {
+            content: "";
+          position: absolute;
+          left: -1.88rem;
+          top: 1.05rem;
+          width: 0.65rem;
+          height: 0.65rem;
+          border-radius: 9999px;
+          border: 1px solid #71717a;
+          background: #18181b;
+}
+          pre {white-space: pre-wrap; overflow-wrap: anywhere;}
+        </style>
+      </head>
+      <body>
+        <main class="mx-auto max-w-6xl space-y-6 px-4 py-8">
+          <nav class="mb-4">
+              <a href="index.html#repositories" class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-blue-400 transition-all group">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Repositories
+              </a>
+          </nav>
+          
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-2xl shadow-black/35">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div class="space-y-4">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h1 class="text-3xl font-bold tracking-tight text-zinc-50">aixbt_agent</h1>
+                  <span class="rounded-full border border-zinc-700 bg-zinc-800 px-2.5 py-1 text-xs text-zinc-200">Agent</span>
+                  <span class="rounded-full border px-2.5 py-1 text-xs font-semibold border-amber-500/50 bg-amber-500/20 text-amber-200">ELEVATED RISK</span>
+                </div>
+                <p class="max-w-3xl text-sm leading-relaxed text-zinc-300">Risk score driven by pseudonymous operator, documented exploit resulting in financial loss, token-linked incentives, and limited independent auditing of performance.</p>
+                <div class="grid gap-2 text-xs text-zinc-300 sm:grid-cols-2">
+                  <div>Generated: <span class="text-zinc-100">3/11/2026, 4:46:07 PM</span></div>
+                  <div>Research date: <span class="text-zinc-100">2026-03-11</span></div>
+                  <div>Sources: <span class="text-zinc-100">Claude, GPT, Grok, Gemini</span></div>
+                  <div>Slug: <span class="mono text-zinc-100">aixbtagent</span></div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950/85 p-4">
+                <div class="text-xs uppercase tracking-wide text-zinc-400">Overall Risk Score</div>
+                <div class="mt-1 text-5xl font-bold text-amber-300">68/100</div>
+                <div class="mt-2 text-xs text-zinc-400">Higher score indicates higher observed risk in this dossier.</div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Claims: <span class="text-zinc-100">7</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Timeline: <span class="text-zinc-100">4</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Red flags: <span class="text-zinc-100">3</span></div>
+                  <div class="rounded border border-zinc-700 bg-zinc-900/70 p-2">Evidence gaps: <span class="text-zinc-100">5</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Identity & Background</h2>
+                <p class="mt-1 text-sm text-zinc-400">Known handles, identity anchors, and control-surface context.</p>
+              </div>
+              <div class="overflow-x-auto rounded-xl border border-zinc-800">
+                <table class="min-w-full text-left text-sm">
+                  <thead class="bg-zinc-950 text-xs uppercase tracking-wide text-zinc-400">
+                    <tr>
+                      <th class="px-4 py-3 font-medium">Field</th>
+                      <th class="px-4 py-3 font-medium">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody class="px-4"><tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verified Name</td>
+            <td class="py-2 text-zinc-100">aixbt</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Handles</td>
+            <td class="py-2 text-zinc-100"><ul class="list-disc pl-5 space-y-1"><li class="leading-relaxed"><a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@aixbt_agent (x)</a> · <a href="https://warpcast.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@aixbt_agent (farcaster)</a></li><li class="leading-relaxed"><a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@0rxbt (x)</a> · <a href="https://warpcast.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@0rxbt (farcaster)</a></li><li class="leading-relaxed"><a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@aixbt_labs (x)</a> · <a href="https://warpcast.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@aixbt_labs (farcaster)</a></li><li class="leading-relaxed"><a href="https://warpcast.com/aixbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">@aixbt (Farcaster)</a></li></ul></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Email Addresses</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Locations</td>
+            <td class="py-2 text-zinc-100"><span class="text-zinc-500">N/A</span></td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Verification Status</td>
+            <td class="py-2 text-zinc-100">medium</td>
+          </tr> <tr class="border-b border-zinc-800/80 align-top last:border-0">
+            <td class="py-2 pr-3 text-zinc-400">Source Ids</td>
+            <td class="py-2 text-zinc-100"><a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a></td>
+          </tr> </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Risk Assessment</h2>
+                <p class="mt-1 text-sm text-zinc-400">Observed operating risk, credibility risk, and unresolved uncertainty.</p>
+              </div>
+              <div class="grid gap-3"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Overall Score</div>
+            <div class="mt-1 text-sm text-zinc-100">68</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Score Reasoning</div>
+            <div class="mt-1 text-sm text-zinc-100">Risk score driven by pseudonymous operator, documented exploit resulting in financial loss, token-linked incentives, and limited independent auditing of performance.</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Criminal Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">none found</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Financial Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">high</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Reputational Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">high</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Verification Risk</div>
+            <div class="mt-1 text-sm text-zinc-100">medium</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Ids</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a> · <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a></div>
+          </div> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+                <article class="rounded-2xl border border-cyan-500/35 bg-cyan-500/8 p-5">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-cyan-200">Owner / Operator Analysis</h2>
+          <p class="mt-1 text-sm text-cyan-100/80">Who appears to control the agent, and how strong that linkage is.</p>
+        </div>
+        <div class="grid gap-2 sm:grid-cols-2">
+          <div class="rounded border px-3 py-2 text-xs border-cyan-500/30 bg-cyan-500/10 text-cyan-100">
+      <span class="text-zinc-400">Ownership model:</span>
+      <span class="ml-1 font-semibold">human_owned</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-cyan-500/30 bg-cyan-500/10 text-cyan-100">
+      <span class="text-zinc-400">Assessment notes:</span>
+      <span class="ml-1 font-semibold">Ownership structure appears to rely on a pseudonymous developer with centralized operational control.</span>
+    </div>
+        </div>
+        <div class="mt-4 space-y-3">
+          <article class="rounded-xl border border-cyan-500/20 bg-zinc-950/60 p-4">
+                <h4 class="text-sm font-semibold text-cyan-100">0rxbt</h4>
+                <p class="mt-1 text-xs text-cyan-200">owner/operator/developer · medium</p>
+                <p class="mt-2 text-sm text-zinc-200">Pseudonymous operator publicly linked to development and infrastructure decisions for the aixbt agent. No confirmed real-world identity or legal entity mapping surfaced in the research.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+              </article><article class="rounded-xl border border-cyan-500/20 bg-zinc-950/60 p-4">
+                <h4 class="text-sm font-semibold text-cyan-100">aixbt labs</h4>
+                <p class="mt-1 text-xs text-cyan-200">developer · medium</p>
+                <p class="mt-2 text-sm text-zinc-200">Appears to operate development and product updates for the agent and terminal platform.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a> · <a href="https://github.com/aixbt-labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-011</a></p>
+              </article><article class="rounded-xl border border-cyan-500/20 bg-zinc-950/60 p-4">
+                <h4 class="text-sm font-semibold text-cyan-100">Virtuals Protocol</h4>
+                <p class="mt-1 text-xs text-cyan-200">promoter/platform · high</p>
+                <p class="mt-2 text-sm text-zinc-200">Platform through which the AI agent token and ecosystem launched.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+              </article>
+        </div>
+        <div class="mt-4 space-y-3">
+          <article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">social_accounts</h4>
+                <p class="mt-1 text-xs text-zinc-400">identified</p>
+                <p class="mt-2 text-sm text-zinc-200">Primary communication occurs on X through @aixbt_agent.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a></p>
+              </article><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">domain</h4>
+                <p class="mt-1 text-xs text-zinc-400">identified</p>
+                <p class="mt-2 text-sm text-zinc-200">aixbt.tech and docs.aixbt.tech host documentation and terminal interface.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://docs.aixbt.tech/introduction/what-is-aixbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-002</a> · <a href="https://aixbt.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-005</a></p>
+              </article><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">repo</h4>
+                <p class="mt-1 text-xs text-zinc-400">identified</p>
+                <p class="mt-2 text-sm text-zinc-200">GitHub repos including x402 and MCP server show developer control surfaces.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://github.com/aixbt-labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-011</a> · <a href="https://github.com/aixbt/x402" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-012</a> · <a href="https://github.com/aixbt/mcp-server" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-013</a></p>
+              </article><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">wallet</h4>
+                <p class="mt-1 text-xs text-zinc-400">unclear</p>
+                <p class="mt-2 text-sm text-zinc-200">Simulacrum wallet referenced during 2025 hack incident but canonical treasury address not conclusively mapped.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-015</a> · <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a></p>
+              </article>
+        </div>
+      </article>
+                <article class="rounded-2xl border border-emerald-500/35 bg-emerald-500/8 p-5">
+                  <div class="section-title mb-4">
+                    <h2 class="text-lg font-semibold tracking-tight text-emerald-200">Live Timeline Signals</h2>
+                    <p class="mt-1 text-sm text-emerald-100/80">Recent launches, monetization shifts, behavior changes, and other near-term agent activity.</p>
+                  </div>
+                  <div class="space-y-3"><article class="rounded-xl border border-emerald-500/25 bg-emerald-500/10 p-4">
+          <h4 class="text-sm font-semibold text-emerald-100">Peak hype cycle</h4>
+          <p class="mt-1 text-xs text-emerald-200">2025-01 · observed · primary_social</p>
+          <p class="mt-2 text-sm text-zinc-200">Token price reached all-time high near $0.94 during AI-agent narrative boom.</p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+        </article><article class="rounded-xl border border-emerald-500/25 bg-emerald-500/10 p-4">
+          <h4 class="text-sm font-semibold text-emerald-100">Security exploit and loss of 55 ETH</h4>
+          <p class="mt-1 text-xs text-emerald-200">2025-03-18 · observed · primary_social</p>
+          <p class="mt-2 text-sm text-zinc-200">Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.</p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></p>
+        </article><article class="rounded-xl border border-emerald-500/25 bg-emerald-500/10 p-4">
+          <h4 class="text-sm font-semibold text-emerald-100">Infrastructure autonomy expansion</h4>
+          <p class="mt-1 text-xs text-emerald-200">2026-03 · observed · primary_social</p>
+          <p class="mt-2 text-sm text-zinc-200">Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.</p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+        </article><article class="rounded-xl border border-emerald-500/25 bg-emerald-500/10 p-4">
+          <h4 class="text-sm font-semibold text-emerald-100">Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastruc</h4>
+          <p class="mt-1 text-xs text-emerald-200">2026-03 · observed · mixed</p>
+          <p class="mt-2 text-sm text-zinc-200">Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.</p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+        </article></div>
+                </article>
+              </section>
+
+              <section class="grid gap-5 lg:grid-cols-2">
+                <article class="rounded-2xl border border-fuchsia-500/35 bg-fuchsia-500/8 p-5">
+        <div class="section-title mb-4">
+          <h2 class="text-lg font-semibold tracking-tight text-fuchsia-200">Public Reaction Snapshot</h2>
+          <p class="mt-1 text-sm text-fuchsia-100/80">How the timeline currently reads across platforms, windows, and backlash events.</p>
+        </div>
+        <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Overall valence:</span>
+      <span class="ml-1 font-semibold">mixed</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Trajectory:</span>
+      <span class="ml-1 font-semibold">volatile</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Controversy:</span>
+      <span class="ml-1 font-semibold">medium</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Platform divergence:</span>
+      <span class="ml-1 font-semibold">x_more_negative</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Manipulation risk:</span>
+      <span class="ml-1 font-semibold">medium</span>
+    </div>
+          <div class="rounded border px-3 py-2 text-xs border-fuchsia-500/30 bg-fuchsia-500/10 text-fuchsia-100">
+      <span class="text-zinc-400">Confidence:</span>
+      <span class="ml-1 font-semibold">medium</span>
+    </div>
+        </div>
+        <p class="mt-4 text-sm text-zinc-200">Sentiment spikes occurred during hack incident and token drawdown but stabilizes during product updates.</p>
+        <div class="mt-4 space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">last_30_days</h4>
+                <p class="mt-1 text-xs text-zinc-400">mixed · low</p>
+                <p class="mt-2 text-sm text-zinc-200">Recent discourse focuses on shipping updates and continued development rather than scandal.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+              </article><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+                <h4 class="text-sm font-semibold text-zinc-100">prior_90_days</h4>
+                <p class="mt-1 text-xs text-zinc-400">mixed · medium</p>
+                <p class="mt-2 text-sm text-zinc-200">Security exploit and debates about autonomy contributed to criticism.</p>
+                <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-015</a> · <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a></p>
+              </article></div>
+      </article>
+                <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+                  <div class="section-title mb-4">
+                    <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Research Coverage Log</h2>
+                    <p class="mt-1 text-sm text-zinc-400">Exact platform queries and surfaces used to build the agent record.</p>
+                  </div>
+                  <div class="space-y-4">
+                    <div>
+                      <p class="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-400">X / Twitter</p>
+                      <div class="space-y-3"><article class="rounded-xl border border-zinc-700/80 bg-zinc-900/70 p-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <h4 class="text-sm font-semibold text-zinc-100">X / Twitter</h4>
+              <span class="rounded border border-zinc-700 bg-zinc-950 px-2 py-1 text-[11px] text-zinc-300">found</span>
+              <span class="rounded border border-zinc-700 bg-zinc-950 px-2 py-1 text-[11px] text-zinc-300">recovered_from_citations</span>
+            </div>
+            <p class="mt-2 text-xs text-amber-200">Exact queries were not preserved in the payload; this row was reconstructed from cited source URLs.</p>
+            <p class="mt-2 text-xs text-zinc-500">No exact queries recorded.</p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a> · <a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-015</a> · <a href="https://x.com/S4mmyEth/status/1902021914517758277" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-018</a> · <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a> · <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+          </article></div>
+                    </div>
+                    <div>
+                      <p class="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-zinc-400">Farcaster / Warpcast</p>
+                      <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400">No Farcaster/Warpcast coverage entries were provided.</div></div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Claims & Performance Ledger</h2>
+              <p class="mt-1 text-sm text-zinc-400">Concrete claims the agent or its operators make, plus performance or verification evidence.</p>
+            </div>
+            <div class="overflow-x-auto rounded-xl border border-zinc-800">
+              <table class="min-w-full text-left text-xs text-zinc-300">
+                <thead class="bg-zinc-950 text-[11px] uppercase tracking-wide text-zinc-400">
+                  <tr>
+                    <th class="px-4 py-3 font-medium">Claim</th>
+                    <th class="px-4 py-3 font-medium">Source</th>
+                    <th class="px-4 py-3 font-medium">Confidence</th>
+                    <th class="px-4 py-3 font-medium">Status</th>
+                  </tr>
+                </thead>
+                <tbody><tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Launch via Virtuals Protocol AIXBT AI agent launched within the Virtuals ecosystem.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Observed date: 2024-11 | Source type: web:virtuals.io | Tier rationale: Tier could not be inferred from linked source metadata.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Peak hype cycle Token price reached all-time high near $0.94 during AI-agent narrative boom.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Observed date: 2025-01 | Source type: web:decrypt.co | Tier rationale: Tier could not be inferred from linked source metadata.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Security exploit and loss of 55 ETH Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Observed date: 2025-03-18 | Source type: web:theblock.co | Tier rationale: Tier could not be inferred from linked source metadata.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-emerald-300 border-emerald-500/40 bg-emerald-500/15">verified</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Observed date: 2026-03 | Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Operational security failure Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></td>
+            <td class="py-3 pr-3 text-zinc-300">high</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">disputed</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Source type: web:theblock.co | Tier rationale: Tier could not be inferred from linked source metadata.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Pseudonymous founder Core operator identity remains pseudonymous with no legal entity mapping.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">disputed</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></div> </div>
+                </details>
+            </td>
+          </tr> <tr class="border-b border-zinc-900/80 align-top last:border-0">
+            <td class="py-3 pr-3 text-zinc-200">Opaque context-window manipulation potential Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.</td>
+            <td class="py-3 pr-3 text-zinc-300"><a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a></td>
+            <td class="py-3 pr-3 text-zinc-300">medium</td>
+            <td class="py-3">
+              <span class="rounded border px-2 py-1 text-xs font-semibold text-amber-300 border-amber-500/40 bg-amber-500/15">disputed</span>
+              <details class="mt-2">
+                  <summary class="cursor-pointer text-xs text-zinc-400 hover:text-zinc-200">Expanded evidence</summary>
+                  <div class="mt-2 space-y-2 text-xs text-zinc-300"><div> <span class="text-zinc-400">Notes:</span> Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.</div> <div> <span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a></div> </div>
+                </details>
+            </td>
+          </tr> </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Live Timeline</h2>
+              <p class="mt-1 text-sm text-zinc-400">Observed public behavior, replies, corrections, and notable incidents in chronological order.</p>
+            </div>
+            <div class="timeline-lane space-y-3"><article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2024-11</div>
+            <h4 class="mt-1 text-sm font-semibold">Launch via Virtuals Protocol</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">AIXBT AI agent launched within the Virtuals ecosystem.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.virtuals.io/</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-006</a> · <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-emerald-500/40 bg-emerald-500/10 text-emerald-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-01</div>
+            <h4 class="mt-1 text-sm font-semibold">Peak hype cycle</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Token price reached all-time high near $0.94 during AI-agent narrative boom.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-007</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-red-500/40 bg-red-500/10 text-red-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2025-03-18</div>
+            <h4 class="mt-1 text-sm font-semibold">Security exploit and loss of 55 ETH</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></p>
+          </article> <article class="timeline-item rounded-xl border p-4 border-zinc-700 bg-zinc-900/65 text-zinc-100">
+            <div class="text-xs uppercase tracking-wide text-zinc-400">2026-03</div>
+            <h4 class="mt-1 text-sm font-semibold">Infrastructure autonomy expansion</h4>
+            <p class="mt-2 text-xs leading-relaxed text-zinc-200">Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.</p>
+            
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0rxbt/status/2030881272202207701</a></p>
+            <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+          </article> </div>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-red-500/35 bg-red-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-red-200">Critical Red Flags</h2>
+                <p class="mt-1 text-sm text-red-100/80">High-impact concerns surfaced by at least one model.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Operational security failure</h4>
+          <p class="mt-2 text-sm text-zinc-200">Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">high</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Public disclosure of exploit, Independent press reporting</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-016</a> · <a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-017</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Pseudonymous founder</h4>
+          <p class="mt-2 text-sm text-zinc-200">Core operator identity remains pseudonymous with no legal entity mapping.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">high</span>
+            · Confidence: <span class="font-semibold">medium</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Public social attribution linking 0rxbt to project</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0rxbt</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0xCygaar/status/1863243798639231165</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a></p>
+        </article> <article class="rounded-xl border border-red-500/30 bg-red-900/20 p-4">
+          <h4 class="text-sm font-semibold text-red-200">Opaque context-window manipulation potential</h4>
+          <p class="mt-2 text-sm text-zinc-200">Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.</p>
+          <div class="mt-2 text-xs text-red-300">
+            Severity: <span class="font-semibold">medium</span>
+            · Confidence: <span class="font-semibold">medium</span>
+          </div>
+          <details class="mt-2 text-xs text-zinc-300">
+              <summary class="cursor-pointer text-zinc-400 hover:text-zinc-200">Supporting evidence</summary>
+              <div class="mt-2">Public critique on X about developer-controlled context windows</div>
+            </details>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Sources:</span> <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/shloked_/status/1878471901053427924</a></p>
+          <p class="mt-2 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a></p>
+        </article> </div>
+            </article>
+
+            <article class="rounded-2xl border border-violet-500/35 bg-violet-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-violet-200">Behavioral Patterns</h2>
+                <p class="mt-1 text-sm text-violet-100/80">Recurring motifs across time, claims, and operations.</p>
+              </div>
+              <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400"> No behavioral patterns were recorded.</div> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Historical Corpus & Product Surface</h2>
+                <p class="mt-1 text-sm text-zinc-400">Older versions, linked products, archives, and long-range operating history.</p>
+              </div>
+              <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400"> No project-history entries provided.</div> </div>
+            </article>
+
+            <article class="rounded-2xl border border-amber-500/35 bg-amber-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-amber-200">Contradictions & Disputes</h2>
+                <p class="mt-1 text-sm text-amber-100/80">Where narratives conflict and what is unresolved.</p>
+              </div>
+              <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400"> No contradictions section provided.</div> </div>
+            </article>
+          </section>
+
+          <section class="grid gap-5 lg:grid-cols-2">
+            <article class="rounded-2xl border border-blue-500/35 bg-blue-500/8 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-blue-200">Key Insights</h2>
+                <p class="mt-1 text-sm text-blue-100/80">Synthesis highlights from all available model outputs.</p>
+              </div>
+              <div class="space-y-3"><div class="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 text-sm text-zinc-400"> No key insights section supplied.</div> </div>
+            </article>
+
+            <article class="rounded-2xl border border-zinc-700 bg-zinc-900/65 p-5">
+              <div class="section-title mb-4">
+                <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Evidence Gaps</h2>
+                <p class="mt-1 text-sm text-zinc-400">What remains unknown and what needs corroboration.</p>
+              </div>
+              <div class="space-y-3"><article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">X/Twitter coverage is missing for this agent dossier.</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Agents often operate primarily on X/Twitter, but coverage_log has no X surface entry.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched/impact: Add X / Twitter coverage_log entries with exact post, reply, quote, and search queries plus result status.</p>
+          <p class="mt-1 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a> · <a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-015</a> · <a href="https://x.com/S4mmyEth/status/1902021914517758277" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-018</a> · <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a> · <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Farcaster cast/reply coverage is missing for this subject.</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Identity signals include Farcaster/Warpcast, but coverage_log has no Farcaster surface entry.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched/impact: Add Farcaster/Warpcast coverage_log entry with exact cast/reply/channel queries and result status.</p>
+          
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">No Farcaster post-level citations were collected for live agent behavior.</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: Current sources include profile-level Farcaster links but no cast/reply URLs tied to the agent&#39;s real-time behavior.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched/impact: Collect direct Farcaster cast/reply URLs (for example warpcast.com/&lt;handle&gt;/0x...) for live behavior, replies under criticism, and owner-linked activity.</p>
+          
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">Coverage log does not show a dedicated recent-window sweep.</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: The dossier includes coverage, but coverage_log does not show explicit last_7_days, last_30_days, or last_90_days passes for live timeline behavior.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched/impact: Add recent coverage entries with exact queries for last_7_days, last_30_days, and/or last_90_days, especially for handle-led X/Farcaster posts and replies.</p>
+          
+        </article> <article class="rounded-xl border border-zinc-700/60 bg-zinc-900/70 p-4">
+          <h4 class="text-sm font-semibold text-zinc-100">X query coverage does not explicitly inspect replies or conversation behavior.</h4>
+          <p class="mt-2 text-xs text-zinc-300">Why uncertain: The dossier references X/Twitter, but coverage_log does not show query families for replies, conversations, or quote context.</p>
+          <p class="mt-1 text-xs text-zinc-400">What was searched/impact: Run X/Twitter queries containing terms like: replies, with_replies, conversation, quote, quoted, mentions.</p>
+          <p class="mt-1 text-xs text-zinc-300"><span class="text-zinc-400">Source IDs:</span> <a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-001</a> · <a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-008</a> · <a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-009</a> · <a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-010</a> · <a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-015</a> · <a href="https://x.com/S4mmyEth/status/1902021914517758277" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-018</a> · <a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-019</a> · <a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">SRC-023</a></p>
+        </article> </div>
+            </article>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Confidence Notes</h2>
+              <p class="mt-1 text-sm text-zinc-400">Data-quality and uncertainty indicators from the distillation step.</p>
+            </div>
+            <div class="grid gap-3 md:grid-cols-2"><div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Data Completeness</div>
+            <div class="mt-1 text-sm text-zinc-100">moderate</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Source Verification</div>
+            <div class="mt-1 text-sm text-zinc-100">multiple primary and secondary sources</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Identity Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">medium due to pseudonymous operator</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Timeline Confidence</div>
+            <div class="mt-1 text-sm text-zinc-100">high for documented incidents</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Conflicting Findings</div>
+            <div class="mt-1 text-sm text-zinc-100">autonomy vs operator control remains disputed</div>
+          </div> <div class="rounded-lg border border-zinc-700 bg-zinc-900/60 p-3">
+            <div class="text-xs uppercase tracking-wide text-zinc-500">Limitations</div>
+            <div class="mt-1 text-sm text-zinc-100">No verified legal identity for 0rxbt; no independent performance audit of trading signals; incomplete mapping of treasury wallets.</div>
+          </div> </div>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Source References</h2>
+              <p class="mt-1 text-sm text-zinc-400">Collected references/links from all source-like fields in the distilled payload.</p>
+            </div>
+            <ul class="grid gap-3 md:grid-cols-2"><li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-001</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt (@aixbt_agent) / Posts / X</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/aixbt_agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/aixbt_agent</a></div>
+            <div class="mt-2 text-xs text-zinc-300">Profile bio referencing autonomous agent and wallet address.</div>
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-002</div>
+            <div class="mt-1 text-sm text-zinc-100">What is AIXBT? | AIXBT Docs</div>
+            <div class="mt-1 text-xs text-zinc-400">AIXBT Docs · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.aixbt.tech/introduction/what-is-aixbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.aixbt.tech/introduction/what-is-aixbt</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-003</div>
+            <div class="mt-1 text-sm text-zinc-100">Access | AIXBT Docs</div>
+            <div class="mt-1 text-xs text-zinc-400">AIXBT Docs · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.aixbt.tech/terminal/access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.aixbt.tech/terminal/access</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-004</div>
+            <div class="mt-1 text-sm text-zinc-100">REST API | AIXBT Docs</div>
+            <div class="mt-1 text-xs text-zinc-400">AIXBT Docs · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://docs.aixbt.tech/builders/rest-api" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://docs.aixbt.tech/builders/rest-api</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-005</div>
+            <div class="mt-1 text-sm text-zinc-100">AIXBT | Real-Time Crypto Market Intelligence</div>
+            <div class="mt-1 text-xs text-zinc-400">AIXBT · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://aixbt.tech/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://aixbt.tech/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-006</div>
+            <div class="mt-1 text-sm text-zinc-100">Virtuals Protocol | Society of AI Agents</div>
+            <div class="mt-1 text-xs text-zinc-400">Virtuals Protocol · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.virtuals.io/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.virtuals.io/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-007</div>
+            <div class="mt-1 text-sm text-zinc-100">What Is AiXBT? The AI Influencer Taking Crypto by Storm</div>
+            <div class="mt-1 text-xs text-zinc-400">Decrypt · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-008</div>
+            <div class="mt-1 text-sm text-zinc-100">Tweet referencing @0rxbt as founder of @aixbt_agent</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/0xCygaar/status/1863243798639231165" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0xCygaar/status/1863243798639231165</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-009</div>
+            <div class="mt-1 text-sm text-zinc-100">rxbt (@0rxbt) / Posts / X</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/0rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0rxbt</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-010</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt labs (@aixbt_labs) / Posts / X</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/aixbt_labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/aixbt_labs</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-011</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt-labs GitHub organization</div>
+            <div class="mt-1 text-xs text-zinc-400">GitHub · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://github.com/aixbt-labs" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/aixbt-labs</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-012</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt/x402 GitHub repository</div>
+            <div class="mt-1 text-xs text-zinc-400">GitHub · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://github.com/aixbt/x402" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/aixbt/x402</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-013</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt/mcp-server GitHub repository</div>
+            <div class="mt-1 text-xs text-zinc-400">GitHub · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://github.com/aixbt/mcp-server" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/aixbt/mcp-server</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-014</div>
+            <div class="mt-1 text-sm text-zinc-100">rxbt on npm</div>
+            <div class="mt-1 text-xs text-zinc-400">npm · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.npmjs.com/~rxbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.npmjs.com/~rxbt</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-015</div>
+            <div class="mt-1 text-sm text-zinc-100">$AIXBT AI agent system compromised announcement</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/aixbt_agent/status/1902014410845270260" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/aixbt_agent/status/1902014410845270260</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-016</div>
+            <div class="mt-1 text-sm text-zinc-100">AI crypto bot AIXBT lost ETH after dashboard access exploit</div>
+            <div class="mt-1 text-xs text-zinc-400">The Block · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-017</div>
+            <div class="mt-1 text-sm text-zinc-100">Hacker breaks into AI crypto bot aixbt&#39;s dashboard to snatch 55 ETH</div>
+            <div class="mt-1 text-xs text-zinc-400">Cointelegraph via TradingView · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-018</div>
+            <div class="mt-1 text-sm text-zinc-100">55 ETH stolen from a simulacrum wallet commentary</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/S4mmyEth/status/1902021914517758277" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/S4mmyEth/status/1902021914517758277</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-019</div>
+            <div class="mt-1 text-sm text-zinc-100">Critique of AIXBT context-window manipulation risk</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/shloked_/status/1878471901053427924" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/shloked_/status/1878471901053427924</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-020</div>
+            <div class="mt-1 text-sm text-zinc-100">AIXBT: Your AI-Powered Assistant for Crypto Trends &amp; Tokens</div>
+            <div class="mt-1 text-xs text-zinc-400">Dynamic · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://www.dynamic.xyz/blog/aixbt" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://www.dynamic.xyz/blog/aixbt</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-021</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt-agent GitHub organization</div>
+            <div class="mt-1 text-xs text-zinc-400">GitHub · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://github.com/aixbt-agent" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://github.com/aixbt-agent</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-022</div>
+            <div class="mt-1 text-sm text-zinc-100">aixbt.sh project page</div>
+            <div class="mt-1 text-xs text-zinc-400">AIXBT · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://aixbt.sh/" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://aixbt.sh/</a></div>
+            
+          </li> <li class="rounded-lg border border-zinc-800 bg-zinc-950/70 p-3">
+            <div class="text-[11px] uppercase tracking-wide text-zinc-500">SRC-023</div>
+            <div class="mt-1 text-sm text-zinc-100">Operator statement about giving AIXBT its own server and infrastructure</div>
+            <div class="mt-1 text-xs text-zinc-400">X · 2026-03-11</div>
+            <div class="mt-1 text-sm text-zinc-100"><a href="https://x.com/0rxbt/status/2030881272202207701" target="_blank" rel="noopener noreferrer" class="text-blue-300 underline decoration-blue-500/40 hover:text-blue-200">https://x.com/0rxbt/status/2030881272202207701</a></div>
+            
+          </li> </ul>
+          </section>
+
+          <section class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-6">
+            <div class="section-title mb-4">
+              <h2 class="text-lg font-semibold tracking-tight text-zinc-100">Data Preservation Annex</h2>
+              <p class="mt-1 text-sm text-zinc-400">Raw distilled payload is attached to avoid information loss or truncation.</p>
+            </div>
+            <div class="mb-4 space-y-2"><details class="rounded-lg border border-zinc-800 bg-zinc-900/70 p-3">
+          <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Evidence Catalog</summary>
+          <pre class="mt-2 overflow-x-auto whitespace-pre-wrap break-words rounded bg-zinc-950/80 p-3 text-xs text-zinc-300">[
+  {
+    &quot;claim_id&quot;: &quot;CLM-001&quot;,
+    &quot;claim_text&quot;: &quot;Launch via Virtuals Protocol AIXBT AI agent launched within the Virtuals ecosystem.&quot;,
+    &quot;category&quot;: &quot;timeline&quot;,
+    &quot;event_date&quot;: &quot;2024-11&quot;,
+    &quot;event_date_precision&quot;: &quot;month&quot;,
+    &quot;source_type&quot;: &quot;web:virtuals.io&quot;,
+    &quot;source_tier&quot;: null,
+    &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+    &quot;verification_status&quot;: &quot;verified&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-006&quot;,
+      &quot;SRC-007&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-002&quot;,
+    &quot;claim_text&quot;: &quot;Peak hype cycle Token price reached all-time high near $0.94 during AI-agent narrative boom.&quot;,
+    &quot;category&quot;: &quot;timeline&quot;,
+    &quot;event_date&quot;: &quot;2025-01&quot;,
+    &quot;event_date_precision&quot;: &quot;month&quot;,
+    &quot;source_type&quot;: &quot;web:decrypt.co&quot;,
+    &quot;source_tier&quot;: null,
+    &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+    &quot;verification_status&quot;: &quot;verified&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-007&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-003&quot;,
+    &quot;claim_text&quot;: &quot;Security exploit and loss of 55 ETH Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.&quot;,
+    &quot;category&quot;: &quot;timeline&quot;,
+    &quot;event_date&quot;: &quot;2025-03-18&quot;,
+    &quot;event_date_precision&quot;: &quot;day&quot;,
+    &quot;source_type&quot;: &quot;web:theblock.co&quot;,
+    &quot;source_tier&quot;: null,
+    &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+    &quot;verification_status&quot;: &quot;verified&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-016&quot;,
+      &quot;SRC-017&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-004&quot;,
+    &quot;claim_text&quot;: &quot;Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+    &quot;category&quot;: &quot;timeline&quot;,
+    &quot;event_date&quot;: &quot;2026-03&quot;,
+    &quot;event_date_precision&quot;: &quot;month&quot;,
+    &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+    &quot;source_tier&quot;: 4,
+    &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+    &quot;verification_status&quot;: &quot;verified&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-023&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-005&quot;,
+    &quot;claim_text&quot;: &quot;Operational security failure Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.&quot;,
+    &quot;category&quot;: &quot;behavioral&quot;,
+    &quot;event_date&quot;: null,
+    &quot;event_date_precision&quot;: &quot;unknown&quot;,
+    &quot;source_type&quot;: &quot;web:theblock.co&quot;,
+    &quot;source_tier&quot;: null,
+    &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+    &quot;verification_status&quot;: &quot;disputed&quot;,
+    &quot;confidence&quot;: &quot;high&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-016&quot;,
+      &quot;SRC-017&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-006&quot;,
+    &quot;claim_text&quot;: &quot;Pseudonymous founder Core operator identity remains pseudonymous with no legal entity mapping.&quot;,
+    &quot;category&quot;: &quot;legal&quot;,
+    &quot;event_date&quot;: null,
+    &quot;event_date_precision&quot;: &quot;unknown&quot;,
+    &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+    &quot;source_tier&quot;: 4,
+    &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+    &quot;verification_status&quot;: &quot;disputed&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-009&quot;,
+      &quot;SRC-008&quot;
+    ]
+  },
+  {
+    &quot;claim_id&quot;: &quot;CLM-007&quot;,
+    &quot;claim_text&quot;: &quot;Opaque context-window manipulation potential Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.&quot;,
+    &quot;category&quot;: &quot;behavioral&quot;,
+    &quot;event_date&quot;: null,
+    &quot;event_date_precision&quot;: &quot;unknown&quot;,
+    &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+    &quot;source_tier&quot;: 4,
+    &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+    &quot;verification_status&quot;: &quot;disputed&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-019&quot;
+    ]
+  }
+]</pre>
+        </details> </div>
+            <details class="rounded-lg border border-zinc-700 bg-zinc-950/70 p-3" open>
+              <summary class="cursor-pointer text-sm font-semibold text-zinc-200">Full JSON payload</summary>
+              <pre class="mt-3 overflow-x-auto rounded bg-zinc-950 p-4 text-xs text-zinc-300">{
+  &quot;subject_name&quot;: &quot;aixbt_agent&quot;,
+  &quot;type&quot;: &quot;agent&quot;,
+  &quot;overall_score&quot;: 68,
+  &quot;research_sources&quot;: &quot;Claude, GPT, Grok, Gemini&quot;,
+  &quot;research_date&quot;: &quot;2026-03-11&quot;,
+  &quot;source_registry&quot;: [
+    {
+      &quot;source_id&quot;: &quot;SRC-001&quot;,
+      &quot;url&quot;: &quot;https://x.com/aixbt_agent&quot;,
+      &quot;title&quot;: &quot;aixbt (@aixbt_agent) / Posts / X&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;,
+      &quot;excerpt&quot;: &quot;Profile bio referencing autonomous agent and wallet address.&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-002&quot;,
+      &quot;url&quot;: &quot;https://docs.aixbt.tech/introduction/what-is-aixbt&quot;,
+      &quot;title&quot;: &quot;What is AIXBT? | AIXBT Docs&quot;,
+      &quot;publisher&quot;: &quot;AIXBT Docs&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-003&quot;,
+      &quot;url&quot;: &quot;https://docs.aixbt.tech/terminal/access&quot;,
+      &quot;title&quot;: &quot;Access | AIXBT Docs&quot;,
+      &quot;publisher&quot;: &quot;AIXBT Docs&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-004&quot;,
+      &quot;url&quot;: &quot;https://docs.aixbt.tech/builders/rest-api&quot;,
+      &quot;title&quot;: &quot;REST API | AIXBT Docs&quot;,
+      &quot;publisher&quot;: &quot;AIXBT Docs&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-005&quot;,
+      &quot;url&quot;: &quot;https://aixbt.tech/&quot;,
+      &quot;title&quot;: &quot;AIXBT | Real-Time Crypto Market Intelligence&quot;,
+      &quot;publisher&quot;: &quot;AIXBT&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-006&quot;,
+      &quot;url&quot;: &quot;https://www.virtuals.io/&quot;,
+      &quot;title&quot;: &quot;Virtuals Protocol | Society of AI Agents&quot;,
+      &quot;publisher&quot;: &quot;Virtuals Protocol&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-007&quot;,
+      &quot;url&quot;: &quot;https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer&quot;,
+      &quot;title&quot;: &quot;What Is AiXBT? The AI Influencer Taking Crypto by Storm&quot;,
+      &quot;publisher&quot;: &quot;Decrypt&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-008&quot;,
+      &quot;url&quot;: &quot;https://x.com/0xCygaar/status/1863243798639231165&quot;,
+      &quot;title&quot;: &quot;Tweet referencing @0rxbt as founder of @aixbt_agent&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-009&quot;,
+      &quot;url&quot;: &quot;https://x.com/0rxbt&quot;,
+      &quot;title&quot;: &quot;rxbt (@0rxbt) / Posts / X&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-010&quot;,
+      &quot;url&quot;: &quot;https://x.com/aixbt_labs&quot;,
+      &quot;title&quot;: &quot;aixbt labs (@aixbt_labs) / Posts / X&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-011&quot;,
+      &quot;url&quot;: &quot;https://github.com/aixbt-labs&quot;,
+      &quot;title&quot;: &quot;aixbt-labs GitHub organization&quot;,
+      &quot;publisher&quot;: &quot;GitHub&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-012&quot;,
+      &quot;url&quot;: &quot;https://github.com/aixbt/x402&quot;,
+      &quot;title&quot;: &quot;aixbt/x402 GitHub repository&quot;,
+      &quot;publisher&quot;: &quot;GitHub&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-013&quot;,
+      &quot;url&quot;: &quot;https://github.com/aixbt/mcp-server&quot;,
+      &quot;title&quot;: &quot;aixbt/mcp-server GitHub repository&quot;,
+      &quot;publisher&quot;: &quot;GitHub&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-014&quot;,
+      &quot;url&quot;: &quot;https://www.npmjs.com/~rxbt&quot;,
+      &quot;title&quot;: &quot;rxbt on npm&quot;,
+      &quot;publisher&quot;: &quot;npm&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-015&quot;,
+      &quot;url&quot;: &quot;https://x.com/aixbt_agent/status/1902014410845270260&quot;,
+      &quot;title&quot;: &quot;$AIXBT AI agent system compromised announcement&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-016&quot;,
+      &quot;url&quot;: &quot;https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access&quot;,
+      &quot;title&quot;: &quot;AI crypto bot AIXBT lost ETH after dashboard access exploit&quot;,
+      &quot;publisher&quot;: &quot;The Block&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-017&quot;,
+      &quot;url&quot;: &quot;https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/&quot;,
+      &quot;title&quot;: &quot;Hacker breaks into AI crypto bot aixbt&#39;s dashboard to snatch 55 ETH&quot;,
+      &quot;publisher&quot;: &quot;Cointelegraph via TradingView&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-018&quot;,
+      &quot;url&quot;: &quot;https://x.com/S4mmyEth/status/1902021914517758277&quot;,
+      &quot;title&quot;: &quot;55 ETH stolen from a simulacrum wallet commentary&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-019&quot;,
+      &quot;url&quot;: &quot;https://x.com/shloked_/status/1878471901053427924&quot;,
+      &quot;title&quot;: &quot;Critique of AIXBT context-window manipulation risk&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-020&quot;,
+      &quot;url&quot;: &quot;https://www.dynamic.xyz/blog/aixbt&quot;,
+      &quot;title&quot;: &quot;AIXBT: Your AI-Powered Assistant for Crypto Trends &amp; Tokens&quot;,
+      &quot;publisher&quot;: &quot;Dynamic&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-021&quot;,
+      &quot;url&quot;: &quot;https://github.com/aixbt-agent&quot;,
+      &quot;title&quot;: &quot;aixbt-agent GitHub organization&quot;,
+      &quot;publisher&quot;: &quot;GitHub&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-022&quot;,
+      &quot;url&quot;: &quot;https://aixbt.sh/&quot;,
+      &quot;title&quot;: &quot;aixbt.sh project page&quot;,
+      &quot;publisher&quot;: &quot;AIXBT&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    },
+    {
+      &quot;source_id&quot;: &quot;SRC-023&quot;,
+      &quot;url&quot;: &quot;https://x.com/0rxbt/status/2030881272202207701&quot;,
+      &quot;title&quot;: &quot;Operator statement about giving AIXBT its own server and infrastructure&quot;,
+      &quot;publisher&quot;: &quot;X&quot;,
+      &quot;accessed_date&quot;: &quot;2026-03-11&quot;
+    }
+  ],
+  &quot;identity&quot;: {
+    &quot;verified_name&quot;: &quot;aixbt&quot;,
+    &quot;handles&quot;: [
+      &quot;@aixbt_agent&quot;,
+      &quot;@0rxbt&quot;,
+      &quot;@aixbt_labs&quot;,
+      &quot;@aixbt (Farcaster)&quot;
+    ],
+    &quot;email_addresses&quot;: [],
+    &quot;locations&quot;: [],
+    &quot;verification_status&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-001&quot;,
+      &quot;SRC-009&quot;,
+      &quot;SRC-010&quot;
+    ]
+  },
+  &quot;owner_operator_assessment&quot;: {
+    &quot;ownership_model&quot;: &quot;human_owned&quot;,
+    &quot;operator_entities&quot;: [
+      {
+        &quot;name&quot;: &quot;0rxbt&quot;,
+        &quot;role&quot;: &quot;owner/operator/developer&quot;,
+        &quot;verification_status&quot;: &quot;medium&quot;,
+        &quot;risk_summary&quot;: &quot;Pseudonymous operator publicly linked to development and infrastructure decisions for the aixbt agent. No confirmed real-world identity or legal entity mapping surfaced in the research.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-009&quot;,
+          &quot;SRC-008&quot;,
+          &quot;SRC-007&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;aixbt labs&quot;,
+        &quot;role&quot;: &quot;developer&quot;,
+        &quot;verification_status&quot;: &quot;medium&quot;,
+        &quot;risk_summary&quot;: &quot;Appears to operate development and product updates for the agent and terminal platform.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-010&quot;,
+          &quot;SRC-011&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Virtuals Protocol&quot;,
+        &quot;role&quot;: &quot;promoter/platform&quot;,
+        &quot;verification_status&quot;: &quot;high&quot;,
+        &quot;risk_summary&quot;: &quot;Platform through which the AI agent token and ecosystem launched.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-006&quot;,
+          &quot;SRC-007&quot;
+        ]
+      }
+    ],
+    &quot;control_surfaces&quot;: [
+      {
+        &quot;surface&quot;: &quot;social_accounts&quot;,
+        &quot;status&quot;: &quot;identified&quot;,
+        &quot;notes&quot;: &quot;Primary communication occurs on X through @aixbt_agent.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-001&quot;
+        ]
+      },
+      {
+        &quot;surface&quot;: &quot;domain&quot;,
+        &quot;status&quot;: &quot;identified&quot;,
+        &quot;notes&quot;: &quot;aixbt.tech and docs.aixbt.tech host documentation and terminal interface.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-002&quot;,
+          &quot;SRC-005&quot;
+        ]
+      },
+      {
+        &quot;surface&quot;: &quot;repo&quot;,
+        &quot;status&quot;: &quot;identified&quot;,
+        &quot;notes&quot;: &quot;GitHub repos including x402 and MCP server show developer control surfaces.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-011&quot;,
+          &quot;SRC-012&quot;,
+          &quot;SRC-013&quot;
+        ]
+      },
+      {
+        &quot;surface&quot;: &quot;wallet&quot;,
+        &quot;status&quot;: &quot;unclear&quot;,
+        &quot;notes&quot;: &quot;Simulacrum wallet referenced during 2025 hack incident but canonical treasury address not conclusively mapped.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-015&quot;,
+          &quot;SRC-016&quot;
+        ]
+      }
+    ],
+    &quot;notes&quot;: &quot;Ownership structure appears to rely on a pseudonymous developer with centralized operational control.&quot;
+  },
+  &quot;timeline&quot;: [
+    {
+      &quot;date&quot;: &quot;2024-11&quot;,
+      &quot;title&quot;: &quot;Launch via Virtuals Protocol&quot;,
+      &quot;description&quot;: &quot;AIXBT AI agent launched within the Virtuals ecosystem.&quot;,
+      &quot;sources&quot;: [
+        &quot;https://www.virtuals.io/&quot;,
+        &quot;https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer&quot;
+      ],
+      &quot;tone&quot;: &quot;positive&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2025-01&quot;,
+      &quot;title&quot;: &quot;Peak hype cycle&quot;,
+      &quot;description&quot;: &quot;Token price reached all-time high near $0.94 during AI-agent narrative boom.&quot;,
+      &quot;sources&quot;: [
+        &quot;https://decrypt.co/299393/what-is-aixbt-ai-crypto-influencer&quot;
+      ],
+      &quot;tone&quot;: &quot;positive&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2025-03-18&quot;,
+      &quot;title&quot;: &quot;Security exploit and loss of 55 ETH&quot;,
+      &quot;description&quot;: &quot;Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.&quot;,
+      &quot;sources&quot;: [
+        &quot;https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access&quot;,
+        &quot;https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/&quot;
+      ],
+      &quot;tone&quot;: &quot;critical&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03&quot;,
+      &quot;title&quot;: &quot;Infrastructure autonomy expansion&quot;,
+      &quot;description&quot;: &quot;Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+      &quot;sources&quot;: [
+        &quot;https://x.com/0rxbt/status/2030881272202207701&quot;
+      ],
+      &quot;tone&quot;: &quot;neutral&quot;,
+      &quot;verified&quot;: true,
+      &quot;source_ids&quot;: [
+        &quot;SRC-023&quot;
+      ]
+    }
+  ],
+  &quot;red_flags&quot;: [
+    {
+      &quot;title&quot;: &quot;Operational security failure&quot;,
+      &quot;description&quot;: &quot;Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Public disclosure of exploit&quot;,
+        &quot;Independent press reporting&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;,
+        &quot;Grok&quot;,
+        &quot;Gemini&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;https://www.theblock.co/post/346911/ai-crypto-bot-aixbt-lost-eth-hack-unauthorized-dashboard-access&quot;,
+        &quot;https://www.tradingview.com/news/cointelegraph%3A61f9396f2094b%3A0-hacker-breaks-into-ai-crypto-bot-aixbt-s-dashboard-to-snatch-55-eth/&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Pseudonymous founder&quot;,
+      &quot;description&quot;: &quot;Core operator identity remains pseudonymous with no legal entity mapping.&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Public social attribution linking 0rxbt to project&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;,
+        &quot;GPT&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;https://x.com/0rxbt&quot;,
+        &quot;https://x.com/0xCygaar/status/1863243798639231165&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-008&quot;
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;Opaque context-window manipulation potential&quot;,
+      &quot;description&quot;: &quot;Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;supporting_evidence&quot;: [
+        &quot;Public critique on X about developer-controlled context windows&quot;
+      ],
+      &quot;counter_evidence&quot;: [],
+      &quot;found_by&quot;: [
+        &quot;Claude&quot;
+      ],
+      &quot;sources&quot;: [
+        &quot;https://x.com/shloked_/status/1878471901053427924&quot;
+      ],
+      &quot;source_ids&quot;: [
+        &quot;SRC-019&quot;
+      ]
+    }
+  ],
+  &quot;social_sentiment&quot;: {
+    &quot;overall_valence&quot;: &quot;mixed&quot;,
+    &quot;trajectory&quot;: &quot;volatile&quot;,
+    &quot;controversy_level&quot;: &quot;medium&quot;,
+    &quot;confidence&quot;: &quot;medium&quot;,
+    &quot;platform_divergence&quot;: &quot;x_more_negative&quot;,
+    &quot;manipulation_risk&quot;: &quot;medium&quot;,
+    &quot;trajectory_reasoning&quot;: &quot;Sentiment spikes occurred during hack incident and token drawdown but stabilizes during product updates.&quot;,
+    &quot;sentiment_windows&quot;: [
+      {
+        &quot;window&quot;: &quot;last_30_days&quot;,
+        &quot;valence&quot;: &quot;mixed&quot;,
+        &quot;controversy_level&quot;: &quot;low&quot;,
+        &quot;summary&quot;: &quot;Recent discourse focuses on shipping updates and continued development rather than scandal.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-023&quot;
+        ]
+      },
+      {
+        &quot;window&quot;: &quot;prior_90_days&quot;,
+        &quot;valence&quot;: &quot;mixed&quot;,
+        &quot;controversy_level&quot;: &quot;medium&quot;,
+        &quot;summary&quot;: &quot;Security exploit and debates about autonomy contributed to criticism.&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-015&quot;,
+          &quot;SRC-019&quot;
+        ]
+      }
+    ],
+    &quot;backlash_events&quot;: [
+      {
+        &quot;date&quot;: &quot;2025-03-18&quot;,
+        &quot;trigger&quot;: &quot;Dashboard exploit resulting in 55 ETH loss&quot;,
+        &quot;reaction_summary&quot;: &quot;Public criticism of AI-agent security and operational safety.&quot;,
+        &quot;status&quot;: &quot;spike&quot;,
+        &quot;confidence&quot;: &quot;high&quot;,
+        &quot;source_ids&quot;: [
+          &quot;SRC-015&quot;,
+          &quot;SRC-016&quot;
+        ]
+      }
+    ],
+    &quot;notes&quot;: &quot;Public sentiment is contextual and not proof of misconduct.&quot;
+  },
+  &quot;risk_assessment&quot;: {
+    &quot;overall_score&quot;: 68,
+    &quot;score_reasoning&quot;: &quot;Risk score driven by pseudonymous operator, documented exploit resulting in financial loss, token-linked incentives, and limited independent auditing of performance.&quot;,
+    &quot;criminal_risk&quot;: &quot;none found&quot;,
+    &quot;financial_risk&quot;: &quot;high&quot;,
+    &quot;reputational_risk&quot;: &quot;high&quot;,
+    &quot;verification_risk&quot;: &quot;medium&quot;,
+    &quot;source_ids&quot;: [
+      &quot;SRC-016&quot;,
+      &quot;SRC-017&quot;,
+      &quot;SRC-009&quot;
+    ]
+  },
+  &quot;confidence_notes&quot;: {
+    &quot;data_completeness&quot;: &quot;moderate&quot;,
+    &quot;source_verification&quot;: &quot;multiple primary and secondary sources&quot;,
+    &quot;identity_confidence&quot;: &quot;medium due to pseudonymous operator&quot;,
+    &quot;timeline_confidence&quot;: &quot;high for documented incidents&quot;,
+    &quot;conflicting_findings&quot;: &quot;autonomy vs operator control remains disputed&quot;,
+    &quot;limitations&quot;: &quot;No verified legal identity for 0rxbt; no independent performance audit of trading signals; incomplete mapping of treasury wallets.&quot;
+  },
+  &quot;evidence_catalog&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;CLM-001&quot;,
+      &quot;claim_text&quot;: &quot;Launch via Virtuals Protocol AIXBT AI agent launched within the Virtuals ecosystem.&quot;,
+      &quot;category&quot;: &quot;timeline&quot;,
+      &quot;event_date&quot;: &quot;2024-11&quot;,
+      &quot;event_date_precision&quot;: &quot;month&quot;,
+      &quot;source_type&quot;: &quot;web:virtuals.io&quot;,
+      &quot;source_tier&quot;: null,
+      &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-002&quot;,
+      &quot;claim_text&quot;: &quot;Peak hype cycle Token price reached all-time high near $0.94 during AI-agent narrative boom.&quot;,
+      &quot;category&quot;: &quot;timeline&quot;,
+      &quot;event_date&quot;: &quot;2025-01&quot;,
+      &quot;event_date_precision&quot;: &quot;month&quot;,
+      &quot;source_type&quot;: &quot;web:decrypt.co&quot;,
+      &quot;source_tier&quot;: null,
+      &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-003&quot;,
+      &quot;claim_text&quot;: &quot;Security exploit and loss of 55 ETH Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.&quot;,
+      &quot;category&quot;: &quot;timeline&quot;,
+      &quot;event_date&quot;: &quot;2025-03-18&quot;,
+      &quot;event_date_precision&quot;: &quot;day&quot;,
+      &quot;source_type&quot;: &quot;web:theblock.co&quot;,
+      &quot;source_tier&quot;: null,
+      &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-004&quot;,
+      &quot;claim_text&quot;: &quot;Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+      &quot;category&quot;: &quot;timeline&quot;,
+      &quot;event_date&quot;: &quot;2026-03&quot;,
+      &quot;event_date_precision&quot;: &quot;month&quot;,
+      &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+      &quot;source_tier&quot;: 4,
+      &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-023&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-005&quot;,
+      &quot;claim_text&quot;: &quot;Operational security failure Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.&quot;,
+      &quot;category&quot;: &quot;behavioral&quot;,
+      &quot;event_date&quot;: null,
+      &quot;event_date_precision&quot;: &quot;unknown&quot;,
+      &quot;source_type&quot;: &quot;web:theblock.co&quot;,
+      &quot;source_tier&quot;: null,
+      &quot;tier_reason&quot;: &quot;Tier could not be inferred from linked source metadata.&quot;,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-006&quot;,
+      &quot;claim_text&quot;: &quot;Pseudonymous founder Core operator identity remains pseudonymous with no legal entity mapping.&quot;,
+      &quot;category&quot;: &quot;legal&quot;,
+      &quot;event_date&quot;: null,
+      &quot;event_date_precision&quot;: &quot;unknown&quot;,
+      &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+      &quot;source_tier&quot;: 4,
+      &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-008&quot;
+      ]
+    },
+    {
+      &quot;claim_id&quot;: &quot;CLM-007&quot;,
+      &quot;claim_text&quot;: &quot;Opaque context-window manipulation potential Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.&quot;,
+      &quot;category&quot;: &quot;behavioral&quot;,
+      &quot;event_date&quot;: null,
+      &quot;event_date_precision&quot;: &quot;unknown&quot;,
+      &quot;source_type&quot;: &quot;self_reported_or_unverified&quot;,
+      &quot;source_tier&quot;: 4,
+      &quot;tier_reason&quot;: &quot;Self-reported or unverified third-party signal.&quot;,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-019&quot;
+      ]
+    }
+  ],
+  &quot;contradictions_and_disputes&quot;: [],
+  &quot;evidence_gaps&quot;: [
+    {
+      &quot;question&quot;: &quot;X/Twitter coverage is missing for this agent dossier.&quot;,
+      &quot;why_uncertain&quot;: &quot;Agents often operate primarily on X/Twitter, but coverage_log has no X surface entry.&quot;,
+      &quot;searched&quot;: &quot;Add X / Twitter coverage_log entries with exact post, reply, quote, and search queries plus result status.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-008&quot;,
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;,
+        &quot;SRC-015&quot;,
+        &quot;SRC-018&quot;,
+        &quot;SRC-019&quot;,
+        &quot;SRC-023&quot;
+      ]
+    },
+    {
+      &quot;question&quot;: &quot;Farcaster cast/reply coverage is missing for this subject.&quot;,
+      &quot;why_uncertain&quot;: &quot;Identity signals include Farcaster/Warpcast, but coverage_log has no Farcaster surface entry.&quot;,
+      &quot;searched&quot;: &quot;Add Farcaster/Warpcast coverage_log entry with exact cast/reply/channel queries and result status.&quot;,
+      &quot;source_ids&quot;: []
+    },
+    {
+      &quot;question&quot;: &quot;No Farcaster post-level citations were collected for live agent behavior.&quot;,
+      &quot;why_uncertain&quot;: &quot;Current sources include profile-level Farcaster links but no cast/reply URLs tied to the agent&#39;s real-time behavior.&quot;,
+      &quot;searched&quot;: &quot;Collect direct Farcaster cast/reply URLs (for example warpcast.com/&lt;handle&gt;/0x...) for live behavior, replies under criticism, and owner-linked activity.&quot;,
+      &quot;source_ids&quot;: []
+    },
+    {
+      &quot;question&quot;: &quot;Coverage log does not show a dedicated recent-window sweep.&quot;,
+      &quot;why_uncertain&quot;: &quot;The dossier includes coverage, but coverage_log does not show explicit last_7_days, last_30_days, or last_90_days passes for live timeline behavior.&quot;,
+      &quot;searched&quot;: &quot;Add recent coverage entries with exact queries for last_7_days, last_30_days, and/or last_90_days, especially for handle-led X/Farcaster posts and replies.&quot;,
+      &quot;source_ids&quot;: []
+    },
+    {
+      &quot;question&quot;: &quot;X query coverage does not explicitly inspect replies or conversation behavior.&quot;,
+      &quot;why_uncertain&quot;: &quot;The dossier references X/Twitter, but coverage_log does not show query families for replies, conversations, or quote context.&quot;,
+      &quot;searched&quot;: &quot;Run X/Twitter queries containing terms like: replies, with_replies, conversation, quote, quoted, mentions.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-008&quot;,
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;,
+        &quot;SRC-015&quot;,
+        &quot;SRC-018&quot;,
+        &quot;SRC-019&quot;,
+        &quot;SRC-023&quot;
+      ]
+    }
+  ],
+  &quot;credentials_and_claims&quot;: [
+    {
+      &quot;claim&quot;: &quot;Launch via Virtuals Protocol AIXBT AI agent launched within the Virtuals ecosystem.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Observed date: 2024-11 | Source type: web:virtuals.io | Tier rationale: Tier could not be inferred from linked source metadata.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-006&quot;,
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Peak hype cycle Token price reached all-time high near $0.94 during AI-agent narrative boom.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Observed date: 2025-01 | Source type: web:decrypt.co | Tier rationale: Tier could not be inferred from linked source metadata.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Security exploit and loss of 55 ETH Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Observed date: 2025-03-18 | Source type: web:theblock.co | Tier rationale: Tier could not be inferred from linked source metadata.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+      &quot;verified&quot;: true,
+      &quot;verification_status&quot;: &quot;verified&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Observed date: 2026-03 | Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-023&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Operational security failure Loss of 55 ETH due to dashboard exploit demonstrates vulnerability in surrounding automation infrastructure.&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;high&quot;,
+      &quot;notes&quot;: &quot;Source type: web:theblock.co | Tier rationale: Tier could not be inferred from linked source metadata.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Pseudonymous founder Core operator identity remains pseudonymous with no legal entity mapping.&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-009&quot;,
+        &quot;SRC-008&quot;
+      ]
+    },
+    {
+      &quot;claim&quot;: &quot;Opaque context-window manipulation potential Critics claim developers control the context window that feeds the AI agent, potentially biasing outputs.&quot;,
+      &quot;verified&quot;: false,
+      &quot;verification_status&quot;: &quot;disputed&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Source type: self_reported_or_unverified | Tier rationale: Self-reported or unverified third-party signal.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-019&quot;
+      ]
+    }
+  ],
+  &quot;recent_experiments&quot;: [
+    {
+      &quot;name&quot;: &quot;Peak hype cycle&quot;,
+      &quot;first_observed_date&quot;: &quot;2025-01&quot;,
+      &quot;status&quot;: &quot;observed&quot;,
+      &quot;evidence_type&quot;: &quot;primary_social&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Token price reached all-time high near $0.94 during AI-agent narrative boom.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-007&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Security exploit and loss of 55 ETH&quot;,
+      &quot;first_observed_date&quot;: &quot;2025-03-18&quot;,
+      &quot;status&quot;: &quot;observed&quot;,
+      &quot;evidence_type&quot;: &quot;primary_social&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Attacker accessed internal dashboard and queued malicious replies, resulting in loss of approximately 55 ETH.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-016&quot;,
+        &quot;SRC-017&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Infrastructure autonomy expansion&quot;,
+      &quot;first_observed_date&quot;: &quot;2026-03&quot;,
+      &quot;status&quot;: &quot;observed&quot;,
+      &quot;evidence_type&quot;: &quot;primary_social&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-023&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastruc&quot;,
+      &quot;first_observed_date&quot;: &quot;2026-03&quot;,
+      &quot;status&quot;: &quot;observed&quot;,
+      &quot;evidence_type&quot;: &quot;mixed&quot;,
+      &quot;confidence&quot;: &quot;medium&quot;,
+      &quot;notes&quot;: &quot;Infrastructure autonomy expansion Operator indicated AIXBT now has its own server and infrastructure as part of progressive autonomy initiative.&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-023&quot;
+      ]
+    }
+  ],
+  &quot;coverage_log&quot;: [
+    {
+      &quot;surface&quot;: &quot;X / Twitter&quot;,
+      &quot;queries&quot;: [],
+      &quot;date_window&quot;: &quot;recovered_from_citations&quot;,
+      &quot;result&quot;: &quot;found&quot;,
+      &quot;source_ids&quot;: [
+        &quot;SRC-001&quot;,
+        &quot;SRC-008&quot;,
+        &quot;SRC-009&quot;,
+        &quot;SRC-010&quot;,
+        &quot;SRC-015&quot;,
+        &quot;SRC-018&quot;,
+        &quot;SRC-019&quot;,
+        &quot;SRC-023&quot;
+      ],
+      &quot;recovery_note&quot;: &quot;Exact queries were not preserved in the payload; this row was reconstructed from cited source URLs.&quot;
+    }
+  ]
+}</pre>
+            </details>
+          </section>
+
+          <footer class="rounded-2xl border border-zinc-800 bg-zinc-900/65 p-5 text-xs text-zinc-400">
+            <p>This dossier is an evidence-oriented analytical artifact, not a legal judgment or formal accusation.</p>
+            <p class="mt-1">All claims should be independently verified against primary sources before making real-world decisions.</p>
+            <p class="mt-1 text-zinc-500">Generated by RepNet Dossier CLI on 2026-03-11.</p>
+          </footer>
+        </main>
+      </body>
+    </html>
